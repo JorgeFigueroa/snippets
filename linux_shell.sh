@@ -89,10 +89,8 @@ netstat     #mostrar estado red
 top         #mostrar todos los procesos
 
 
-$ ssh root@IP    #conectar a servidor
-$ rsync -rv jorge@IP:/var/www/build/path/vendor .
-
-$ ftp hostname
-
-$ sudo nano /private/etc/hosts #path Hosts
-$ nano ~/.bash_profile  #variables de entorno
+ssh root@IP    #conectar a servidor
+rsync -rv jorge@IP:/var/www/build/path/vendor .
+ftp hostname
+nano /private/etc/hosts #path Hosts
+nano ~/.bash_profile  #variables de entorno

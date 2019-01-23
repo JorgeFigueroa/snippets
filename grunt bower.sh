@@ -14,27 +14,25 @@ bower install --save angular-bootstrap
 
 
 #### PROYECTOS
-sudo git clone https://github.com/ngbp/ngbp.git
-sudo npm -g install grunt-cli karma bower
-sudo npm install
+git clone https://github.com/ngbp/ngbp.git
+npm -g install grunt-cli karma bower
+npm install
 bower install
 sudo grunt watch
 
 
 git version ruby -v compass -v
 node -v si da problemas reinstalar npm
-sudo npm install -g yo bower grunt-cli
-sudo npm install -g generator-karma generator-angular
-
+npm install -g yo bower grunt-cli
+npm install -g generator-karma generator-angular
 yo angular proyecto_yeoman
 grunt serve
 npm install
 yo angular:route articulos
 
 
-sudo npm install -g bower
-sudo npm install -g grunt-cli
-sudo npm install -g cleverstack-cli
+
+npm install -g cleverstack-cli
 clever init -S proyecto_cleverstack
 clever serve
 set NODE_PATH=./lib/;./modules
