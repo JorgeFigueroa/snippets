@@ -4,12 +4,11 @@ nodemon server.js
 
 brew install nginx
 nginx -v    
-nginx -h   //help
+nginx -h   #help
 sudo nginx
 sudo nginx -s stop
 
-#Configurar la ruta del servidor para Node.js
-/usr/local/etc/nginx/nginx.conf
+/usr/local/etc/nginx/nginx.conf #Configurar la ruta del servidor para Node.js
 
 #Crear un sitio web básico con Nginx y Node.js
 proxy_set_header Host $hots;

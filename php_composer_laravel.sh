@@ -13,8 +13,6 @@ php artisan serve
 php artisan down
 php artisan up
 php artisan make:controller tu_controllador
-
-
 php artisan migrate            # crea tablas nell database in base cuntas migration tenemos creadas
 php artisan migrate:rollback
 php artisan make:migration prueva  # crea una Migration dentro de database/migration/
