@@ -24,7 +24,6 @@ service network:  restart, status
 service iptables  stop
 chkconfig iptables  off
 
-
 #apache
 /etc/httpd/conf/httpd.conf
 apachectl: status, configtest, graceful

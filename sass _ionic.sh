@@ -21,10 +21,8 @@ npm install -g ionic cordova
 ionic start myApp
 ionic login
 ionic serve
-
 ionic link     #Connect your local app to Ionic
 ionic upload   #Sube la aplicación ionic view
-
 ionic docs
 ionic info
 
