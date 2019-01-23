@@ -21,33 +21,7 @@ input:valid + span:after {
 
 
 
-/* MENU ACTIVE */
-<style>
-  .active {
-    background-color: green;
-  }
-</style>
-
-<script src="jquery.min.js"></script>
-  $(document).ready(function () {
-    $('a.menu').click(function () {
-      $('a.menu').removeClass("active");
-      $(this).addClass("active");
-    });
-  });
-</script>
-
-<ul id="navi">
-  <li><a class="menu" href="#">About MHG</a></li>
-  <li><a class="menu" href="#">Workout Programs</a></li>
-  <li><a class="menu" href="#">Fitness Tips</a></li>
-  <li><a class="menu" href="#">Contact Us</a></li>
-  <li><a class="menu" href="#">Read Our Blog</a></li>
-</ul>
-
-
-
-<!-- ######  RESPONSIVE -->
+/* ######  RESPONSIVE */
 <link href="estilos_impresora.css" rel="stylesheet" media="print" > 
 <link href="estilos_movil.css" rel="stylesheet" media="handheld, only screen and (max-width: 480px)"  />
 <link href="estilos_escritorio.css" rel="stylesheet" media="screen and ( min-width:481px )" />

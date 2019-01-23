@@ -8,7 +8,7 @@ mvn -v
 
 #### TOMCAT
 dowload  http://tomcat.apache.org/download-80.cgi
-$ nano /etc/profile
+nano /etc/profile
 export CATALINA_HOME=/home/ivan/servidor/apache-tomcat-8.0.30
 
 $ source /etc/profile
@@ -28,5 +28,3 @@ $ cd apache-tomcat-8.0.30/bin
 $ ./startup.sh
 $ ./shutdown.sh
 http://localhost:8080.
-
-ssh root@123.45.67.890

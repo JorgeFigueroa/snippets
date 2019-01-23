@@ -5,17 +5,16 @@ apt-get upgrade     #Realiza una actualización
 apt-cache search paquete
 apt-get install paquete
 apt-get remove paquete
-aptitude search paquete
 apt-get purge vlc
-
-
 apt-get install aptitude
+
+aptitude search paquete
 aptitude update
 aptitude --help
-man aptitude
-
 aptitude search git
 aptitude install git
+man aptitude
+
 
 aptitude install build-essential libssl-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash

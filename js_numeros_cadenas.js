@@ -19,13 +19,11 @@ function espar(numero) {
   
   
   
-  
   //#####  CADENAS
   var nombre = 'jorge';
   
-  if (nombre.indexOf('jorge') === 0){}
-  else{}
-  
+  if (nombre.indexOf('jorge') === 0)
+
   nombre.indexOf("jorge");
   nombre[4];
   nombre.charAt(1);
@@ -33,5 +31,4 @@ function espar(numero) {
   //mayusculo mminusculo
   nombre.toUpperCase();
   nombre.toLowerCase();
-  
   nombre.replace("j","y");

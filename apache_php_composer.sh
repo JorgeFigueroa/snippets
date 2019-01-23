@@ -18,13 +18,13 @@ max_execution_time = 3000
 
 #config module mongo
 https://github.com/mongodb/mongo-php-driver
-$ git clone https://github.com/mongodb/mongo-php-driver.git
-$ cd mongo-php-driver
-$ git submodule update --init
-$ phpize
-$ ./configure --with-mongodb-ssl=darwin
-$ make all
-$ sudo make install
+git clone https://github.com/mongodb/mongo-php-driver.git
+cd mongo-php-driver
+git submodule update --init
+phpize
+./configure --with-mongodb-ssl=darwin
+make all
+sudo make install
 
 #seguridad
 max_execution_time = 30
@@ -62,10 +62,6 @@ $sudo mv composer.phar /usr/local/bin/composer
 composer -v
 
 
-
-
-#Zendframework2
-php public/index.php  
 #symfony
 php bin/console    
 php bin/console generate:bundle --namespace=BackendBundle --format=yml	#generar Bundle
@@ -83,15 +79,15 @@ php bin/console  debug:router     -  > lista de rutas
 #### LARAVEL
 composer create-project laravel/laravel tu_proyecto "5.0.*" --prefer-dist
 laravel new tu_proyecto
-$php artisan serve
-$php artisan down
-$php artisan up
-$php artisan make:controller tu_controllador
-$php artisan migrate                 #crea tablas nell database in base cuntas migration tenemos creadas
-$php artisan migrate:rollback
-$php artisan make:migration prueva   #crea una Migration dentro de database/migration/
-$php artisan db:seed
-$php artisan make:model Article      #crea un model dentro de app/
+php artisan serve
+php artisan down
+php artisan up
+php artisan make:controller tu_controllador
+php artisan migrate                 #crea tablas nell database in base cuntas migration tenemos creadas
+php artisan migrate:rollback
+php artisan make:migration prueva   #crea una Migration dentro de database/migration/
+php artisan db:seed
+php artisan make:model Article      #crea un model dentro de app/
 
 
 ####LUMEN

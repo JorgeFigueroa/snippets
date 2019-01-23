@@ -5,7 +5,6 @@ cmd + alt w           #para cerrar todas las finestras
 cmd + shif 3          #para capturar screen 
 cmd + shif 4          #para seleccionar area
 cmd + shif 4 spazio   #captura una finestra especifica
-
 cmd + alt + i  #chrome svilupatore
 
 
@@ -26,10 +25,12 @@ cmd + B      #para ir ala funcion
 
 man
 
-$ Killall Dock      #reiniciar dock
-$ git sudo apachectl stop		#parar apache
 
-$ defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder     #mostrar archivos ocultos
-$ defaults write com.apple.Finder AppleShowAllFiles NO;killall Finder      #ocultar archivos ocultos
-$ defaults write com.apple.screencapture type jpg #captura de pantalla jpg
-$ defaults write com.apple.screencapture type jpg;killall SystemUIServer      #cambiar el formato de captura de pantalla
+defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder     #mostrar archivos ocultos
+defaults write com.apple.Finder AppleShowAllFiles NO; killall Finder      #ocultar archivos ocultos
+defaults write com.apple.screencapture type jpg; killall SystemUIServer      #cambiar el formato de captura de pantalla
+defaults write com.apple.screencapture type jpg;killall SystemUIServer      cambiar el formato de captura de pantalla
+
+apachectl stop		#parar apache
+Killall Dock      #reiniciar dock
+python -m SimpleHTTPServer 9000  #crea server

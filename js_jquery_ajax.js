@@ -67,12 +67,12 @@ var xhr;
 if (window.XMLHttpRequest) // IE7+, Firefox, Chrome, Opera, Safari
     xhr = new XMLHttpRequest();
 else {
-    xhr = new ActiveXObject(“Microsoft.XMLHTTP”);// IE6, IE5
+    xhr = new ActiveXObject("Microsoft.XMLHTTP");// IE6, IE5
 }
 xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        document.getElementById(“myDiv”).innerHTML = xhr.responseText;
+        document.getElementById("myDiv").innerHTML = xhr.responseText;
     }
-    xhr.open(“GET”, “http: example.com / recurso”, true);
+    xhr.open("GET", "http: example.com / recurso", true);
     xhr.send();
 }
