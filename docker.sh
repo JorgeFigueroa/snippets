@@ -3,6 +3,9 @@ docker --version
 docker container --help
 
 docker run -p 5432:5432  --name bmw-db -e POSTGRES_PASSWORD=postgres -d postgres:9.3 #crea container con image postgress
+docker cp filename CONTAINER_ID:./tmp
+docker exec -it CONTAINER_ID bash  ## connect container 
+psql -d database -U username -f tmp/filename.sql    ## Restore database
 
 docker container ls --all          ## list container
 docker ps -a                       ## list container
@@ -11,13 +14,9 @@ docker images                      ## list images
 docker rmi -f IMAGE_ID             ## remove image 
 docker commit CONTAINER_ID  NAME
 
+
+
 docker run --name REPOSITORY -d test/nginx ##crea images
-
-
-
-docker cp filename nomecontainer:percorsoDoveCopiare
-docker exec -it nomeContainerPostgres bash psql -d database -U username -f percorsoDoveCopiare/fileDump.sql
-docker exec -it CONTAINER_ID  bash
 
 
 docker build -t friendlyhello .  # Create image using this directory's Dockerfile
