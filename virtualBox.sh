@@ -2,3 +2,4 @@
 VBoxManage.exe clonehd “C:\path\disco.vmdk” “C:\path\cloned_disco.vdi” —format vdi
 VBoxManage.exe modifyhd “C:\path\cloned_ubuntu.vdi” —resize 24576
 Change partitions GParted
+

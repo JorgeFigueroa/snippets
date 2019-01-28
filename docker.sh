@@ -1,5 +1,6 @@
 
-docker --version
+docker version
+docker info
 docker container --help
 
 docker run -p 5432:5432  --name bmw-db -e POSTGRES_PASSWORD=postgres -d postgres:9.3 #crea container con image postgress
