@@ -37,5 +37,3 @@ docker tag <image> username/repository:tag  # Tag <image> for upload to registry
 docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 
-
-
