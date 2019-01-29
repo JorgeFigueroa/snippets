@@ -43,10 +43,3 @@ docker run username/repository:tag                   # Run image from a registry
 
 
 
-
-
-
-
-
-
-
