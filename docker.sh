@@ -19,7 +19,7 @@ docker ps -a                       ## list container
 docker rm CONTAINER_ID             ## remove container
 docker images                      ## list images
 docker rmi -f IMAGE_ID             ## remove image 
-docker commit CONTAINER_ID  NAME
+docker commit CONTAINER_ID  Nombre  ## crea una imagen a partir de otro  container    
 docker start CONTAINER_ID
 docker stop CONTAINER_ID
 
