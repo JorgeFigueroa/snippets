@@ -26,7 +26,7 @@ select now();   #mostrar fecha y ora
 select concat('jorge', 'figueroa');
 select dayname('1980-02-19');
 select round(3.555);
-select columna, columna2 from tabella ORDER BY id DESC LIMIT 1;  #ultimo registro
+select columna, columna2 FROM tabella ORDER BY id DESC LIMIT 1;  #ultimo registro
 select count(*) from tabla;
 
 select columna from table where columna like '%palabra'; 

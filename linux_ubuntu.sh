@@ -3,16 +3,12 @@ nano /etc/apt/sources.list  #servidores para bajar paquetes
 apt-get update      #Descarga nuevas listas de paquetes
 apt-get upgrade     #Realiza una actualización
 apt-cache search paquete
-apt-get install paquete
-apt-get remove paquete
-apt-get purge vlc
-apt-get install aptitude
+apt-get install, remove, purge: paquete
 
-aptitude search paquete
+apt-get install aptitude
 aptitude update
 aptitude --help
-aptitude search git
-aptitude install git
+aptitude search, install:  paquete
 man aptitude
 
 
@@ -25,9 +21,9 @@ nvm install 10.4.1
 nvm ls
 nvm use 6.11.2
 
-aptitude install   nginx  mongodb  php7.2-cli mysql-server php7.2-fpm  php7.2-mysql
+aptitude install  nginx  mongodb  php7.2-cli mysql-server php7.2-fpm  php7.2-mysql
 
 
 #administracion de procesos
-service nginx status, stop, start, reload
+service nginx: status, stop, start, reload
 service php7.2-fpm restart

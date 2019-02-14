@@ -80,10 +80,10 @@ chmod u=w, o=wx file
 
 top 1	              #mostrar procesos
 ps -fe | grep res     #processi
-kill -9        25274 25275 25294 #kill processi
+kill -9        25274 25275 25294 #kill  matar processi
 
 
-ping 192.168.1.1   #comprobar ip esta respondiendo 
+ping 192.168.1.1   #comprobar IP esta respondiendo 
 ping 8.8.8.8   #comprobar si tienes internet con ip google
 netstat     #mostrar estado red
 top         #mostrar todos los procesos
