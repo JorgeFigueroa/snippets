@@ -20,8 +20,11 @@ docker rm CONTAINER_ID             ## remove container
 docker images                      ## list images
 docker rmi -f IMAGE_ID             ## remove image 
 docker commit CONTAINER_ID  Nombre  ## crea una imagen a partir de otro  container    
+docker commit --change='CMD["apache2ctl", "-D FOREGROUND"]'  -c "EXPOSE 85" CONTAINER_ID nombre
+
 docker start CONTAINER_ID
 docker stop CONTAINER_ID
+
 
 
 

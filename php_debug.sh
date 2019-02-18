@@ -6,7 +6,9 @@ export PATH="$MAMP_PHP:$PATH"
 
 php -v
 php --ini
-open /Applications/MAMP/bin/php/php5.6.10/conf/php.ini
+open /Applications/MAMP/bin/php/php5.6.10/conf/php.ini   display_errors = on
+
+
 
 [xdebug]
 zend_extension="/Applications/MAMP/bin/php/php5.5.10/lib/php/extensions/no-debug-non-zts-20121212/xdebug.so"
