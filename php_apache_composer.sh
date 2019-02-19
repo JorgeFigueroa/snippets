@@ -12,7 +12,13 @@ MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
 
 
 ### PHP
-php -v  --help  -i  -m  --ini
+nano ~/.bash_profile
+export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin # MAMP PHP
+export PATH="$MAMP_PHP:$PATH"
+
+php --ini
+open /Applications/MAMP/bin/php/php5.6.10/conf/php.ini   display_errors = on
+php -v  --help  -i  -m
 ini_set("memory_limit", -1); #aumentar tiempo de excucion
 max_execution_time = 3000
 
@@ -51,8 +57,10 @@ MAMP_Xdebug_MAMP
  xdebug.remote_enable=1
  xdebug.remote_host=localhost
  xdebug.remote_port=9000
+ xdebug.remote_handler="dbgp"
  xdebug.remote_autostart=1
  xdebug.max_nesting_level=250
+
 
 
 

@@ -26,7 +26,7 @@ docker start CONTAINER_ID
 docker stop CONTAINER_ID
 
 
-
+docker build /PATH
 
 
 
