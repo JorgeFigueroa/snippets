@@ -1,5 +1,4 @@
 /*  formulario */
-
 input:focus:invalid{
   background: #f8075b;
 }
@@ -19,7 +18,10 @@ input:valid + span:after {
     left: 310px;
 }
 
-
+/* MEDIA QUERY*/
+@media (max-width: 480px){};
+@media (min-width: 481px) and (max-width: 767px){};
+@media (min-width: 768px){};
 
 /* ######  RESPONSIVE */
 <link href="estilos_impresora.css" rel="stylesheet" media="print" > 
@@ -35,4 +37,4 @@ input:valid + span:after {
 <i class="fa fa-camera-retro fa-2x"></i>
 
 <link href='http://fonts.googleapis.com/css?family=Marck+Script|Mr+De+Haviland' rel='stylesheet' type='text/css'>
-<style> h1{font-family: 'Marck Script', cursive;}</style>
+h1{font-family: 'Marck Script', cursive;}

@@ -2,11 +2,11 @@
 var numero1 = 34, numero2 = '30';
 
 (true) //true
-  (numero2) // true, xke  variable numero2 esta definida
-  (!(numero1 < numero2)) // TRUE XKE numero1 NO ES menor que numero 2
-  (numero1 && true) // true
-  (numero1 || false) //true
-  (numero1 !== numero2) // true  xke los nuemros son diferentes
+(numero2) // true, xke  variable numero2 esta definida
+(!(numero1 < numero2)) // TRUE XKE numero1 NO ES menor que numero 2
+(numero1 && true) // true
+(numero1 || false) //true
+(numero1 !== numero2) // true  xke los nuemros son diferentes
 
 if (false) {
 } else if (false) {
