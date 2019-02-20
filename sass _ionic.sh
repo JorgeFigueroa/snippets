@@ -1,6 +1,5 @@
 # SASS
 npm install -g less
-
 gem install sass
 gem install bourbon
 
@@ -10,8 +9,8 @@ sass   file.sass    file.css --no-cache -t compact
 sass   file.sass    file.css --no-cache -t compressed
 sass   file.sass    file.css --no-cache -t expanded
 
-sass --watch cli.sass  //escucha el file
-sass --watch source:css //escucha la carpeta
+sass --watch cli.sass  #escucha el file
+sass --watch source:css #escucha la carpeta
 sass --watch anidado.sass:styles/main.css
 
 
