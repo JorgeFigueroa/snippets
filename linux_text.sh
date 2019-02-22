@@ -20,20 +20,21 @@ cut -c1-10 error.log    #muestra el primer caracter con intervalos
 cut -c1,8,10-20         #corta caracteres con rangos 
 cut -d":"               #mostra con delimitador 
 
-#buscar palabra
-grep -lr palabra *  #mostra fichero que contiene la palabra
-grep -rn palabra    #mostra lineas y fichero
+#https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+#grep -r "key" /path
+grep -rl palabra *  #mostra fichero 
+grep -rn palabra    #mostra numero lineas y fichero
 grep -o 'palabra' file.log | wc -l #count palabra en el file
 grep ^letra         #buscar con letra
-grep palabra -iR    #palabra sin considerar mayusculas
+grep -i key         #palabra sin considerar mayusculas
 grep palabra.*palabra    #buscar palabras
-grep -v '#'         #no contiene #
-grep -l             #nombre del fichero
+grep -lv '#'         #no contiene l
 grep -w palabra     #palabra independiente  
-grep -n             #numero de lineas
 grep -c             #cuenta cantidad de lineas
 grep -r             #modo recursivo
 
+
+find -name file.txt
 uniq    #no repetidas
 
 
