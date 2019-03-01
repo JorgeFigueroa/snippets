@@ -34,7 +34,9 @@ grep -c             #cuenta cantidad de lineas
 grep -r             #modo recursivo
 
 
-find -name file.txt
+find . -name file.txt
+find . -name “myFile*”  # file name or would like to match a part of the name
+find . -type d      #list only directories
 uniq    #no repetidas
 
 
