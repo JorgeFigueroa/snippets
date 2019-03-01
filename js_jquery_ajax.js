@@ -19,9 +19,7 @@ $('h2').text('<strong>Warning!</strong> Title elements can be …');
 $(document).ready(function () {
     if (jQuery) {
         alert("jQuery is loaded");
-    } else {
-        alert("jQuery is not loaded");
-    }
+    } 
 });
 
 

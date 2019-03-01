@@ -48,14 +48,12 @@ while (salta < 10) {
   if (salta % 2 == 0) {
     continue;// salta while() cuando se cumple el if 
   }
-  // imprime el while 
 }
 
 // ejemplo de ciclo do while y break
 var contador = 0;
 do {
-  contador++
-  // entra una vez imprime contador
+  contador++ // entra una vez imprime contador
   if (contador >= 10)
     break; // rompe el ciclo termina el ciclo
 } while (true);

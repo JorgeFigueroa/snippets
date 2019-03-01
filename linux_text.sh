@@ -30,7 +30,7 @@ grep -i key         #palabra sin considerar mayusculas
 grep palabra.*palabra    #buscar palabras
 grep -lv '#'         #no contiene l
 grep -w palabra     #palabra independiente  
-grep -c             #cuenta cantidad de lineas
+grep -c             #cuenta lineas
 grep -r             #modo recursivo
 
 
