@@ -10,9 +10,8 @@ var numero1 = 34, numero2 = '30';
 
 if (false) {
 } else if (false) {
-} else {
-  // ejecuta else xke los son falsos if(false)
-}
+} else { }// ejecuta else xke los son falsos if(false)
+
 
 //boleanos -> true / false
 /* operadores logicos
