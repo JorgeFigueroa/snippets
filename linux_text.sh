@@ -9,11 +9,11 @@ cat file | wc –l    # conta line giga file
 more file           #inizio  "h"  mas opciones
 less file           #inizio ficheros grandes "h"  mas opciones
 head file           #primeras 10 lineas
-head -n1            #primera linea
 head -n5 *.log      #primera 5 lineas de *.log
 head -n5 -q *.log   #primera 5 lineas de *.log sin nombre fichero
 tail                #ultimas 10 lineas
 tail -n5 *.log      #ultimas 5 lineas de *.log
+tail -f 
 
 #Filtrar Texto
 cut -c1-10 error.log    #muestra el primer caracter con intervalos
