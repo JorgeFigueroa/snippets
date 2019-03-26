@@ -4,10 +4,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Hom
 export PATH=$JAVA_HOME/bin:$PATH
 export M2_HOME=/usr/local/apache-maven-3.6.0
 export PATH=$PATH:$M2_HOME/bin
-
 mvn -v
 
-#plantillas de proyectos
+
+#buscar plantillas de proyectos
 mvn archetype:generate
 mvn archetype:generate -Dfilter=org.apache:struts
 
@@ -20,4 +20,11 @@ version:      1.0-SNAPSHOT
 pachage       es.empresa.maven
 
 mvn install
-.m2 ▸ repository ▸ es ▸ empresa ▸ maven ▸ nombre_proyecto
+.m2/repository/es/empresa/maven/nombre_proyecto
+
+
+mvn clean  Deleting /target
+
+
+
+
