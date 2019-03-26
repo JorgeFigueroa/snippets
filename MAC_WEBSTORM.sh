@@ -19,7 +19,7 @@ cmd + .      =    #para cerrar una parte de codigo
 cmd + rotolina mouse   #para hacer zoom
 cmd + -      #para hacer un comento
 cmd + B      #para ir ala funcion
-//TODO:           #las tareas que estan pendientes
+TODO:        #las tareas que estan pendientes
 
 
 

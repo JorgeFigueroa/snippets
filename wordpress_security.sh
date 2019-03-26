@@ -69,11 +69,6 @@ https://www.virustotal.com/
 inurl:wordpress/wp-content/plugins  #test poner en google
 
 
-admin_seguridad
-wp_atientas
-yategane
-
-
 #####  WORDPREES MULTISITE
 wp-config. php
 define( 'WP_ALLOW_MULTISITE', true );

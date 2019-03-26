@@ -7,9 +7,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-
 #apache centos 7
 yum install php71-php-mcrypt.x86_64   httpd
 httpd -V
-systemctl httpd: start, enable, status, restart 
-firewall-cmd --zone=public --permanent --add-service=http
+systemctl httpd: start, enable, status, restart
 systemctl reload firewalld
+firewall-cmd --zone=public --permanent --add-service=http
 /etc/init.d/php7-fpm restart
 
 
@@ -27,6 +27,7 @@ service start, restart, reload: httpd
 chkconfig httpd on
 
 nano /etc/hosts
+
 
 service mysqld:  start, status, enable
 chkconfig  mysqld  on

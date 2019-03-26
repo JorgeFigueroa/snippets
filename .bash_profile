@@ -31,5 +31,5 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 
 #MONGO
-#export PATH=/Users/jorge/Documents/mongo/mongodb_3.6.3/bin:$PATH
-export PATH=/Users/jorge/Documents/mongo/mongodb_4.0.4/bin:$PATH
+#export PATH=/Users/miuser/Documents/mongo/mongodb_3.6.3/bin:$PATH
+export PATH=/Users/miuser/Documents/mongo/mongodb_4.0.4/bin:$PATH

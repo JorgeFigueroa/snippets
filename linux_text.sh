@@ -9,31 +9,34 @@ cat file | wc –l    # conta line giga file
 more file           #inizio  "h"  mas opciones
 less file           #inizio ficheros grandes "h"  mas opciones
 head file           #primeras 10 lineas
-head -n1            #primera linea
 head -n5 *.log      #primera 5 lineas de *.log
 head -n5 -q *.log   #primera 5 lineas de *.log sin nombre fichero
 tail                #ultimas 10 lineas
 tail -n5 *.log      #ultimas 5 lineas de *.log
+tail -f 
 
 #Filtrar Texto
 cut -c1-10 error.log    #muestra el primer caracter con intervalos
 cut -c1,8,10-20         #corta caracteres con rangos 
 cut -d":"               #mostra con delimitador 
 
-#buscar palabra
-grep -lr palabra *  #mostra fichero que contiene la palabra
-grep -rn palabra    #mostra lineas y fichero
+#https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+#grep -r "key" /path
+grep -rl palabra *  #mostra fichero 
+grep -rn palabra    #mostra numero lineas y fichero
 grep -o 'palabra' file.log | wc -l #count palabra en el file
 grep ^letra         #buscar con letra
-grep palabra -iR    #palabra sin considerar mayusculas
+grep -i key         #palabra sin considerar mayusculas
 grep palabra.*palabra    #buscar palabras
-grep -v '#'         #no contiene #
-grep -l             #nombre del fichero
+grep -lv '#'         #no contiene l
 grep -w palabra     #palabra independiente  
-grep -n             #numero de lineas
-grep -c             #cuenta cantidad de lineas
+grep -c             #cuenta lineas
 grep -r             #modo recursivo
 
+
+find . -name file.txt
+find . -name “myFile*”  # file name or would like to match a part of the name
+find . -type d      #list only directories
 uniq    #no repetidas
 
 

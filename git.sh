@@ -70,7 +70,7 @@ git --help comando  #ver ayuda de comandos
  rm --cached -f src/app/services/UrlApi.ts
 
  rm archivo			#borrar un archivo
- mv a.md b.md    	#cambiar nombre
+ mv a.txt b.txt    	#cambiar nombre
  mv index.html app/   #mover archivo
  mv styles/ app/      #mover carpeta
 
