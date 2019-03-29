@@ -61,9 +61,13 @@ id  #info usuario
 adduser newUser #
 passwd user     #change pasword
 addgroup newGrupo 
-usermod -g nameuser grupo #cambiar grupo a user
+usermod -g nameuser grupo #change group a user
 
-chown user:grupo /dir #cambiar dir de user
+cat /etc/passwd                         #List All Users
+awk -F':' '{ print $1}' /etc/passwd     #List All Users
+
+
+chown user:grupo /dir #change dir de user
 chown -R user:grupo /dir     #change privileg
 
 
