@@ -1,6 +1,6 @@
 #Mostrar
 cat file       #todo
-cat -n      #lineas numeradas
+cat -n file    #lineas numeradas
 cat file fileB
 cat file | less
 cat file | more
@@ -11,9 +11,11 @@ less file           #inizio ficheros grandes "h"  mas opciones
 head file           #primeras 10 lineas
 head -n5 *.log      #primera 5 lineas de *.log
 head -n5 -q *.log   #primera 5 lineas de *.log sin nombre fichero
+head -10 file.csv_ > newfile_10.csv     #crea file con 10 line
+
 tail                #ultimas 10 lineas
 tail -n5 *.log      #ultimas 5 lineas de *.log
-tail -f 
+tail -f             #
 
 #Filtrar Texto
 cut -c1-10 error.log    #muestra el primer caracter con intervalos
@@ -22,16 +24,19 @@ cut -d":"               #mostra con delimitador
 
 #https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
 #grep -r "key" /path
-grep -rl palabra *  #mostra fichero 
-grep -rn palabra    #mostra numero lineas y fichero
-grep -o 'palabra' file.log | wc -l #count palabra en el file
+grep -rl palabra *           #mostra file que contiene  palabra
+grep -rn palabra file        #mostra numberline e row 
+grep -rE 'key|key' file      #mostra rows con multiple key
+grep -E 'key|key' file  > newfile     #crea file con rows da multiple key
+grep -o 'palabra' file | wc -l #count palabra en el file
 grep ^letra         #buscar con letra
 grep -i key         #palabra sin considerar mayusculas
 grep palabra.*palabra    #buscar palabras
 grep -lv '#'         #no contiene l
-grep -w palabra     #palabra independiente  
-grep -c             #cuenta lineas
-grep -r             #modo recursivo
+grep -w palabra      #palabra independiente  
+grep -r              #modo recursivo
+
+wc -l *.txt     #contar lineas de varios ficheros
 
 
 find . -name file.txt
@@ -39,10 +44,6 @@ find . -name “myFile*”  # file name or would like to match a part of the nam
 find . -type d      #list only directories
 uniq    #no repetidas
 
-
-wc -l *.txt     #contar lineas de varios ficheros
-wc -l *.log        #contar  
-cat *.log | wc -l       #total file
 
 echo $USER
 echo $PATH

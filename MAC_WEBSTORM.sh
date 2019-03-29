@@ -22,6 +22,9 @@ cmd + B      #para ir ala funcion
 TODO:        #las tareas que estan pendientes
 
 
+###DEBUG
+ALT + click     #VALOR EN ESE MOMENTO   
+
 
 man
 
