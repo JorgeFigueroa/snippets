@@ -23,10 +23,10 @@ cut -c1,8,10-20         #corta caracteres con rangos
 cut -d":"               #mostra con delimitador 
 
 #https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
-#grep -r "key" /path
-grep -rl palabra *           #mostra file que contiene  palabra
-grep -rn palabra file        #mostra numberline e row 
-grep -rE 'key|key' file      #mostra rows con multiple key
+grep -r key                  #show file che contiene la key
+grep -rl key             #show file que contiene key
+grep -rn key file        #show numberline e row 
+grep -rE 'key|key' file      #show rows con multiple key
 grep -E 'key|key' file  > newfile     #crea file con rows da multiple key
 grep -o 'palabra' file | wc -l #count palabra en el file
 grep ^letra         #buscar con letra
