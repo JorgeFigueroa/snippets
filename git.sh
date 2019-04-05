@@ -9,7 +9,7 @@ git --help comando  #ver ayuda de comandos
  config g --global user.email "nombre@dominio.com"
 
 #Git add and commit in one command
- config --global alias.add-commit '!git add -A && git commit'
+ config --global alias.addcommit '!git add -A && git commit'
  add-commit -m 'My commit message'
 
  branch --all            #listar ramas
