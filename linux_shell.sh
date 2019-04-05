@@ -12,7 +12,7 @@ ls -l name??.txt #comodin ? busca depende cantidad
 ls | wc -l  #contar archivos
 
 tree dir/   #mostrar dir forma arbol
-tree -CL 2 dir/   #Descend only level directories deep. 
+tree -CL 2 dir/   #Descend only level directories deep.  colorato
 
 pwd         #mostrar ruta
 clear       #limpiar
