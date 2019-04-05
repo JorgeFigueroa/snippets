@@ -49,8 +49,8 @@ echo $USER
 echo $PATH
 echo "texto \n $USER"
 
-echo 'testo' > file.txt
-echo 'testo' >> file.txt
+echo 'testo' > file.txt     #crea write text to file
+echo 'testo' >> file.txt    #append  text to file
 
 sort -nr    #ordenar
 sort -r     #odernar de modo inverso
