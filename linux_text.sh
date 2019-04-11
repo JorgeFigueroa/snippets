@@ -16,6 +16,7 @@ head -10 file.csv_ > newfile_10.csv     #crea file con 10 line
 tail                #ultimas 10 lineas
 tail -n5 *.log      #ultimas 5 lineas de *.log
 tail -f             #
+multitail -c file   #tail con colores
 
 #Filtrar Texto
 cut -c1-10 error.log    #muestra el primer caracter con intervalos
