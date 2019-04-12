@@ -24,6 +24,7 @@ cut -c1,8,10-20         #corta caracteres con rangos
 cut -d":"               #mostra con delimitador 
 
 #https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+grep "key" file         #search key in file
 grep -r key                  #show file che contiene la key
 grep -rl key             #show file que contiene key
 grep -rn key file        #show numberline e row 
@@ -57,3 +58,6 @@ sort -nr    #ordenar
 sort -r     #odernar de modo inverso
 unique      #muestra los unicos
 open
+
+https://www.guru99.com/the-vi-editor.html
+vi file
