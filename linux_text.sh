@@ -25,7 +25,8 @@ cut -d":"               #mostra con delimitador
 
 #https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
 grep -n "key" file         #search key in file
-grep -A 3 2016-07-13 file   #get text to interval  range
+grep -A 3 "key" file        #get text to interval  range
+sed -n '/09:38:46/,/09:38:47/p' file
 grep -r key                  #show file che contiene la key
 grep -rl key             #show file que contiene key
 grep -rn key file        #show numberline e row 
