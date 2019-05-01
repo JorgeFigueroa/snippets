@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 git --version
 man git		#manual de git
 git --help comando  #ver ayuda de comandos
