@@ -37,3 +37,4 @@ defaults write com.apple.screencapture type jpg;killall SystemUIServer      camb
 apachectl stop		#parar apache
 Killall Dock      #reiniciar dock
 python -m SimpleHTTPServer 9000  #crea server
+sudo nano /private/etc/hosts

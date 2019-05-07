@@ -108,3 +108,17 @@ ssh-keygen -t rsa -C "you@homestead"  #cd /Users/jorge/.ssh
 
 # link para el idioma espanol
 https://github.com/caouecs/Laravel-lang/blob/master/src/es/validation.php
+
+
+#Enable PHP extension
+cd php-version/ext/pcntl
+brew install m4   ln -s /usr/local/opt/m4/bin/m4 /Applications/MAMP/Library/bin/m4
+phpize
+./configure
+make
+cp modules/pcntl.so /Applications/MAMP/bin/php/php5.3.6/lib/php/extensions/no-debug-non-zts-20090626/
+echo "extension=pcntl.so" >> /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
+php --ri pcntl
+
+
+MAMP PRO 4 stores data in /Library/Application Support/appsolute/MAMP PRO/db/mysql56

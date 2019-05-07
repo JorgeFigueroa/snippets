@@ -16,6 +16,7 @@ db.collection.find().count()
 db.collection.count({edad: {$gte: 6}} )       # cuenta >= maggiore o uguale
 
 
+
 db.collection.find().forEach(function(doc) {
   print("Customer Name" + doc.firstName);
 });
