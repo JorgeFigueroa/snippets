@@ -92,7 +92,7 @@ ping 192.168.1.1   #comprobar IP esta respondiendo
 ping 8.8.8.8   #comprobar si tienes internet con ip google
 netstat     #mostrar estado red
 top         #mostrar todos los procesos
-iptables -L -n -v  #1. Displaying the Status of Your Firewall
+iptables -L -n -v  #1. Displaying the Status of Your Firewall  https://www.cyberciti.biz/tips/linux-iptables-examples.html
 
 ssh root@IP    #conectar a servidor
 rsync -rv jorge@IP:/var/www/build/path/vendor .

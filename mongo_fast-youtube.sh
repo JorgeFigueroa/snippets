@@ -4,6 +4,7 @@ db.collection.find({field: {$gt: 30, $lt: 90}}); # > $gt maggiore AND  < $lt min
 db.collection.find({field: {$regex: 'ston'}}); #  regular expression   /pattern/
 db.collection.find({field: {$exists : true}} )
 db.collection.find({$or: [  {field: "value"}, {field: "value"}  ]  })
+db.collection.find().pretty()
 
 # sorting
 db.collection.find( null, {field: 1})
@@ -16,12 +17,9 @@ db.collection.find().count()
 db.collection.count({edad: {$gte: 6}} )       # cuenta >= maggiore o uguale
 
 
-
 db.collection.find().forEach(function(doc) {
   print("Customer Name" + doc.firstName);
 });
-
-
 
 db.collection.insert( {field: 'valor'} )
 db.collection.insert({  firstName: 'Isaac',  lastName: 'Asimov' })
@@ -40,6 +38,10 @@ db.collection.update(  {field: 'value'},      {$inc:   { age: 1  }})   # increme
 db.collection.update(  {field: 'value'},      {$inc:   { age: -1 }})   # decrementar 1
 
 
-
 db.collection.remove(  {field: 'value'} )
 db.collection.remove(  {field: 'value'}, {justOne: true} )
+
+
+
+
+
