@@ -18,7 +18,7 @@ pwd         #mostrar ruta
 clear       #limpiar
 history     #lista de comando usados
 
-mkdir  dirname          #crear carpeta
+mkdir  dir1 dir2        #make parent directories as needed
 mkdir -p dir/fotos      #crear subcarpetas
 touch file.txt          #crearFile
 echo hola mundo >> file.txt #agregar testo
@@ -63,6 +63,7 @@ adduser newUser #
 passwd user     #change pasword
 addgroup newGrupo 
 usermod -g nameuser grupo #change group a user
+usermod -aG wheel username  #Sudo User centos 
 
 cat /etc/passwd                         #List All Users
 awk -F':' '{ print $1}' /etc/passwd     #List All Users
