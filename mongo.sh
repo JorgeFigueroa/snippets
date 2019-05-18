@@ -15,9 +15,7 @@ mongodump --query '{"key" : "value"}' --db <dbName> --collection <collectionName
 mongodump --db <dbName> --collection <collectionName> --queryFile query.json
 mongorestore --drop dump_mongo-static		 #cancella vechio mongo e ricarica nuovo  db mongo
 
-##################################
-
-
+#--------------------------------------------------------------------------------------#
 db.collection.find({field: 'value'}, {firstName: true, lastName:false});
 db.collection.find({"address.city": "value"})
 db.collection.find({field: {$gt: 30, $lt: 90}}); # > $gt maggiore AND  < $lt minore
