@@ -1,31 +1,28 @@
-$('#disclaimer').hide()  //esconde
-$('#disclaimer').show()  //muestra
-$('#disclaimer').toggle()  //muestra nascondi
-$('#disclaimer').addClass('new')  //agrega clase
-removeClass('zebraHover');
+$('#element').hide()  //esconde
+$('#element').show()  //muestra
+$('#element').toggle()  //muestra nascondi
+$('#element').addClass('newclas')  //agrega clase
+removeClass('class');
 text()  // actualiZa texto al interior
 
-$('<input>').insertAfter('#disclaimer')  //fuera  despues
-$('<input>').insertBefore('#disclaimer') //fuera antes
-$('<input>').prependTo('#disclaimer') // dentro al inizio
-$('<input>').appendTo('#disclaimer')  // dentro ala fine
+$('<input>').insertAfter('#element')  //fuera  despues
+$('<input>').insertBefore('#element') //fuera antes
+$('<input>').prependTo('#element') // dentro al inizio
+$('<input>').appendTo('#element')  // dentro ala fine
 
-$('#no-script').remove();
-$('#celebs tr').remove(':contains("Singer")');
+$('#element').remove();
+$('#element tr').remove(':contains("Singer")');
 $('p').html('<strong>Warning!</strong> Text has been replaced … ');
 $('h2').text('<strong>Warning!</strong> Title elements can be …');
 
 
 $(document).ready(function () {
-    if (jQuery) {
-        alert("jQuery is loaded");
-    } 
+    if (jQuery) alert("jQuery is loaded");
 });
 
 
 // ##### AJAX
 $('div:first').load('test.html');
-
 
 $.getJSON('file.json', function (data) {
     alert('Fetched ' + data.length + ' items!');
@@ -64,13 +61,13 @@ $(document).ready(function () {
 var xhr;
 if (window.XMLHttpRequest) // IE7+, Firefox, Chrome, Opera, Safari
     xhr = new XMLHttpRequest();
-else {
+else 
     xhr = new ActiveXObject("Microsoft.XMLHTTP");// IE6, IE5
-}
+
 xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4 && xhr.status == 200) {
+    if (xhr.readyState == 4 && xhr.status == 200) 
         document.getElementById("myDiv").innerHTML = xhr.responseText;
-    }
+    
     xhr.open("GET", "http: example.com / recurso", true);
     xhr.send();
 }

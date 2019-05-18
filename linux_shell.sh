@@ -85,7 +85,7 @@ chmod u=w, o=wx file
 
 top 1	              #mostrar procesos
 ps -fe | grep res     #processi
-kill -9        25274 25275  #kill  matar processi
+kill -9  25274   #kill  matar processi
 
 
 ping 192.168.1.1   #comprobar IP esta respondiendo 
