@@ -19,7 +19,7 @@ clear       #limpiar
 history     #lista de comando usados
 
 mkdir  dirname          #crear carpeta
-mkdir -p dir/fotos      #crear subcarpetas
+mkdir -p dir/subdir      #crear subcarpetas
 touch file.txt          #crearFile
 echo hola mundo >> file.txt #agregar testo
 
@@ -60,7 +60,7 @@ whoami #nombre usuario
 groups #nombre  grupo
 id  #info usuario
 adduser newUser #
-passwd user     #change pasword
+passwd user  tu pass   #change pasword
 addgroup newGrupo 
 usermod -g nameuser grupo #change group a user
 
