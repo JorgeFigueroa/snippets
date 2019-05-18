@@ -61,17 +61,7 @@ MAMP_Xdebug_MAMP
  xdebug.max_nesting_level=250
 
 
-
-
-
-#instalar COMPOSER 
-$sudo mv composer.phar /usr/local/bin/composer
-composer -v
-
-
-
 https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
-
 #### APACHE #httpd.conf modulos y  cors   
 MAMP_headers_module_MAMPLoadModule headers_module modules/mod_headers.so
 MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
@@ -84,7 +74,9 @@ MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
 
 
 
-
+#instalar COMPOSER 
+$sudo mv composer.phar /usr/local/bin/composer
+composer -v
 
 
 composer create-project symfony/framework-standard-edition symfony/ "3.1.*"

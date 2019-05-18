@@ -20,7 +20,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-
  desc table;  #mostrar structura tabla
  status;
 
-
+############################ QUERY
 select version(); #version de mysql
 select now();   #mostrar fecha y ora
 select concat('jorge', 'figueroa');
@@ -37,8 +37,6 @@ select columna from table where columna like '%palabra%' and columna like '%pala
 select columna from tabla order by columna desc;
 select columna from tabla order by columna asc;
 select columna from tabla LIMIT 0,5;  # muestra del resgistro 0 al 5
-
-
 
 
 

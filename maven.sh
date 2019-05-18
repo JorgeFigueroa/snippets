@@ -7,7 +7,6 @@ set variable M2 = %M2_HOME%\bin
 CMD and write mvn
 
 
-
 nano ~/.bash_profile
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/
 export PATH=$JAVA_HOME/bin:$PATH
