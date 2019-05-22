@@ -11,8 +11,6 @@ ls -l name*.txt
 ls -l name??.txt #comodin ? busca depende cantidad 
 ls | wc -l  #contar archivos
 
-tree dir/   #mostrar dir forma arbol
-tree -CL 2 dir/   #Descend only level directories deep.  color
 
 pwd         #mostrar ruta
 clear       #limpiar
@@ -22,6 +20,9 @@ mkdir  dir1 dir2        #make parent directories as needed
 mkdir -p dir/fotos      #crear subcarpetas
 touch file.txt          #crearFile
 echo hola mundo >> file.txt #agregar testo
+
+tree dir/   #mostrar dir forma arbol
+tree -CL 2 dir/   #Descend only level directories deep.  color
 
 cp -r dir otroDir       #copiar carpeta modo recursivo
 cp -p file fileB
