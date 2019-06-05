@@ -1,7 +1,6 @@
 #Administración de software
 nano /etc/apt/sources.list  #servidores para bajar paquetes
-apt-get update      #Descarga nuevas listas de paquetes
-apt-get upgrade     #Realiza una actualización
+apt-get update, upgrade     #Descarga nuevas listas de paquetes #Realiza una actualización
 apt-cache search paquete
 apt-get install, remove, purge: paquete
 

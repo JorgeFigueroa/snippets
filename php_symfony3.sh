@@ -181,4 +181,4 @@ https://github.com/caouecs/Laravel-lang/blob/master/src/es/validation.php
 
 
 
-MAMP PRO 4 stores data in /Library/Application Support/appsolute/MAMP PRO/db/mysql56
+ /Library/Application Support/appsolute/MAMP PRO/db/mysql56   ##MAMP PRO 4 stores data
