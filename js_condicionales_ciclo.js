@@ -1,7 +1,6 @@
 // ####  CONDICIONALES  IF
 var numero1 = 34, numero2 = '30';
 
-(true) //true
 (numero2) // true, xke  variable numero2 esta definida
 (!(numero1 < numero2)) // TRUE XKE numero1 NO ES menor que numero 2
 (numero1 && true) // true
@@ -15,10 +14,8 @@ if (false) {
 
 //boleanos -> true / false
 /* operadores logicos
-> mayor que
-< menor que
-|| OR
-&& AND
+> mayor   < menor 
+|| OR  && AND
 == === igual
 != !== diferente
 !  no
@@ -45,9 +42,8 @@ while (multiplo < 10) {
 var salta = 0;
 while (salta < 10) {
   salta++;
-  if (salta % 2 == 0) {
+  if (salta % 2 == 0) 
     continue;// salta while() cuando se cumple el if 
-  }
 }
 
 // ejemplo de ciclo do while y break
@@ -57,3 +53,39 @@ do {
   if (contador >= 10)
     break; // rompe el ciclo termina el ciclo
 } while (true);
+
+
+
+//modulo incremento decremento
+//    %   ++     --
+
+function espar(numero) {
+  if(numero % 2 == 0) 
+    return ' es multiplo 2 ';
+  return ' no es multiplo de 2 ';
+}
+
+Math;
+//redondeo
+Math.pow(2,3);
+Math.round(34.2);
+Math.ceil(34.2);
+Math.floor(34.2);
+Math.random(); //funcion aleatorio
+Math.sqrt(4);  //raiz cuadrada
+
+
+
+//#####  CADENAS
+var nombre = 'jorge';
+
+if (nombre.indexOf('jorge') === 0)
+
+nombre.indexOf("jorge");
+nombre[4];
+nombre.charAt(1);
+nombre.slice(1,4);
+//mayusculo mminusculo
+nombre.toUpperCase();
+nombre.toLowerCase();
+nombre.replace("j","y");
