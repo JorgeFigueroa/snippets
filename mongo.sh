@@ -1,3 +1,4 @@
+brew install mongo
 export PATH=$PATH:/mongodb/bin
 mkdir -p /mongodb/data/db
 mongod --dbpath /mongodb/data/db
