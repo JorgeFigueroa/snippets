@@ -1,4 +1,8 @@
-$mongod     $mongo     #127.0.0.1:27017
+export PATH=$PATH:/mongodb/bin
+mkdir -p /mongodb/data/db
+mongod –dbpath /mongodb/data/db
+mongo –version
+
 help
 db.help
 db.help()
