@@ -74,8 +74,9 @@ MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
 
 
 
-#instalar COMPOSER 
-$sudo mv composer.phar /usr/local/bin/composer
+#instalar COMPOSER
+php composer-setup.php
+mv composer.phar /usr/local/bin/composer
 composer -v
 
 
