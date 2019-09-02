@@ -1,6 +1,7 @@
 /Library/Application Support/appsolute/MAMP PRO/db/mysql  #path db
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
 ##### MYSQL DAL TERMINAL
+ssh -L 3333:localhost:3306 username@hostname
 
  mysql --version  --help
  mysql -u root -p
