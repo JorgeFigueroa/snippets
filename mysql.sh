@@ -7,6 +7,7 @@ iptables -I INPUT 4 -p tcp --dport 3306 -s 95.248.24.232 -j ACCEPT
 iptables -L -v
 
 create user 'user'@'tuip' identified by 'Pass@123';
+FLUSH PRIVILEGES;
 
  mysql --version  --help
  mysql -u root -p
