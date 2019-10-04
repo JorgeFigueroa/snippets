@@ -18,7 +18,7 @@ git --help comando  #ver ayuda de comandos
  branch ramanueva		#crear rama nueva
  checkout -b ramanueva	#crear rama nueva
  checkout ramanueva		#cambiar de rama
- branch -d ramanueva		#eliminar rama en local
+ branch -d name_rama		#eliminar rama en local
  merge otrarama		    #unir rama corrente con otrarama
 
  status		#stado del repositorio
