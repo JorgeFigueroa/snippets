@@ -1,3 +1,4 @@
+cd C:\Program Files\PostgreSQL\12\bin
 psql --version
 psql -h myhost -d mydb -U myuser -W
 psql -d mydb -U myuser
