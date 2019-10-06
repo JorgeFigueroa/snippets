@@ -2,11 +2,11 @@
 open cmd
 cd C:\Program Files\PostgreSQL\12\bin
 
-pg_dump -U postgres -C  -f D:\path\name.dump name_db
+pg_dump -U postgres -C  -f D:\path\name.dump name_db #dump
+psql -U postgres < D:\nuxeo\barclays.dump            #restore
 
 psql --version
-psql -h localhost -d mydb -U myuser -W    #Connect to PostgreSQL database
-psql -d mydb -U myuser
+psql -h localhost -U myuser -W    #Connect to PostgreSQL database
  
 create database mydb;
 create  user name_user  with  password 'pass';
