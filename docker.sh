@@ -5,12 +5,12 @@ docker container --help
 docker search key
 docker pull REPOSITORY:TAG
 
-docker run -p 5432:5432  --name bmw-db -e POSTGRES_PASSWORD=postgres -d postgres:9.3 #crea container con image postgress
+docker run -p 5432:5432  --name name_db -e POSTGRES_PASSWORD=postgres -d postgres:9.3 #crea container con image postgress
 docker cp filename CONTAINER_ID:./tmp
 docker exec -it CONTAINER_ID bash  ## connect container 
 apt-get update
 apt-get install vim nano
-psql -d database -U username -f tmp/filename.sql    ## Restore database
+psql -d name_db -U username -f path/filename.sql    ## Restore database
 ctrl + p + q        # uscire senza fermare il container
 exit                # uscire fermando contaniner
 
