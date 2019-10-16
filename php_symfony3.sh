@@ -1,5 +1,4 @@
-### PHP WIN10
-https://www.forevolve.com/en/articles/2016/10/27/how-to-add-your-php-runtime-directory-to-your-windows-10-path-environment-variable/
+### PHP Windows 10 PATH environment variable
 Pannello di controllo\Tutti gli elementi del Pannello di controllo\Sistema
 SET PATH=c:\php\php5.3.29\;%PATH%
 
