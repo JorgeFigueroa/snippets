@@ -1,5 +1,5 @@
 ### PHP Windows 10 PATH environment variable
-Pannello di controllo\Tutti gli elementi del Pannello di controllo\Sistema
+impostazione di sistema avanzate\avanzate\variabili ambiente
 SET PATH=c:\php\php5.3.29\;%PATH%
 
 ### PHP
