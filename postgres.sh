@@ -12,6 +12,8 @@ psql -h localhost -U myuser -W    #Connect to PostgreSQL database
 create database mydb;
 create  user name_user  with  password 'pass';
 
+DROP DATABASE target_database;
+
 \c dbname username #connection database
 \l    #List databases
 \dt   #List tables
