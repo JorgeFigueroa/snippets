@@ -1,6 +1,7 @@
 #http://www.postgresqltutorial.com/psql-commands/
 open cmd
-cd C:\Program Files\PostgreSQL\12\bin
+cd C:\Program Files\PostgreSQL\12\bin 
+osx  /Library/PostgreSQL/11/bin
 
 pg_dump -U username -C -f D:\path\name.dump name_db  #dump
 create database name_db;
