@@ -1,6 +1,6 @@
 #http://www.postgresqltutorial.com/psql-commands/
 open cmd
-cd C:\Program Files\PostgreSQL\12\bin 
+win C:\Program Files\PostgreSQL\12\bin 
 osx  /Library/PostgreSQL/11/bin
 
 pg_dump -U postgres -C -f D:\path\name.dump name_db  #dump
