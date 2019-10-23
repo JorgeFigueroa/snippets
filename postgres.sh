@@ -22,4 +22,4 @@ DROP DATABASE name_database;
 
 
 
-
+pg_ctl restart/start/status -D "C:\Program Files\PostgreSQL\12\data"
