@@ -1,4 +1,5 @@
 #http://www.postgresqltutorial.com/psql-commands/
+#https://www.postgresql.org/docs/12/app-pg-ctl.html
 open cmd
 win C:\Program Files\PostgreSQL\12\bin 
 osx  /Library/PostgreSQL/11/bin
