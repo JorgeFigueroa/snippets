@@ -4,7 +4,7 @@ open cmd
 win C:\Program Files\PostgreSQL\12\bin 
 osx  /Library/PostgreSQL/11/bin
 
-pg_dump -U postgres -C -f D:\path\name.dump name_db  #dump
+pg_dump -U postgres -C -f D:\name.dump name_db  #dump
 create database name_db;
 ./psql -U postgres -d name_db -1 -f D:\name.dump  #restore
 
