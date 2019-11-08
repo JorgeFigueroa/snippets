@@ -167,3 +167,5 @@ rsync -rv jorge@IP:/var/www/build/path/vendor .
 ftp hostname
 nano /private/etc/hosts #path Hosts
 nano ~/.bash_profile  #variables de entorno
+
+
