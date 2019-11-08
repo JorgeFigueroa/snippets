@@ -34,6 +34,6 @@ nano /etc/hosts
 service mysqld:  start, status, enable
 chkconfig  mysqld  on
 
-nohup java -jar file.jar
 
+nohup java -jar rest-camel-nuxeo-1.0.jar > /dev/null &
 
