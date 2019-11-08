@@ -33,3 +33,7 @@ nano /etc/hosts
 
 service mysqld:  start, status, enable
 chkconfig  mysqld  on
+
+nohup java -jar file.jar
+
+
