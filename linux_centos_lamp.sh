@@ -34,6 +34,12 @@ nano /etc/hosts
 service mysqld:  start, status, enable
 chkconfig  mysqld  on
 
+ps aux | grep java
+kill -9 pid
+
+
 java -jar file.jar
 nohup java -jar file.jar > /dev/null &
+
+
 
