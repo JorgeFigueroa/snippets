@@ -1,4 +1,5 @@
 https://javatutorial.net/set-java-home-windows-10
+https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 https://maven.apache.org/download.cgi
 
 JAVA_HOME  /path_install_JDK
