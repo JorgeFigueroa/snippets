@@ -169,3 +169,4 @@ nano /private/etc/hosts #path Hosts
 nano ~/.bash_profile  #variables de entorno
 
 
+iconv -f "windows-1252" -t "UTF-8" import.csv -o new_import.csv
