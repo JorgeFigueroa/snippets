@@ -1,3 +1,17 @@
+
+Get-Content D:\log.txt -Tail 3
+Get-Content D:\log.txt –Wait
+
+
+
+
+
+
+
+
+
+
+
 wmic process get processid,parentprocessid,executablepath | find "nameProcess"   #Find a Windows process based on its description, using CMD
 tasklist /v | find "nameProcess"    #Find a Windows process based on its description, using CMD
 
