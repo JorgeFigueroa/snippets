@@ -1,3 +1,5 @@
+C:\Windows\System32\drivers\etc
+
 #!/usr/bin/env bash
 git --version
 man git		#manual de git
