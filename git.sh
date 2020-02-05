@@ -27,7 +27,7 @@ git --help comando  #ver ayuda de comandos
  log --all
  log         #listar de comit
  log --stat
- show commit-id --stat
+ show --stat
  diff        #ver diferenciasgit
  add .     	#preparar archivos para commit
  commit -m "mensaje"
