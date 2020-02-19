@@ -14,8 +14,8 @@ FLUSH PRIVILEGES;
  mysql -u root -p < alldb.sql  # backup todas db
  mysql -u root -p database_name < file.sql  #update DB desde sql
  
- 15 2 * * * root mysqldump -u root -pGuialatina=2018 guialatina_2018 | gzip > /home/jorge/mysql-bk/`data ' %m-%d-%Y'`.sql.gz 
- 15 2 * * * root mysqldump -u root -pGuialatina=2018 guialatina_2018 | gzip > /home/jorge/database_`data ' %m-%d-%Y'`.sql.gz 
+ 15 2 * * * root mysqldump -u root -p pass name_db | gzip > /home/jorge/mysql-bk/`data ' %m-%d-%Y'`.sql.gz 
+ 15 2 * * * root mysqldump -u root -p pass name_db | gzip > /home/jorge/database_`data ' %m-%d-%Y'`.sql.gz 
 
  
  mysqldump --opt -u root -p  --all-databases > alldb.sql
