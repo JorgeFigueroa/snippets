@@ -23,7 +23,11 @@ http://rubyinstaller.org/downloads/
 ruby -v compass -v sass -v
 gem install compass
 gem install sass
+gem install susy
 gem install bourbon
+compass create my-project
+compass watch
+compass clean
 
 # NODE-SASS
 npm install -g node-sass
@@ -38,7 +42,7 @@ sass   file.sass    file.css --no-cache -t compact
 sass   file.sass    file.css --no-cache -t compressed
 sass   file.sass    file.css --no-cache -t expanded
 
-sass --watch cli.sass  #escucha el file
+sass --watch file.sass  #escucha el file
 sass --watch source:css #escucha la carpeta
 sass --watch anidado.sass:styles/main.css
 
