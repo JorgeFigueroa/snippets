@@ -23,7 +23,6 @@ http://rubyinstaller.org/downloads/
 gem install compass
 gem install sass
 gem install susy
-gem install bourbon
 ruby -v compass -v sass -v
 compass create my-project
 compass watch
