@@ -18,15 +18,19 @@ yo angular:route articulos
 
 
 # SASS
-npm install -g less
-npm install -g node-sass
-node-sass -w sass_folder -o css_folder 
-
+https://www.codementor.io/@ricardozea/sass-for-beginners-the-friendliest-guide-about-installing-and-using-sass-on-windows-cjfs2id3o
 http://rubyinstaller.org/downloads/
+ruby -v compass -v sass -v
+gem install compass
 gem install sass
 gem install bourbon
 
-n
+# NODE-SASS
+npm install -g node-sass
+node-sass -w sass_folder -o css_folder 
+
+npm install -g less
+
 
 sass   file.sass    file.css
 sass   file.sass    file.css --no-cache
