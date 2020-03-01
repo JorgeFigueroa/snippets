@@ -20,11 +20,11 @@ yo angular:route articulos
 # SASS
 https://www.codementor.io/@ricardozea/sass-for-beginners-the-friendliest-guide-about-installing-and-using-sass-on-windows-cjfs2id3o
 http://rubyinstaller.org/downloads/
-ruby -v compass -v sass -v
 gem install compass
 gem install sass
 gem install susy
 gem install bourbon
+ruby -v compass -v sass -v
 compass create my-project
 compass watch
 compass clean
