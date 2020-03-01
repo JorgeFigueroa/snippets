@@ -17,7 +17,7 @@ yo angular proyecto_yeoman
 yo angular:route articulos
 
 
-# SASS
+# SCSS
 https://www.codementor.io/@ricardozea/sass-for-beginners-the-friendliest-guide-about-installing-and-using-sass-on-windows-cjfs2id3o
 http://rubyinstaller.org/downloads/
 gem install compass
@@ -34,7 +34,7 @@ node-sass -w sass_folder -o css_folder
 
 npm install -g less
 
-
+# SASS 
 sass   file.sass    file.css
 sass   file.sass    file.css --no-cache
 sass   file.sass    file.css --no-cache -t compact
