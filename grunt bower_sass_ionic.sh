@@ -19,8 +19,14 @@ yo angular:route articulos
 
 # SASS
 npm install -g less
+npm install -g node-sass
+node-sass -w sass_folder -o css_folder 
+
+http://rubyinstaller.org/downloads/
 gem install sass
 gem install bourbon
+
+n
 
 sass   file.sass    file.css
 sass   file.sass    file.css --no-cache
