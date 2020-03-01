@@ -27,6 +27,8 @@ ruby -v compass -v sass -v
 compass create my-project
 compass watch
 compass clean
+compass compile --output-style compressed --force
+compass compile --output-style expanded --force
 
 # NODE-SASS
 npm install -g node-sass
