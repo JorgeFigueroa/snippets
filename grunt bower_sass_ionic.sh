@@ -47,7 +47,10 @@ sass --watch file.sass  #escucha el file
 sass --watch source:css #escucha la carpeta
 sass --watch anidado.sass:styles/main.css
 
-
+# LESS
+http://lesscss.org/usage/
+npm install -g less
+lessc styles.less styles.css
 
 #Installing Ionic
 npm install -g ionic cordova
