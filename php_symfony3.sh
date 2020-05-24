@@ -14,6 +14,15 @@ ini_set("memory_limit", -1); #aumentar tiempo de excucion
 max_execution_time = 3000
 
 
+php -S localhost:8000  #SERVER LOCAL
+
+
+#SHOW ERROR
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 #config module mongo
 https://github.com/mongodb/mongo-php-driver
 git clone https://github.com/mongodb/mongo-php-driver.git
