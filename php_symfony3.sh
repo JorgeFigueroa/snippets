@@ -18,6 +18,9 @@ php -S localhost:8000  #SERVER LOCAL
 
 
 #SHOW ERROR
+display_errors = on  #php.ini 
+php_flag display_errors 1 #.htaccess
+#index.php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
