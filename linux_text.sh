@@ -81,6 +81,7 @@ ls | wc -l  #contar archivos
 
 tree dir/   #mostrar dir forma arbol
 tree -CL 2 dir/   #Descend only level directories deep.  color
+tree /F    # windows
 
 pwd         #mostrar ruta
 clear       #limpiar
