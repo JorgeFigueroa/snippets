@@ -11,6 +11,10 @@ php -v  --help  -i  -m
 php -S localhost:8000  #SERVER LOCAL
 php --ini   
 
+extension=phpVerion\ext\php_pdo_mysql.dll
+
+
+
 #SHOW ERROR
 display_errors = on  #php.ini 
 php_flag display_errors 1 #.htaccess
