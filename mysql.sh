@@ -1,13 +1,16 @@
 ## WINDOWS
 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads    vc_redist.x64.exe
 https://dev.mysql.com/downloads/windows/installer/8.0.html               Windows (x86, 32-bit), MSI Installer
-install MySql Server, MySql shell, MySql Documentation. Samples, MySql Workbench
+install:  MySql Server, MySql shell, MySql Documentation. Samples, MySql Workbench
 
 SET PATH=C:\Program Files\MySQL\MySQL Server 8.0\bin;%PATH%
 
 /Library/Application Support/appsolute/MAMP PRO/db/mysql  #path db
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
-##### MYSQL DAL TERMINAL
+
+
+
+##### MYSQL TERMINAL
 ssh -L 3333:localhost:3306 username@hostname
 
 iptables -I INPUT 4 -p tcp --dport 3306 -s 95.248.24.232 -j ACCEPT
