@@ -13,8 +13,59 @@ httpd -h                # All Command line options:
 
 https://windows.php.net/download#php-7.4        VC15 x64 Thread Safe 
 
-
-C:\Apache24\conf\httpd.conf
+##  httpd.conf
+cd Apache24\conf\httpd.conf
 <IfModule dir_module>
     DirectoryIndex index.html index.php
 </IfModule>
+
+LoadModule php7_module C:/phpVersion/php7apache2_4.dll
+<IfModule php7_module>
+    AddHandler application/x-httpd-php .php
+    PHPIniDir "C:/phpVersion"
+</IfModule>
+
+
+cd Apache24\conf\extra\httpd-vhosts.conf
+	<VirtualHost demo1.com:80>
+	    ServerAdmin webmaster@demo1.com
+	    DocumentRoot "/sites/demo1.com"
+	    ServerName demo1.com
+	    ServerAlias www.demo1.com
+		<Directory "c:/sites/demo1.com">
+		   AllowOverride All
+		   Require all granted
+		   Options Indexes FollowSymLinks
+		</Directory>
+	    ErrorLog "logs/demo1.com-error.log"
+	    CustomLog "logs/demo1.com-access.log" common
+	</VirtualHost>
+
+	<VirtualHost demo2.com:80>
+	    ServerAdmin webmaster@demo2.com
+	    DocumentRoot "/sites/demo2.com"
+	    ServerName demo2.com
+	    ServerAlias www.demo2.com
+		<Directory "c:/sites/demo2.com">
+		   AllowOverride All
+		   Require all granted
+		   Options Indexes FollowSymLinks
+		</Directory>
+	    ErrorLog "logs/demo2.com-error.log"
+	    CustomLog "logs/demo2.com-access.log" common
+	</VirtualHost>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
