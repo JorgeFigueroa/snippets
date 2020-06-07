@@ -8,3 +8,7 @@ httpd.exe -k install    #install as a service. Open command prompt as Administra
 services.msc            #You can start/stop the service:
 
 httpd -h                # All Command line options:
+
+
+
+https://windows.php.net/download#php-7.4        VC15 x64 Thread Safe 
