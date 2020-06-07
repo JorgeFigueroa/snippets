@@ -28,6 +28,8 @@ LoadModule php7_module C:/phpVersion/php7apache2_4.dll
 LoadModule vhost_alias_module modules/mod_vhost_alias.so
 Include conf/extra/httpd-vhosts.conf
 
+
+
 # Virtual hosts
 cd Apache24\conf\extra\httpd-vhosts.conf
 <VirtualHost demo1.com:80>
