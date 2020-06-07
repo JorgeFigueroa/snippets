@@ -33,6 +33,9 @@ FLUSH PRIVILEGES;
  show tables;
  desc table;  #mostrar structura tabla
  status;
+ 
+CREATE database DATABASE_NAME;
+DROP database DATABASE_NAME;
 
 ############################ QUERY
 select version(); #version de mysql
@@ -57,8 +60,7 @@ select columna from tabla LIMIT 0,5;  # muestra del resgistro 0 al 5
 INSERT INTO tabella (id, name, last_name) VALUES (null, 'jorge', 'figueroa');
 UPDATE tabla SET columna ='valor nuevo' WHERE columna = 2 LIMIT 1;
 DELETE from tabla where columna = '1' LIMIT 1;
-DROP database DATABASE_NAME;
-CREATE database DATABASE_NAME;
+
 
 CREATE TABLE user_type (
 id INT NOT NULL AUTO_INCREMENT,
