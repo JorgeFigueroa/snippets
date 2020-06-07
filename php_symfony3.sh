@@ -1,53 +1,25 @@
 ### PHP Windows 10 PATH environment variable
 impostazione di sistema avanzate\avanzate\variabili ambiente
-SET PATH=c:\php\php5.3.29\;%PATH%
+SET PATH=c:\php\phpVERSION\;%PATH%
 
 ### PHP
 nano ~/.bash_profile
 export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin # MAMP PHP
 export PATH="$MAMP_PHP:$PATH"
 
-php --ini
-open /Applications/MAMP/bin/php/php5.6.10/conf/php.ini   display_errors = on
 php -v  --help  -i  -m
-ini_set("memory_limit", -1); #aumentar tiempo de excucion
-max_execution_time = 3000
-
-
 php -S localhost:8000  #SERVER LOCAL
-
+php --ini   
 
 #SHOW ERROR
 display_errors = on  #php.ini 
 php_flag display_errors 1 #.htaccess
-#index.php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 1);        #index.php
+ini_set('display_startup_errors', 1); #index.php
+error_reporting(E_ALL);               #index.php
 
 
-#config module mongo
-https://github.com/mongodb/mongo-php-driver
-git clone https://github.com/mongodb/mongo-php-driver.git
-cd mongo-php-driver
-git submodule update --init
-phpize
-./configure --with-mongodb-ssl=darwin
-make all
-sudo make install
-
-#Enable PHP module
-cd php-version/ext/pcntl
-brew install m4   ln -s /usr/local/opt/m4/bin/m4 /Applications/MAMP/Library/bin/m4
-phpize
-./configure
-make
-cp modules/pcntl.so /Applications/MAMP/bin/php/php5.3.6/lib/php/extensions/no-debug-non-zts-20090626/
-echo "extension=pcntl.so" >> /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
-php --ri pcntl
-
-
-#seguridad php.ini
+#SECURITY php.ini
 max_execution_time = 30
 memory_limit = 128M
 upload_max_filesize = 3M
@@ -59,6 +31,8 @@ Production Value: E_ALL & ~E_DEPRECATED & ~E_STRICT
 display_errors = Off
 log_errors = On
 error_log = dir
+ini_set("memory_limit", -1); #aumentar tiempo de excucion
+
 
 bind-address = 127.0.0.1    #my.cnf:
 
@@ -77,6 +51,30 @@ MAMP_Xdebug_MAMP
  xdebug.max_nesting_level=250
 
 
+
+#config module mongo
+https://github.com/mongodb/mongo-php-driver
+git clone https://github.com/mongodb/mongo-php-driver.git
+cd mongo-php-driver
+git submodule update --init
+phpize
+./configure --with-mongodb-ssl=darwin
+make all
+sudo make install
+
+#Enable PHP module
+cd php-version/ext/pcntl
+brew install m4   ln -s /usr/local/opt/m4/bin/m4    /Applications/MAMP/Library/bin/m4
+phpize
+./configure
+make
+cp modules/pcntl.so /Applications/MAMP/bin/php/phpVERSION/lib/php/extensions/no-debug-non-zts-20090626/
+echo "extension=pcntl.so" >> /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
+php --ri pcntl
+
+
+
+
 https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
 #### APACHE #httpd.conf modulos y  cors   
 MAMP_headers_module_MAMPLoadModule headers_module modules/mod_headers.so
@@ -90,7 +88,7 @@ MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
 
 
 
-#instalar COMPOSER
+#COMPOSER
 php composer-setup.php
 mv composer.phar /usr/local/bin/composer
 composer -v
@@ -155,11 +153,11 @@ php bin/console generate:bundle --namespace=BackendBundle --format=yml	#generar 
 php bin/console doctrine:mapping:import BackendBundle yml
 php bin/console doctrine:mapping:import BackendBundle yml –filter=”tablaNueva”
 php bin/console doctrine:mapping:convert annotation ./src
-php bin/console doctrine:generate:entities BackendBundle           - > crear carpeta Entity
+php bin/console doctrine:generate:entities BackendBundle           # crear carpeta Entity
 php bin/console doctrine:schema:update --dump-sql
 php bin/console doctrine:schema:update –force
 php bin/console doctrine:schema:validate
-php bin/console  debug:router     -  > lista de rutas
+php bin/console  debug:router    # lista de rutas
 
 
 
