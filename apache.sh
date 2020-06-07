@@ -12,3 +12,9 @@ httpd -h                # All Command line options:
 
 
 https://windows.php.net/download#php-7.4        VC15 x64 Thread Safe 
+
+
+C:\Apache24\conf\httpd.conf
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+</IfModule>
