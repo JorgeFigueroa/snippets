@@ -1,5 +1,7 @@
 ## WINDOWS
-https://dev.mysql.com/downloads/windows/installer/8.0.html
+https://dev.mysql.com/downloads/windows/installer/8.0.html               Windows (x86, 32-bit), MSI Installer
+https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads    vc_redist.x64.exe
+
 
 
 /Library/Application Support/appsolute/MAMP PRO/db/mysql  #path db
