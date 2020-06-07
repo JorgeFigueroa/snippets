@@ -2,9 +2,9 @@
 impostazione di sistema avanzate\avanzate\variabili ambiente
 SET PATH=c:\php\phpVERSION\;%PATH%
 
-### PHP
+### MAMP MAC 
 nano ~/.bash_profile
-export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin # MAMP PHP
+export MAMP_PHP=/Applications/MAMP/bin/php/phpVersion/bin # MAMP PHP
 export PATH="$MAMP_PHP:$PATH"
 
 php -v  --help  -i  -m
