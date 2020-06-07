@@ -12,7 +12,7 @@ php -S localhost:8000  #SERVER LOCAL
 php --ini   
 
 extension=phpVerion\ext\php_pdo_mysql.dll
-extension=C:\php-7.4.6\ext\php_mysqli.dll
+extension=phpVerion\ext\php_mysqli.dll
 
 
 
