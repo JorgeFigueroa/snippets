@@ -6,7 +6,7 @@ JAVA_HOME  /path_install_JDK
 M2_HOME    /path_maven
 PATH	%JAVA_HOME%/bin;%M2_HOME%/bin
 
-set system variable M2_HOME = B:\apache-maven-3.3.9 
+set system variable M2_HOME = path\apache-maven-3.3.9 
 set variable M2 = %M2_HOME%\bin
 CMD mvn
 
