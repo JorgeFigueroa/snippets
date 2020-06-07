@@ -43,19 +43,6 @@ cd Apache24\conf\extra\httpd-vhosts.conf
     CustomLog "logs/demo1.com-access.log" common
 </VirtualHost>
 
-<VirtualHost demo2.com:80>
-    ServerAdmin webmaster@demo2.com
-    DocumentRoot "/sites/demo2.com"
-    ServerName demo2.com
-    ServerAlias www.demo2.com
-	<Directory "c:/sites/demo2.com">
-	   AllowOverride All
-	   Require all granted
-	   Options Indexes FollowSymLinks
-	</Directory>
-    ErrorLog "logs/demo2.com-error.log"
-    CustomLog "logs/demo2.com-access.log" common
-</VirtualHost>
 
 
 
