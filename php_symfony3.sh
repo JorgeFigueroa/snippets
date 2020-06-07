@@ -14,6 +14,7 @@ php --ini
 extension=phpVerion\ext\php_pdo_mysql.dll
 extension=phpVerion\ext\php_mysqli.dll
 extension=phpVerion\ext\php_openssl.dll
+extension=phpVerion\ext\php_curl.dll
 
 
 
