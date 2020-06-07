@@ -1,3 +1,7 @@
+## WINDOWS
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+
+
 /Library/Application Support/appsolute/MAMP PRO/db/mysql  #path db
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
 ##### MYSQL DAL TERMINAL
