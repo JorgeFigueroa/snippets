@@ -60,7 +60,9 @@ cd Apache24\conf\extra\httpd-vhosts.conf
 
 
 
-
+C:\Windows\System32\drivers\etc\hosts
+127.0.0.1 demo1.com	www.demo1.com
+127.0.0.1 demo2.com	www.demo2.com
 
 
 
