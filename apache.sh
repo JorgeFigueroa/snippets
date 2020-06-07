@@ -23,6 +23,7 @@ cd Apache24\conf\httpd.conf
 
 LoadModule php7_module C:/phpVersion/php7apache2_4.dll
 LoadModule vhost_alias_module modules/mod_vhost_alias.so
+LoadModule rewrite_module modules/mod_rewrite.so
 Include conf/extra/httpd-vhosts.conf
 
 
