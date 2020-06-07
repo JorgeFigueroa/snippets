@@ -5,13 +5,10 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 
 Apache24\bin\httpd.exe    --> http://localhost
 httpd.exe -k install    #install as a service. Open command prompt as Administrator
-services.msc            #You can start/stop the service:
+services.msc            #start/stop the service:
 
 httpd -h                # All Command line options:
-
-
-
-https://windows.php.net/download#php-7.4        VC15 x64 Thread Safe 
+php -v
 
 ##  httpd.conf
 cd Apache24\conf\httpd.conf
@@ -19,15 +16,14 @@ cd Apache24\conf\httpd.conf
     DirectoryIndex index.html index.php
 </IfModule>
 
-LoadModule php7_module C:/phpVersion/php7apache2_4.dll
 <IfModule php7_module>
     AddHandler application/x-httpd-php .php
     PHPIniDir "C:/phpVersion"
 </IfModule>
 
+LoadModule php7_module C:/phpVersion/php7apache2_4.dll
 LoadModule vhost_alias_module modules/mod_vhost_alias.so
 Include conf/extra/httpd-vhosts.conf
-
 
 
 # Virtual hosts
