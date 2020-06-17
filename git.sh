@@ -69,7 +69,7 @@ git --help comando  #ver ayuda de comandos
  checkout 01     #va ala tag 01
  diff 01..02     #comparar archivos
  rm --cached  mylogfile.log
- rm --cached -r dir/      #Eliminar dir
+ rm --cached -r dir/      #Eliminar dir to GIT
  rm --cached -f src/app/services/UrlApi.ts
 
  rm archivo			#borrar un archivo
