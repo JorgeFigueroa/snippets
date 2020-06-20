@@ -13,7 +13,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-
 ##### MYSQL TERMINAL
 ssh -L 3333:localhost:3306 username@hostname
 
-iptables -I INPUT 4 -p tcp --dport 3306 -s 95.248.24.232 -j ACCEPT
+iptables -I INPUT 4 -p tcp --dport 3306 -s 95.**.**  -j ACCEPT
 iptables -L -v
 
 create user 'user'@'tuip' identified by 'Pass@123';
