@@ -1,3 +1,6 @@
+ssh username@ip_address
+
+
 rpm --query centos-release   #version centos
 which yum
 
