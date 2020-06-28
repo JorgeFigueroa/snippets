@@ -1,3 +1,5 @@
+d:
+
 
 Get-Content D:\log.txt -Tail 3
 Get-Content D:\log.txt –Wait
