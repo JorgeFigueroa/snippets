@@ -61,7 +61,13 @@ C:\Windows\System32\drivers\etc\hosts
 127.0.0.1 demo1.com	www.demo1.com
 127.0.0.1 demo2.com	www.demo2.com
 
-services.msc       #restart Apache2.4
+run cmd ---> administrator
+
+notepad C:\Apache24\conf\extra\httpd-vhosts.conf
+notepad C:\Windows\System32\drivers\etc\hosts
+services.msc       
+	#restart Apache2.4   
+	#start MySQL80   cmd mysql -u root -p
 
 
 
