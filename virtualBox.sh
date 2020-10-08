@@ -14,3 +14,5 @@ VBoxManage.exe clonehd “C:\path\disco.vmdk” “C:\path\cloned_disco.vdi”�
 VBoxManage.exe modifyhd “C:\path\cloned_ubuntu.vdi” —resize 24576
 Change partitions GParted
 
+
+Pannello di controllo\Sistema e sicurezza\Windows Defender Firewall\ impostazione avanazate\ regola di conezione in entrata
