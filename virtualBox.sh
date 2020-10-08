@@ -1,6 +1,7 @@
 cmd 
 bcdedit
 bcdedit /set hypervisorlaunchtype off
+bcdedit /set hypervisorlaunchtype auto
 
 unistall vitualbox
 rm C:\Users\jeorge.barroso\.VirtualBox
