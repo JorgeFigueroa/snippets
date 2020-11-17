@@ -2,7 +2,6 @@ MongoDB Community Server  --> https://fastdl.mongodb.org/windows/mongodb-windows
 mkdir C:\data\db
 SET PATH=C:\Program Files\MongoDB\Server\4.4\bin\;%PATH%
 
-
 brew install mongo
 mkdir -p /mongodb/data/db
 mongod --dbpath /mongodb/data/db
