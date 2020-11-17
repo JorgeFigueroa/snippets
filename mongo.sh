@@ -14,6 +14,7 @@ db.help
 db.help()
 exit
 show dbs
+db
 show collections
 
 use miPrimeraDB   #crea db
