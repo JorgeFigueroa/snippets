@@ -7,7 +7,7 @@ brew install mongo
 mkdir -p /mongodb/data/db
 mongod --dbpath /mongodb/data/db
 
-
+mongod
 mongo –version
 
 help
