@@ -51,8 +51,9 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 
 docker-compose up -d
-docker network ls
 docker-machine
+docker network inspect bridge
+docker network ls
 
 
 
