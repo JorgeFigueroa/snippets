@@ -51,7 +51,7 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 
 
-
+docker network ls
 
 
 
