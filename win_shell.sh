@@ -1,3 +1,7 @@
+ping www.google.com
+nslookup      #name dominio
+
+
 d:
 
 
