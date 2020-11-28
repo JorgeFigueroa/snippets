@@ -9,15 +9,6 @@ Get-Content D:\log.txt -Tail 3
 Get-Content D:\log.txt –Wait
 
 
-
-
-
-
-
-
-
-
-
 wmic process get processid,parentprocessid,executablepath | find "nameProcess"   #Find a Windows process based on its description, using CMD
 tasklist /v | find "nameProcess"    #Find a Windows process based on its description, using CMD
 
@@ -25,45 +16,25 @@ taskkill /F /PID  processId     #Kill process
 
 
 
-I comandi Dos
-
-
-
-
-Ecco un piccolo elenco dei comandi pi˘ comuni usati nel prompt di WinXP
-
-
---------------------------------------------------------------------------------
 
 bootcfg - Configurare, interrogare o modificare le impostazioni del file Boot.ini.
 
 
---------------------------------------------------------------------------------
-
 driverquery - Visualizzazione di un elenco dei drivers di tutte le periferiche installate e delle loro propriet‡.
 
-
---------------------------------------------------------------------------------
 
 getmac - Visualizzazione dell'indirizzo MAC (Media Access Control) e di un elenco dei protocolli di rete associati ad ogni indirizzo per tutte le schede di rete in ogni computer.
 
 
---------------------------------------------------------------------------------
-
 gpresult - Visualizzazione delle impostazioni del Group Policy e dell'RSOP (Resultant Set of Policy) di un utente o di un computer.
 
-
---------------------------------------------------------------------------------
 
 netsh - Questo comando puÚ essere utilizzato all'interno del "Netsh Interface IP" al fine di configurare il protocollo TCP/IP.
 
 
---------------------------------------------------------------------------------
-
 schtasks - Schematizzazione dei comandi e dei programmi che girano peridicamente o in un tempo specifico sul computer.
 
 
---------------------------------------------------------------------------------
 
 systeminfo - Visualizzazione di informazioni dettagliate sulla configurazione del computer e del sistema operativo installato su di esso.
 
