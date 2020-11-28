@@ -60,16 +60,15 @@ taskkill /fi "status eq not responding"
 vol #Il comando vol visualizza l'etichetta e il numero di serie di volume del disco.
 
 
+
+
 attrib  #Il comando attib visualizza o modifica gli attributi dei file.
 chdir #Il comando chdir cambia la directory corrente o ne visualizza il nome.
 chkdsk  #Il comando chkdsk verifica il disco e visualizza una relazione sul suo stato.
 cls #Il comando cls cancella il contenuto della schermata.
 compact #Il comando compact permette di comprimere e decomprimere nelle partizioni NTFS i file di una directory, e di rammentare che tutti i file che si aggiungeranno in quella directory andranno compressi o decompressi.
 
-
-
 defrag  #Il comando defrag riorganizza i file su disco per ottimizzarne l'uso.
-
 
 doskey  #Il comando doskey modifica righe di comando, chiama comandi di MS-DOS e crea macro.
 
@@ -90,13 +89,11 @@ rd  #Il comando rd rimuove una directory.
 
 recover #Il comando recover permette di recuperare documenti andati perduti in settori corrotti del disco fisso (sempre che si abbia un file system NTFS).
 
-
 runas #Il comando runas permette di assumere temporaneamente il profilo di un altro utente (magari quello di amministratore), senza dover interrompere la sessione di lavoro, di riaccedere a Windows con un altro profilo utente, di eseguire un task specifico e di tornare alla normale attivita' con il profilo di partenza.
 
 sort  #Il comando sort permette di ordinare alfabeticamente i contenuti di un file di testo e di inserirne il risultato in un nuovo file di testo.
 
 subst #Il comando subst associa un percorso ad una lettera di unita'.
-
 
 unformat  #Il comando unformat ripristina i dati di un disco cancellati con il comando format.
 
