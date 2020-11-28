@@ -30,6 +30,7 @@ systeminfo #Visualizzazione di informazioni dettagliate sulla configurazione del
 
 cd  #Il comando cd permette di cambiare cartella.
 copy  #Il comando copy permette la copia di file o gruppi di file.
+xcopy #Il comando xcopy cipia i file (ad esclusione dei file nascosti e di sistema) e la struttura delle directory (intere cartelle, sottocartelle incluse).
 
 mkdir   #Il comando mkdir crea una nuova directory (cartella).
 rmdir #Il comando rmdir rimuove una directory.
@@ -41,6 +42,11 @@ deltree #Il comando deltree elimina una directory e tutti i file e le sottodirec
 undelete  #Il comando undelete ripristina i file cancellati precedentemente con il comando del.
 
 move  #Il comando move sposta file o cartelle su un nuovo percorso.
+ren #Il comando ren consente di rinominare file o cartelle.
+rename  #Il comando rename rinomina uno o piu' file.
+type    #Il comando type visualizza il contenuto di un file di testo.
+replace #Il comando replace sostituisce i file.
+
 
 ipconfig  #Il comando ipconfig permette di conoscere il proprio indirizzo IP, quello del SUBNET MASK e del GATEWAY.
 ping  #Il comando ping consente di verificare la comunicazione tra due computer di una rete.
@@ -51,6 +57,7 @@ path  #Il comando path visualizza o imposta un percorso di ricerca per i file es
 taskkill  #Il comando taskkill (se non si avvia digitare tskill anziche' taskkill) sostituisce il Task Manager di Windows e permette di eseguire operazioni di chiusura di task rapidissime.
 #Utilizzandone le varie opzioni e' possibile, inoltre, intervenire su piu' programmi contemporaneamente, come per esempio nel caso delle applicazioni che non rispondono che possono essere chiuse tutte in un colpo solo digitando
 taskkill /fi "status eq not responding"
+vol #Il comando vol visualizza l'etichetta e il numero di serie di volume del disco.
 
 
 attrib  #Il comando attib visualizza o modifica gli attributi dei file.
@@ -64,59 +71,33 @@ compact #Il comando compact permette di comprimere e decomprimere nelle partizio
 defrag  #Il comando defrag riorganizza i file su disco per ottimizzarne l'uso.
 
 
-
-
 doskey  #Il comando doskey modifica righe di comando, chiama comandi di MS-DOS e crea macro.
 
 expand  #Il comando expand decomprime uno o piu' file compressi.
 fdisk #Il comando fdisk configura un disco rigido per l'utilizzo con MS-DOS.
 
-
 format  #Il comando format da' luogo alla formattazione di un'unita'.
-
 
 label #Il comando label crea, modifica o elimina l'etichetta di volume di un disco.
 
-
 more  #Il comando more visualizza i dati di output una schermata per volta.
-
-
 
 print #Il comando print stampa un file di testo consentendo di usare altri comandi di MS-DOS.
 
-
 prompt  #Il comando prompt cambia il prompt dei comandi di MS-DOS.
-
 
 rd  #Il comando rd rimuove una directory.
 
-
 recover #Il comando recover permette di recuperare documenti andati perduti in settori corrotti del disco fisso (sempre che si abbia un file system NTFS).
-
-
-ren #Il comando ren consente di rinominare file o cartelle.
-
-
-rename  #Il comando rename rinomina uno o piu' file.
-
-
-replace #Il comando replace sostituisce i file.
-
 
 
 runas #Il comando runas permette di assumere temporaneamente il profilo di un altro utente (magari quello di amministratore), senza dover interrompere la sessione di lavoro, di riaccedere a Windows con un altro profilo utente, di eseguire un task specifico e di tornare alla normale attivita' con il profilo di partenza.
 
 sort  #Il comando sort permette di ordinare alfabeticamente i contenuti di un file di testo e di inserirne il risultato in un nuovo file di testo.
 
-
 subst #Il comando subst associa un percorso ad una lettera di unita'.
 
 
-
-type    #Il comando type visualizza il contenuto di un file di testo.
-
 unformat  #Il comando unformat ripristina i dati di un disco cancellati con il comando format.
 
-vol #Il comando vol visualizza l'etichetta e il numero di serie di volume del disco.
 
-xcopy #Il comando xcopy cipia i file (ad esclusione dei file nascosti e di sistema) e la struttura delle directory (intere cartelle, sottocartelle incluse).
