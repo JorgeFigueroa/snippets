@@ -89,7 +89,7 @@ http(s)://<username>.github.io/<projectname>
 cd ~/.ssh
 ssh-keygen
 cat ~/.ssh/id_rsa.pub
-registrar https://github.com/settings/keys
+registrar SSH keys  --> https://github.com/settings/keys
 
 
 #https://stackoverflow.com/questions/32910928/ssh-keygen-no-such-file-or-directory
