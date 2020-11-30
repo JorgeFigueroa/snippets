@@ -85,6 +85,11 @@ git push -u origin gh-pages
 http(s)://<username>.github.io/<projectname>
 
 
+#Git batch
+cd ~/.ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+registrar https://github.com/settings/keys
 
 
 #https://stackoverflow.com/questions/32910928/ssh-keygen-no-such-file-or-directory
