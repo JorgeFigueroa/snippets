@@ -6,6 +6,10 @@ npm install packages
 npm uninstall packages
 npm install package  --save-dev
 
+npm pack
+npm install path_pack
+
+
 npm update package
 npm list 
 npm ls
