@@ -5,6 +5,7 @@ npm init
 npm install packages 
 npm uninstall packages
 npm install package  --save-dev
+npm root -g
 
 npm update package
 npm list 
