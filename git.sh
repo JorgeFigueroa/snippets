@@ -88,6 +88,7 @@ http(s)://<username>.github.io/<projectname>
 
 
 #https://stackoverflow.com/questions/32910928/ssh-keygen-no-such-file-or-directory
+cd ~/.ssh
 ls -al ~/.ssh-keygen 		##see if existing SSH keys are present
 ssh-keygen -t rsa -b 4096 -C "my@gmail.com" -f  /Users/jorge/.ssh/	##Generating a new SSH key
 ssh -i /path/to/key -vT git@github.com
