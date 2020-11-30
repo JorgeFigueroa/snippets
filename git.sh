@@ -5,6 +5,14 @@ git --version
 man git		#manual de git
 git --help comando  #ver ayuda de comandos
 
+
+#Git batch registrar SSH keys
+cd ~/.ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+https://github.com/settings/keys
+
+
  init    #iniciar repositorio git
  clone https://github.com/atientas/bootstrap.git  #copia archivos de remoto
  config -l			#mostrar configuracion de git
@@ -85,11 +93,7 @@ git push -u origin gh-pages
 http(s)://<username>.github.io/<projectname>
 
 
-#Git batch
-cd ~/.ssh
-ssh-keygen
-cat ~/.ssh/id_rsa.pub
-registrar SSH keys  --> https://github.com/settings/keys
+
 
 
 #https://stackoverflow.com/questions/32910928/ssh-keygen-no-such-file-or-directory
