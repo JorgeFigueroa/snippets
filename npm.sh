@@ -5,7 +5,6 @@ npm init
 npm install packages 
 npm uninstall packages
 npm install package  --save-dev
-npm root -g
 
 npm update package
 npm list 
@@ -19,6 +18,7 @@ npm list --depth=0 --json
 
 #https://www.sitepoint.com/npm-guide/
 npm install -g npm@latest     #Updating npm
+npm root -g   #list packages global
 npm config list
 npm config get prefix
 
