@@ -45,7 +45,8 @@ ini_set("memory_limit", -1); #aumentar tiempo de excucion
 bind-address = 127.0.0.1    #my.cnf:
 
 
-
+#https://www.strangebuzz.com/en/blog/step-by-step-debugging-with-xdebug-symfony-and-phpstorm
+#https://medium.com/@ahmetmertsevinc/the-easiest-way-to-debug-a-symfony-application-in-phpstorm-25d609e374a7
 #https://xdebug.org/wizard --> WINDOWS
 Download php_xdebug-3.0.1-7.4-vc15-x86_64.dll
 Edit C:\php-7.4.6\php.ini and add the line
