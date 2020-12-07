@@ -45,6 +45,15 @@ ini_set("memory_limit", -1); #aumentar tiempo de excucion
 bind-address = 127.0.0.1    #my.cnf:
 
 
+
+#https://xdebug.org/wizard -- WINDOWS
+Download php_xdebug-3.0.1-7.4-vc15-x86_64.dll
+Move the downloaded file to C:\php\ext
+Edit C:\php-7.4.6\php.ini and add the line
+zend_extension = C:\php\ext\php_xdebug-3.0.1-7.4-vc15-x86_64.dll
+
+
+
 [xdebug]
 zend_extension="/Applications/MAMP/bin/php/php5.6.10/lib/php/extensions/no-debug-non-zts-20131226/xdebug.so"
 xdebug.remote_handler="dbgp"
