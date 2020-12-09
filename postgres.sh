@@ -26,3 +26,4 @@ pg_ctl restart/start/status -D "C:\Program Files\PostgreSQL\12\data"
 \connect name_db
 
 
+#https://mauriziosiagri.wordpress.com/it/postgresql/postgresql-comandi-utili/
