@@ -44,7 +44,7 @@ ini_set("memory_limit", -1); #aumentar tiempo de excucion
 
 bind-address = 127.0.0.1    #my.cnf:
 
-
+#https://www.jetbrains.com/help/phpstorm/zero-configuration-debugging-cli.html#start-a-script-with-xdebug
 #https://www.strangebuzz.com/en/blog/step-by-step-debugging-with-xdebug-symfony-and-phpstorm
 #https://medium.com/@ahmetmertsevinc/the-easiest-way-to-debug-a-symfony-application-in-phpstorm-25d609e374a7
 #https://xdebug.org/wizard --> WINDOWS
