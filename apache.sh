@@ -27,6 +27,19 @@ LoadModule rewrite_module modules/mod_rewrite.so
 Include conf/extra/httpd-vhosts.conf
 
 
+https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
+#### APACHE #httpd.conf modulos y  cors   
+MAMP_headers_module_MAMPLoadModule headers_module modules/mod_headers.so
+MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers "*"
+    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+</IfModule>
+
+
+
 # Virtual hosts
 cd Apache24\conf\extra\httpd-vhosts.conf
 <VirtualHost demo1.com:80>
@@ -42,18 +55,6 @@ cd Apache24\conf\extra\httpd-vhosts.conf
     ErrorLog "logs/demo1.com-error.log"
     CustomLog "logs/demo1.com-access.log" common
 </VirtualHost>
-
-
-https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
-#### APACHE #httpd.conf modulos y  cors   
-MAMP_headers_module_MAMPLoadModule headers_module modules/mod_headers.so
-MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
-
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-    Header set Access-Control-Allow-Headers "*"
-    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
-</IfModule>
 
 
 
