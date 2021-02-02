@@ -13,13 +13,25 @@ php -v
  apt-get install apache2
  ps -A | grep apache2
  apache2ctl [-k start|restart|graceful|graceful-stop|stop]	#Gestión del servicio
-
-#Gestión del servicio
+ #Gestión del servicio
  apache2ctl -t	#test sintax file config
  apache2ctl -M  #show modules
  apache2ctl -S	#show virtualhost
  apache2ctl -V	#show version
  systemctl [start|stop|restart|reload|status] apache2.service 	#Gestión con systemd
+ 
+ #files di configuración
+ /etc/apache2/apache2.conf
+ /etc/apache2/envvars  #Variables de entorno
+ /etc/apache2/conf-available
+	a2enconf name_conf	#attiva configuracion
+	a2disconf name_conf #dissativa configuracion
+	a2enmod name_modulo # attiva modulo
+	a2dismod name_modulo # disativa modulo
+	a2endite name_site	#attiva site
+	a2dissite name_site	#disativa site
+	
+	chown -R www-data:www-data site
 
 
 
