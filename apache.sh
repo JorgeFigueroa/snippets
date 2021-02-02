@@ -6,9 +6,22 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 Apache24\bin\httpd.exe    --> http://localhost
 httpd.exe -k install    #install as a service. Open command prompt as Administrator
 services.msc            #start/stop the service:
-
 httpd -h                # All Command line options:
 php -v
+
+#UBUNTU
+ apt-get install apache2  
+ apache2ctl [-k start|restart|graceful| 	#Gestión del servicio
+ graceful-stop|stop]
+#Gestión del servicio
+ apache2ctl -t	#comprueva sintax file config
+ apache2ctl -M  #show modules
+ apache2ctl -S	#show virtualhost
+ apache2ctl -V	#show version
+ systemctl [start|stop|restart|reload|status] apache2.service 	#Gestión con systemd
+
+
+
 
 ##  httpd.conf
 cd Apache24\conf\httpd.conf
