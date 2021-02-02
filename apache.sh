@@ -10,11 +10,12 @@ httpd -h                # All Command line options:
 php -v
 
 #UBUNTU
- apt-get install apache2  
- apache2ctl [-k start|restart|graceful| 	#Gestión del servicio
- graceful-stop|stop]
+ apt-get install apache2
+ ps -A | grep apache2
+ apache2ctl [-k start|restart|graceful|graceful-stop|stop]	#Gestión del servicio
+
 #Gestión del servicio
- apache2ctl -t	#comprueva sintax file config
+ apache2ctl -t	#test sintax file config
  apache2ctl -M  #show modules
  apache2ctl -S	#show virtualhost
  apache2ctl -V	#show version
