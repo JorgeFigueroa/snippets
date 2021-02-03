@@ -5,7 +5,7 @@ bcdedit /set hypervisorlaunchtype auto
 
 unistall vitualbox
 rm C:\Users\jeorge.barroso\.VirtualBox
-rm C:\Users\jeorge.barroso\VirtualBox VMs
+##rm C:\Users\jeorge.barroso\VirtualBox VMs
 restart
 
 
