@@ -10,6 +10,11 @@ aptitude --help
 aptitude search, install:  paquete
 man aptitude
 
+#LIBERAR MEMORIA RAM
+watch -n 1 free -m
+sudo sync && sudo sysctl -w vm.drop_caches=3
+
+
 
 aptitude install build-essential libssl-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
