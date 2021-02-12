@@ -39,7 +39,7 @@ https://github.com/settings/keys
  diff        #ver diferenciasgit
  add .     	#preparar archivos para commit
  commit -m "mensaje"
- commit -am "mensaje"
+ commit -am "mensaje"      #git add + git commit 
  commit --amend -m "renombrar commit anterior"
 
  tag -a v1.0.0 -m "Version 1 lista para produccion"
