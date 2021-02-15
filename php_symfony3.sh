@@ -186,6 +186,13 @@ services:
         arguments: ['@request_stack']
         tags:
             - { name: kernel.event_listener, event: inversionista.event, method: onSubirPrecio }
+  
+  #AppBundle/Controller/InversionistaController.php
+   $lan = $this->get('app.aereolinea');
+   $lan->setPrecio(2000);
+   $aerolineaEvent = new AerolineaEvent($lan);
+   $this->container->get('event_dispatcher')->dispatch('inversionista.event', $aerolineaEvent);
+
 
     app.tiempo_transcurrido.listener:
         class: AppBundle\EventListener\TiempoTranscurridoListener
