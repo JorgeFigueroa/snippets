@@ -8,14 +8,23 @@ export MAMP_PHP=/Applications/MAMP/bin/php/phpVersion/bin # MAMP PHP
 export PATH="$MAMP_PHP:$PATH"
 
 php -v  --help  -i  -m
-php -S localhost:8000  #SERVER LOCAL
 php --ini   
 
-extension=phpVerion\ext\php_pdo_mysql.dll
+## php.ini
 extension=phpVerion\ext\php_mysqli.dll
-extension=phpVerion\ext\php_openssl.dll
+extension=phpVerion\ext\php_pdo_mysql.dll
+extension=phpVerion\ext\php_pgsql.dll
+extension=phpVerion\ext\php_pdo_pgsql.dll
 extension=phpVerion\ext\php_curl.dll
-
+extension=phpVerion\ext\php_fileinfo.dll
+extension=phpVerion\ext\php_gd2.dll
+extension=phpVerion\ext\php_mbstring.dll
+extension=phpVerion\ext\php_openssl.dll
+extension=phpVerion\ext\php_soap.dll
+extension=phpVerion\ext\php_sockets.dll
+extension=phpVerion\ext\php_xmlrpc.dll
+extension=phpVerion\ext\php_xsl.dll
+extension=phpVerion\ext\php_intl.dll
 
 
 
@@ -43,6 +52,8 @@ ini_set("memory_limit", -1); #aumentar tiempo de excucion
 
 
 bind-address = 127.0.0.1    #my.cnf:
+
+
 
 #https://www.jetbrains.com/help/phpstorm/zero-configuration-debugging-cli.html#start-a-script-with-xdebug
 #https://www.strangebuzz.com/en/blog/step-by-step-debugging-with-xdebug-symfony-and-phpstorm
@@ -97,15 +108,16 @@ php --ri pcntl
 
 
 
-
-
 #COMPOSER
 php composer-setup.php
 mv composer.phar /usr/local/bin/composer
 composer -v
 
 
+
+#### SYMFONY
 composer create-project symfony/framework-standard-edition symfony/ "3.1.*"
+
 web/config.php    #URL Configuration
 web/app_dev.php   #URL DesarroloLocal 
 app/config/parameters #DB
@@ -129,7 +141,7 @@ php bin/console doctrine:generate:entities BackendBundle  # genera clases .php d
   src/BackendBundle/Entity/NameTable.php
 
 
-##### RUTAS 
+## RUTAS 
 #app/config/routing.yml
 app:
     resource: "@AppBundle/Resources/config/routing.yml"
@@ -158,7 +170,6 @@ class UserController extends Controller
 src/AppBundle/Resource/views/vista.html.twing  ## VISTA
 
 
-#symfony
 php bin/console    
 php bin/console generate:bundle --namespace=BackendBundle --format=yml	#generar Bundle
 php bin/console doctrine:mapping:import BackendBundle yml
@@ -169,6 +180,13 @@ php bin/console doctrine:schema:update --dump-sql
 php bin/console doctrine:schema:update –force
 php bin/console doctrine:schema:validate
 php bin/console  debug:router    # lista de rutas
+
+
+php -S localhost:8000  #SERVER LOCAL
+php bin/console server:run 127.0.0.1:8080
+
+
+
 
 
 
