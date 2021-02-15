@@ -106,13 +106,16 @@ php --ri pcntl
 
 
 
-
-
 #COMPOSER
 php composer-setup.php
 mv composer.phar /usr/local/bin/composer
 composer -v
+composer install
+composer update
 
+#composer.json dependencias
+"require": 
+ {"knplabs/knp-paginator-bundle": "2.5.*"}
 
 
 #### SYMFONY
@@ -123,8 +126,7 @@ web/app_dev.php   #URL DesarroloLocal
 app/config/parameters #DB
 css js            # web/assets
 
-"require": {"knplabs/knp-paginator-bundle": "2.5.*"} #composer.json dependencias
-$composer update
+
 
 #Generar bundle para las entidades
 php bin/console generate:bundle --namespace=BackendBundle --format=yml
