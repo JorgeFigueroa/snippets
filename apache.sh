@@ -67,31 +67,29 @@ MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
 
 
 # Virtual hosts
-cd Apache24\conf\extra\httpd-vhosts.conf
-<VirtualHost demo1.com:80>
-    ServerAdmin webmaster@demo1.com
-    DocumentRoot "/sites/demo1.com"
-    ServerName demo1.com
-    ServerAlias www.demo1.com
-	<Directory "c:/sites/demo1.com">
-	   AllowOverride All
-	   Require all granted
-	   Options Indexes FollowSymLinks
-	</Directory>
-    ErrorLog "logs/demo1.com-error.log"
-    CustomLog "logs/demo1.com-access.log" common
-</VirtualHost>
-
-
-
-C:\Windows\System32\drivers\etc\hosts
-127.0.0.1 demo1.com	www.demo1.com
-127.0.0.1 demo2.com	www.demo2.com
-
 run cmd ---> administrator
-
 notepad C:\Apache24\conf\extra\httpd-vhosts.conf
+
+	<VirtualHost demo1.com:80>
+	    ServerAdmin webmaster@demo1.com
+	    DocumentRoot "/sites/demo1.com"
+	    ServerName demo1.com
+	    ServerAlias www.demo1.com
+		<Directory "c:/sites/demo1.com">
+		   AllowOverride All
+		   Require all granted
+		   Options Indexes FollowSymLinks
+		</Directory>
+	    ErrorLog "logs/demo1.com-error.log"
+	    CustomLog "logs/demo1.com-access.log" common
+	</VirtualHost>
+
+
 notepad C:\Windows\System32\drivers\etc\hosts
+
+	127.0.0.1 demo1.com	www.demo1.com
+	127.0.0.1 demo2.com	www.demo2.com
+
 services.msc       
 	#restart Apache2.4   
 	#start MySQL80   cmd mysql -u root -p
