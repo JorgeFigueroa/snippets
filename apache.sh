@@ -53,7 +53,7 @@ LoadModule rewrite_module modules/mod_rewrite.so
 Include conf/extra/httpd-vhosts.conf
 
 
-https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
+#https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/
 #### APACHE #httpd.conf modulos y  cors   
 MAMP_headers_module_MAMPLoadModule headers_module modules/mod_headers.so
 MAMP_rewrite_module_MAMPLoadModule rewrite_module modules/mod_rewrite.so
