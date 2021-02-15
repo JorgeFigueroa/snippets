@@ -110,8 +110,21 @@ php --ri pcntl
 php composer-setup.php
 mv composer.phar /usr/local/bin/composer
 composer -v
-composer install
-composer update
+composer init
+composer create-project symfony/skeleton directory-project
+composer install	#test prod
+composer show	  #list libreria  + version
+composer update	#desarrollo   
+composer update name/dependencia
+composer require name/dependencia:^9.2     
+composer remove name/dependencia
+composer update –dry-run –no-suggest
+composer selfupdate	 #actualiza composer
+composer dump-autoload –optimize	 #optimiza produccion
+composer run-script comando
+composer app:prepare
+
+
 
 #composer.json dependencias
 "require": 
@@ -162,6 +175,26 @@ login:
   path: /login
   defaults: {_controller: AppBundle:User:login}
 
+
+#app/config/services.yml
+services:
+    app.aereolinea:
+        class: AppBundle\Model\Entity\Aerolinea
+        arguments: ['%aerolinea%', '%precio%']
+    app.inversionista.listener:
+        class: AppBundle\EventListener\InversionistaListener
+        arguments: ['@request_stack']
+        tags:
+            - { name: kernel.event_listener, event: inversionista.event, method: onSubirPrecio }
+
+    app.tiempo_transcurrido.listener:
+        class: AppBundle\EventListener\TiempoTranscurridoListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+            
+            
+            
 
 #### CONTROLADOR src/AppBundle/Controller
 class UserController extends Controller
