@@ -40,6 +40,18 @@ FLUSH PRIVILEGES;
 CREATE database DATABASE_NAME;
 DROP database DATABASE_NAME;
 
+
+CREATE TABLE user_type (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(20) NOT NULL,
+PRIMARY KEY (id))
+ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO tabella (id, name, last_name) VALUES (null, 'jorge', 'figueroa');
+UPDATE tabla SET columna ='valor nuevo' WHERE columna = 2 LIMIT 1;
+DELETE from tabla where columna = '1' LIMIT 1;
+
 ############################ QUERY
 select version(); #version de mysql
 select now();   #mostrar fecha y ora
@@ -60,13 +72,11 @@ select columna from tabla LIMIT 0,5;  # muestra del resgistro 0 al 5
 
 
 
-INSERT INTO tabella (id, name, last_name) VALUES (null, 'jorge', 'figueroa');
-UPDATE tabla SET columna ='valor nuevo' WHERE columna = 2 LIMIT 1;
-DELETE from tabla where columna = '1' LIMIT 1;
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
 
-CREATE TABLE user_type (
-id INT NOT NULL AUTO_INCREMENT,
-name VARCHAR(20) NOT NULL,
-PRIMARY KEY (id))
-ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
