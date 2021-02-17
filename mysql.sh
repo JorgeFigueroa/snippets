@@ -72,9 +72,10 @@ select columna from tabla LIMIT 0,5;  # muestra del resgistro 0 al 5
 
 
 
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+SELECT o.OrderID as order_name, c.CustomerName, o.OrderDate
+FROM Orders as o
+INNER JOIN Customers as c ON o.CustomerID=c.CustomerID
+order by order_name
 
 
 
