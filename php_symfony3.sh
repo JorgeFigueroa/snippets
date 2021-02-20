@@ -35,11 +35,12 @@ ini_set('display_errors', 1);        #index.php
 ini_set('display_startup_errors', 1); #index.php
 error_reporting(E_ALL);               #index.php
 
+post_max_size = 20M
+upload_max_filesize = 3M
 
 #SECURITY php.ini
 max_execution_time = 30
 memory_limit = 128M
-upload_max_filesize = 3M
 allow_url_include = Off
 include_path = ".:/Applications/MAMP/bin/php/php7.2.1/lib/php"
 session.save_handler = files
