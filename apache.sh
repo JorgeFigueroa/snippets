@@ -102,13 +102,31 @@ openssl genrsa -out ca.key 2084 #Generar Llave privada
 openssl req -new -key ca.key -out ca.csr	#Generar Archivo CSR 
 openssl x509 -req -days 90 -in ca.csr -signkey ca.key -out ca.crt	#Generar Certificado 
 
-C:\Apache24\conf\httpd.conf
-
+#C:\Apache24\conf\httpd.conf
 LoadModule ssl_module modules/mod_ssl.so
 LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
 Include conf/extra/httpd-ssl.conf
 
 
+#C:\Apache24\conf\extra\httpd-vhosts.conf
+<VirtualHost symfony_rest_videos.test:443>
+	ServerAdmin webmaster@symfony_rest_videos.test
+	DocumentRoot "/sites/symfony_rest_videos.test"
+	ServerName symfony_rest_videos.test
+	ServerAlias www.symfony_rest_videos.test
+	
+	SSLEngine on
+	SSLCertificateFile "C:\Apache24\conf\server.crt"
+	SSLCertificateKeyFile "C:\Apache24\conf\server.key"
+	
+	<Directory "C:/sites/symfony_rest_videos.test">
+	   AllowOverride All
+	   Require all granted
+	   Options Indexes FollowSymLinks
+	</Directory>
+	ErrorLog "logs/symfony_rest_videos.test-error.log"
+	CustomLog "logs/symfony_rest_videos.test-access.log" common
+</VirtualHost>
 
 
 
