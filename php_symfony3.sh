@@ -37,6 +37,7 @@ error_reporting(E_ALL);               #index.php
 
 post_max_size = 20M
 upload_max_filesize = 3M
+memory_limit = -1
 
 #SECURITY php.ini
 max_execution_time = 30
