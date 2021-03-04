@@ -4,6 +4,14 @@ esc   #modalita commando
 i     #modalita inserimento
 v     #modalita visuale
 
+:     #Digitare comandi
+:w    #salva file
+:w nomefile #salva con nome
+:wq   #salva e chiudi
+:q    #esci da ViM
+:q!   #uscita forzata
+
+
 w     #sposta parola succesiva
 b     #sposta parola precendente
 gg    #sposta prima riga
@@ -30,14 +38,6 @@ P     #incolla prima il cursore
 n                    #continua la ricerca del testo eseguito
 :s/testo/new_testo   #sostituice testo
 :s/testo//           #sostituice testo con psazio vouto  
-
-
-:     #Digitare comandi
-:w    #salva file
-:w nomefile #salva con nome
-:wq   #salva e chiudi
-:q    #esci da ViM
-:q!   #uscita forzata
 
 
 
