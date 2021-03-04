@@ -62,7 +62,15 @@ unique      #muestra los unicos
 open
 
 https://www.guru99.com/the-vi-editor.html
-vi file
+vi file_name
+esc   #modalita commando
+i     #modalita inserimento
+v     #modalita visuale
+:w    #salva file
+:q    #chiudi file
+:wq   #salva e chiudi
+
+
 
 
 ######################################### LINUX SHELL
