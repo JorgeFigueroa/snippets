@@ -28,8 +28,8 @@ P     #incolla prima il cursore
 n                    #continua la ricerca del testo eseguito con /
 /parola              #ricerca un parola
 /par.                #ricerca parte di una parola
-:s/testo/new_testo    #sostituice testo
-:s/testo//            #sostituice testo con psazio vouto  
+:s/testo/new_testo   #sostituice testo
+:s/testo//           #sostituice testo con psazio vouto  
 
 
 :     #Digitare comandi
