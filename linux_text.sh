@@ -97,6 +97,20 @@ P     #incolla prima il cursore
 :wq   #salva e chiudi
 :q!   #forza la chiusura
 
+[ESC] = Tona alla modalità NORMALE (COMANDO)
+: = (due punti) Digitare comandi
+:q = esci da ViM
+:q! = uscita forzata
+i = Il carattere "i" permette di passare dalla modalità comando alla modalità INSERIMENTO
+dd = CANCELLA / TAGLIA una riga
+x = cancella un carattere
+/ = ricerca testo nel file
+n = continua la ricerca del testo eseguito con /
+P = incolla il testo tagliato con "dd"
+v = Permette di passare dalla modalità comando alla modalità VISUALE
+:w = salva
+:w nomefile = salva con nome
+
 
 
 ######################################### LINUX SHELL
