@@ -25,9 +25,9 @@ p     #incolla dopo il cursore
 P     #incolla prima il cursore
 
 /                    #ricerca testo nel file
-n                    #continua la ricerca del testo eseguito con /
 /parola              #ricerca un parola
 /par.                #ricerca parte di una parola
+n                    #continua la ricerca del testo eseguito
 :s/testo/new_testo   #sostituice testo
 :s/testo//           #sostituice testo con psazio vouto  
 
