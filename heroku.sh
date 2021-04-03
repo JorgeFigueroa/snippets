@@ -12,14 +12,15 @@ git add .
 git commit -m "init"
 
 heroku apps:create name-app
-heroku apps:create name-project-prod --remote production
+heroku apps:create name-project --remote production
 
-heroku git:remote -a name-project-prod
+heroku git:remote -a name-project
 
-heroku addons:add sendgrid --app name-project-prod
-heroku addons:add redistogo --app name-project-prod
+heroku addons:add sendgrid --app name-project
+heroku addons:add redistogo --app name-project
 
-heroku config:set PROJECT_URL=name-project-prod.herokuapp.com --app name-project-prod
+heroku config:set PROJECT_URL=name-project.herokuapp.com --app name-project
 
+heroku ps --app name-project
 
 git push heroku master
