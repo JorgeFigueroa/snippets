@@ -5,6 +5,8 @@ brew tap heroku/brew && brew install heroku. #macOS
 
 heroku --version
 heroku login
+heroku keys:add
+heroku keys
 which heroku
 
 git init
@@ -22,4 +24,4 @@ heroku config:set PROJECT_URL=name-project.herokuapp.com --app name-project
 
 heroku ps --app name-project
 
-git push heroku master
+git push production master
