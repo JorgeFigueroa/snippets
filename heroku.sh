@@ -11,7 +11,6 @@ git init
 git add .
 git commit -m "init"
 
-heroku apps:create name-app
 heroku apps:create name-project --remote production
 
 heroku git:remote -a name-project
