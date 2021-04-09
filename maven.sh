@@ -79,8 +79,13 @@ mvn –encrypt-master-password
 
 
 
-
-
+### How to include custom library into maven local repository
+mvn install:install-file -Dfile=javacsv.jar -DgroupId=com.csvreader -DartifactId=csvreader -Dversion=2.3 -Dpackaging=jar
+<dependency>
+      <groupId>com.csvreader</groupId>
+      <artifactId>csvreader</artifactId>
+      <version>2.3</version>
+  </dependency>
 
 
 
