@@ -4,9 +4,8 @@ open cmd
 win C:\Program Files\PostgreSQL\12\bin 
 osx  /Library/PostgreSQL/11/bin
 
- # file di config
-PostgreSQL\11\data\pg_hba.conf   #Client Authentication Configuration File
-PostgreSQL\11\data\postgresql.conf 
+PostgreSQL\11\data\pg_hba.conf        #Client Authentication Configuration File
+PostgreSQL\11\data\postgresql.conf    #configuration file
 
 
 ./psql --version
