@@ -4,8 +4,10 @@ open cmd
 win C:\Program Files\PostgreSQL\12\bin 
 osx  /Library/PostgreSQL/11/bin
 
+ # file di config
 PostgreSQL\11\data\pg_hba.conf
-PostgreSQL\11\data\postgresql.conf  # file di config
+PostgreSQL\11\data\postgresql.conf 
+
 
 ./psql --version
 ./psql -h localhost -p 5432 -U postgres -W    #Connect to PostgreSQL database
