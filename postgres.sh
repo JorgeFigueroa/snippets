@@ -6,7 +6,9 @@ osx  /Library/PostgreSQL/11/bin
 
 PostgreSQL\11\data\pg_hba.conf        #Client Authentication Configuration File
 PostgreSQL\11\data\postgresql.conf    #configuration file
-
+  listen_addresses = '*'		# what IP address(es) to listen on;
+  listen_addresses = 'IP1, IP2'	
+  max_connections = 100			# (change requires restart)
 
 ./psql --version
 ./psql -h localhost -p 5432 -U postgres -W    #Connect to PostgreSQL database
