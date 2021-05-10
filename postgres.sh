@@ -16,7 +16,7 @@ PostgreSQL\11\data\postgresql.conf    #configuration file
 
 PostgreSQL\11\data\pg_hba.conf        #Client Authentication Configuration File
   # TYPE  DATABASE        USER            ADDRESS                 METHOD
-  local   all             postgres        trust
+  local   all             postgres                                trust
   host    replication     all             127.0.0.1/32            md5
   host    all             all             0.0.0.0/0               md5
 
