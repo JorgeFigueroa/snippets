@@ -8,6 +8,7 @@ PostgreSQL\11\data\pg_hba.conf        #Client Authentication Configuration File
 PostgreSQL\11\data\postgresql.conf    #configuration file
   listen_addresses = '*'		# what IP address(es) to listen on;
   listen_addresses = 'IP1, IP2'	
+  port = 5433				
   max_connections = 100			# (change requires restart)
 
 ./psql --version
