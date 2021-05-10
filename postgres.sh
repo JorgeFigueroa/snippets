@@ -5,7 +5,8 @@ win C:\Program Files\PostgreSQL\12\bin
 services.msc  postgres start
 osx  /Library/PostgreSQL/11/bin
 
-apt-get install postgresql  #ubuntu
+apt-get install postgresql  /etc/postgresql/num_version/main/pg_hba.conf  #ubuntu
+/etc/init.d/postgresql restart
 
 PostgreSQL\11\data\postgresql.conf    #configuration file
   listen_addresses = '*'		# what IP address(es) to listen on;
@@ -33,8 +34,8 @@ PostgreSQL\11\data\pg_hba.conf        #Client Authentication Configuration File
 pg_dump -h localhost -p 5432 -U postgres -C -f D:\name.dump name_db  #dump
 
 
- 
-create database mydb;
+CREATE ROLE NEW_ROLE LOGIN PASSWORD 'PASS'
+create database mydb OWNER  NEW_ROLE;
 create  user name_user  with  password 'pass';
 
 DROP DATABASE name_database;
