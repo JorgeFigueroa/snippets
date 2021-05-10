@@ -5,6 +5,8 @@ win C:\Program Files\PostgreSQL\12\bin
 services.msc  postgres start
 osx  /Library/PostgreSQL/11/bin
 
+apt-get install postgresql  #ubuntu
+
 PostgreSQL\11\data\postgresql.conf    #configuration file
   listen_addresses = '*'		# what IP address(es) to listen on;
   listen_addresses = 'IP1, IP2'	
