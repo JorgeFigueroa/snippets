@@ -72,7 +72,7 @@ cd /path/nexus-3.18.1-01/bin
 
 mvn archetype:generate -Dfilter=org.apache.maven.archetypes:
 mvn install	deploy	.m2/project/project.jar
-
+mvn dependency:tree     #display the dependency tree for the project:
 
 mvn –encrypt-master-password
 .m2/settings-security.xml
