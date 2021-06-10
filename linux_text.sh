@@ -60,6 +60,8 @@ sort -nr    #ordenar
 sort -r     #odernar de modo inverso
 unique      #muestra los unicos
 open
+sort nome_file.csv  | sort | uniq -d  #Script to find duplicates in a csv file
+
 
 
 ######################################### LINUX SHELL
