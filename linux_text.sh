@@ -48,6 +48,9 @@ wc -l *.txt     #contar lineas de varios ficheros
 find . -name file.txt
 find . -name “*myFile*”  # file name or would like to match a part of the name
 find . -type d      #list only directories
+find . -type f -newermt 2020-01-01 ! -newermt 2020-12-31  -name "*.pdf"  #How to use 'find' to search for files created on a specific date? 
+find . -type f -newermt 2020-01-01 ! -newermt 2020-06-31  -name "*.pdf" | wc -l # contar los file encontrados
+find . -type f -newermt 2020-01-01 ! -newermt 2020-07-31  -name "*.pdf" -delete  # Remove all files created before a certain date
 uniq    #no repetidas
 
 
