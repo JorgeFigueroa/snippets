@@ -1,3 +1,5 @@
+
+
 ping www.google.com
 nslookup      #name dominio
 
@@ -30,6 +32,7 @@ systeminfo #Visualizzazione di informazioni dettagliate sulla configurazione del
 
 cd  #Il comando cd permette di cambiare cartella.
 copy  #Il comando copy permette la copia di file o gruppi di file.
+copy *.csv all.csv
 xcopy #Il comando xcopy cipia i file (ad esclusione dei file nascosti e di sistema) e la struttura delle directory (intere cartelle, sottocartelle incluse).
 
 mkdir   #Il comando mkdir crea una nuova directory (cartella).
