@@ -5,6 +5,8 @@ cat file fileB
 cat file | less
 cat file | more
 cat file | wc –l    # conta line giga file
+cat *csv > combined.csv
+
 
 more file           #inizio  "h"  mas opciones
 less file           #inizio ficheros grandes "h"  mas opciones
