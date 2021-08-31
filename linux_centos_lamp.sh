@@ -45,10 +45,23 @@ java -jar file.jar
 nohup java -jar file.jar > /dev/null &
 
 
+
+
+### Montare un device
+lsblk -a  #lista dispositivia blocchi
+mount /dev/sr0 /path/destinazione  #Montare il lettore cd virtuale
+umount /dev/sr0  #Smontare il lettore cd virtuale
+/etc/fstab  #lista dei dispositivi da montare al boot
+df -h   #Spazio libero sul sistema
+du -hs  #Spazio occupato della cartella
+
+
+
+
 env   #mostra variabili di ambiente
 echo $PATH
 
-###Cron e Schedulazioni
+### Cron e Schedulazioni
 ps aux|grep cron  #check process cron
 crontab -l        #list cron
 crontab -e        #edit cron
@@ -57,6 +70,3 @@ crontab -e        #edit cron
 0 */2 * ? * *	  #Every 2 minutes
 0 */30 * ? * *	#Every 30 minutes
 0 0 6 * * ?	    #Every day at 6am
-
-
-
