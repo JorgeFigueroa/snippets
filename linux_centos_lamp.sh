@@ -76,7 +76,19 @@ passwd user  tu pass   #change pasword
 addgroup newGrupo 
 usermod -g nameuser grupo #change group a user
 
+chown user:grupo /dir #change dir de user
+chown -R user:grupo /dir     #change privileg
 
+drwx - r - r     # user - grupo - otrosUser
+r - w - x   # leer - scribir - ejecutar    -->file
+r - w - x   # listar - modificar - acceder    -->dir
+chmod -R 777   #permisos ala carpeta
+chmod +r file   #agregar permisos de lectura
+chmod -r file   #quitar permisos de lectura
+chmod u-r file  #quita permisos solo user
+chmod o-x file  #quita permisos de execute solo otros
+chmod u-r, g+x file #modificando permisos
+chmod u=w, o=wx file    
 
 
 
