@@ -125,20 +125,7 @@ date --set="2 OCT 2006 18:00:00"
 purge       #liberar memoria
 
 
-#Usuarios y permisos
-sudo su #pasar a root
-sudo su –    # permessi root
-su user #cambia user
-whoami #nombre usuario
-groups #nombre  grupo
-id  #info usuario
-adduser newUser #
-passwd user  tu pass   #change pasword
-addgroup newGrupo 
-usermod -g nameuser grupo #change group a user
 
-cat /etc/passwd                         #List All Users
-awk -F':' '{ print $1}' /etc/passwd     #List All Users
 
 
 chown user:grupo /dir #change dir de user
