@@ -46,7 +46,6 @@ nohup java -jar file.jar > /dev/null &
 
 
 
-
 ### Montare un device
 lsblk -a  #lista dispositivia blocchi
 mount /dev/sr0 /path/destinazione  #Montare il lettore cd virtuale
@@ -61,7 +60,7 @@ du -hs  #Spazio occupato della cartella
 /etc/passwd       #List All Users
 awk -F':' '{ print $1}' /etc/passwd     #List All Users
 /etc/shells       #list shell disponibile per user
-/etc/shadow       #password deili utenti
+/etc/shadow       #password degli utenti
 /etc/group        #list grups
 
 sudo su #pasar a root
@@ -71,11 +70,26 @@ whoami #nombre usuario
 groups #nombre  grupo
 id  #info usuario
 
-
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default
-passwd name_user  tu_pass   #change pasword
-addgroup newGrupo 
+useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default
 usermod -g nameuser grupo #change group a user
+userdel name_user -r  #delete user
+passwd name_user  tu_pass   #change pasword
+
+groupadd name_group 
+groupdel name_group
+groupmod name_group -g 1002
+
+
+### Permessi di file e cartelle
+groups #lista dei gruppi a cui appartiene l’utente
+chmod  #modifca i permessi di un flee/cartella
+chown  #modifca il proprietario di un flee/cartella
+chgrp  #cambia il gruppo di un flee/cartella
+
+lettura = 4
+scrittura = 2
+esecuzione = 1
 
 chown user:grupo /dir #change dir de user
 chown -R user:grupo /dir     #change privileg
