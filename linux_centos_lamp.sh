@@ -57,6 +57,22 @@ du -hs  #Spazio occupato della cartella
 
 
 
+#Usuarios y permisos
+cat /etc/passwd       #List All Users
+sudo su #pasar a root
+sudo su –    # permessi root
+su user #cambia user
+whoami #nombre usuario
+groups #nombre  grupo
+id  #info usuario
+adduser newUser #
+passwd user  tu pass   #change pasword
+addgroup newGrupo 
+usermod -g nameuser grupo #change group a user
+
+
+awk -F':' '{ print $1}' /etc/passwd     #List All Users
+
 
 env   #mostra variabili di ambiente
 echo $PATH
