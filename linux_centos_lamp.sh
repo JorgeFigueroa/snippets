@@ -71,8 +71,9 @@ whoami #nombre usuario
 groups #nombre  grupo
 id  #info usuario
 
-adduser newUser #
-passwd user  tu pass   #change pasword
+
+useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default
+passwd name_user  tu_pass   #change pasword
 addgroup newGrupo 
 usermod -g nameuser grupo #change group a user
 
