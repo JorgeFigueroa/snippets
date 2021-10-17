@@ -36,3 +36,7 @@ npm up: npm update packages
 npm t: run tests
 npm ls: list installed modules
 npm ll or npm la: print additional package information while listing modules
+
+
+npm install -g nodemon # or using yarn: yarn global add nodemon
+
