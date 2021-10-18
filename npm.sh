@@ -1,7 +1,7 @@
 #https://www.javascripttutorial.net/nodejs-tutorial/npm-list/
 
 npm --version
-npm init 
+npm init --yes
 npm install packages 
 npm uninstall packages
 npm install package  --save-dev
