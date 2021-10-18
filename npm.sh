@@ -19,8 +19,9 @@ npm pack        #genera pachete zipado
 npm docs [package-name]   #Go to documentation page of package
 npm bugs [package-name]   #Go to issue page of package
 npm outdated              #List outdated packages
-
 npm update package
+npm rm <package-name>
+
 npm list 
 npm ls    #List packages modules
 npm list --depth=0
