@@ -1,4 +1,7 @@
 npm install -g @angular/cli
+npm i -g @angular/cli@1.7.4
+
+ng --version
 ng new my-app
 ng serve –open
 
