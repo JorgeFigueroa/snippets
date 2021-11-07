@@ -1,4 +1,5 @@
 node -v
+https://nodejs.org/download/release/  --> all version node
 https://github.com/coreybutler/nvm-windows/releases  --> nvm-setup.zip
 nvm list
 nvm use version.node
