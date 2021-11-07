@@ -1,3 +1,10 @@
+node -v
+https://github.com/coreybutler/nvm-windows/releases  --> nvm-setup.zip
+nvm list
+nvm use version.node
+nvm install version.node
+
+
 #Configuramos el servidor para Node.js
 npm install -g nodemon
 nodemon server.js
