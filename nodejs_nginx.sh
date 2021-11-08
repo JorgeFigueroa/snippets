@@ -4,10 +4,10 @@ https://nodejs.org/download/release/  --> all version node
 ### node version manager
 https://github.com/coreybutler/nvm-windows/releases  
 https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip
-nvm list
-nvm use version.node
-nvm install version.node
-
+nvm install [version]        # Download and install [version]
+nvm uninstall [version]      # Uninstall [version]
+nvm use [version]            # Switch to use [version]
+nvm list                     # List installed versions
 
 #Configuramos el servidor para Node.js
 npm install -g nodemon
