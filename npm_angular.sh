@@ -1,3 +1,4 @@
+npm uninstall typescript
 npm install -g typescript
 tsc –v
 tsc helloworld.ts
