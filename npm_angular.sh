@@ -1,3 +1,8 @@
+npm install -g typescript
+tsc –v
+tsc helloworld.ts
+
+
 npm install -g @angular/cli
 npm i -g @angular/cli@1.7.4
 
