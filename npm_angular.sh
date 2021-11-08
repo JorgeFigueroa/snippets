@@ -6,6 +6,9 @@ tsc helloworld.ts
 npm install -g @angular/cli
 npm i -g @angular/cli@1.7.4
 
+#Compatibility list for Angular/Angular-CLI and Node.js
+https://www.redcricket.net/en/news-en/compatibility-list-for-angular-angular-cli-and-node-js/
+
 ng --version
 ng new my-app
 ng serve –open
