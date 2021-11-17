@@ -1,9 +1,19 @@
 node -v
 https://nodejs.org/download/release/  --> all version node
 
-### node version manager
+### node version manager win
 https://github.com/coreybutler/nvm-windows/releases  
 https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip
+
+### node version manager osx. https://tecadmin.net/install-nvm-macos-with-homebrew/
+brew update 
+brew install nvm 
+mkdir ~/.nvm 
+vim ~/.bash_profile 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+source ~/.bash_profile
+
 nvm install [version]        # Download and install [version]
 nvm uninstall [version]      # Uninstall [version]
 nvm use [version]            # Switch to use [version]
