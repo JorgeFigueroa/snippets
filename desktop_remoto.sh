@@ -1,4 +1,7 @@
 https://www.youtube.com/watch?v=PTFytIkW9CY
+### BIOS ENABLED
+Wake-on-LAN, Wake-up on LAN, PME Event Wake Up, Remote Wake Up, Wake up on PCI event
+
 
 ### ABILITARE ACCESO REMOTO CMD
 netsh advfirewall firewall add rule name="TLI_Wake-on-LAN" dir=in action=allow profile=any localport=9 protocol=UDP edge=yes
