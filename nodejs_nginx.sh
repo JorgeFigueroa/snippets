@@ -9,9 +9,9 @@ https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip
 brew update 
 brew install nvm 
 mkdir ~/.nvm 
-vim ~/.bash_profile 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+nano ~/.bash_profile 
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
 source ~/.bash_profile
 
 nvm install [version]        # Download and install [version]
