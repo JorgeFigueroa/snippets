@@ -3,7 +3,9 @@
 open cmd
 win C:\Program Files\PostgreSQL\12\bin 
 services.msc  postgres start
-osx  /Library/PostgreSQL/11/bin
+## OSX  
+/Library/PostgreSQL/11/bin
+/Library/PostgreSQL/11/scripts/runpsql.sh
 
 apt-get install postgresql  /etc/postgresql/num_version/main/pg_hba.conf  #ubuntu
 /etc/init.d/postgresql restart
