@@ -68,6 +68,19 @@ zend_extension = C:\php-7.4.6\ext\php_xdebug-3.0.1-7.4-vc15-x86_64.dll
 xdebug.remote_enable = 1
 xdebug.remote_autostart = 1
 
+### version osx 
+[xdebug]
+zend_extension="/Applications/MAMP/bin/php/php5.6.10/lib/php/extensions/no-debug-non-zts-20131226/xdebug.so"
+#MAMP_Xdebug_MAMP
+ xdebug.remote_enable=1
+ xdebug.remote_host=localhost
+ xdebug.remote_port=9000
+ xdebug.remote_handler="dbgp"
+ xdebug.remote_autostart=1
+ xdebug.max_nesting_level=250
+
+
+
 #### version php7.4
 [XDebug]
 zend_extension = C:\php\ext\php_xdebug-3.1.2-7.4-vc15-nts-x86_64.dll
@@ -89,19 +102,6 @@ xdebug.mode=debug
 xdebug.remote_handler=dbgp
 
 
-
-[xdebug]
-zend_extension="/Applications/MAMP/bin/php/php5.6.10/lib/php/extensions/no-debug-non-zts-20131226/xdebug.so"
-xdebug.remote_handler="dbgp"
-xdebug.max_nesting_level=250
-[xdebug]
-MAMP_Xdebug_MAMP
- xdebug.remote_enable=1
- xdebug.remote_host=localhost
- xdebug.remote_port=9000
- xdebug.remote_handler="dbgp"
- xdebug.remote_autostart=1
- xdebug.max_nesting_level=250
 
 
 
