@@ -68,6 +68,26 @@ zend_extension = C:\php-7.4.6\ext\php_xdebug-3.0.1-7.4-vc15-x86_64.dll
 xdebug.remote_enable = 1
 xdebug.remote_autostart = 1
 
+#### version php7.4
+[XDebug]
+zend_extension = C:\php\ext\php_xdebug-3.1.2-7.4-vc15-nts-x86_64.dll
+#xdebug.remote_autostart=1
+xdebug.start_with_request=yes
+xdebug.default_enabled=1
+#xdebug.remote_port=9000
+xdebug.client_port=9000
+#xdebug.remote_host=localhost
+xdebug.client_host = localhost
+#xdebug.remote_connect_back=1
+xdebug.discover_client_host=true
+#xdebug.remote_enable=1
+xdebug.mode=debug
+xdebug.idekey=PHPSTORM
+
+xdebug.remote_cookie_expire_time = 3600
+xdebug.mode=debug
+xdebug.remote_handler=dbgp
+
 
 
 [xdebug]
