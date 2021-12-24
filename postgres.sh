@@ -32,6 +32,8 @@ pg_dump -h localhost -p 5432 -U postgres -C -f D:\name.dump name_db  #dump
 CREATE ROLE NAME_ROLE LOGIN PASSWORD 'PASS'
 create database mydb OWNER  NAME_ROLE;
 create user name_user  with  password 'pass';
+ALTER USER user_name WITH PASSWORD 'new_password';
+
 
 DROP DATABASE name_database;
 
