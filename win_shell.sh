@@ -37,6 +37,7 @@ xcopy #Il comando xcopy cipia i file (ad esclusione dei file nascosti e di siste
 
 mkdir   #Il comando mkdir crea una nuova directory (cartella).
 rmdir #Il comando rmdir rimuove una directory.
+rd /s /q "path"  ## cancela la cartella in modo ricorsivo
 
 dir #Il comando dir visualizza l'elenco dei file e delle subdirectory di una directory.
 
