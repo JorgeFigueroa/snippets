@@ -8,11 +8,11 @@ docker pull REPOSITORY:TAG
 docker run -p 5432:5432  --name name_db -e POSTGRES_PASSWORD=postgres -d postgres:9.3 #crea container con image postgress
 docker cp filename CONTAINER_ID:./tmp
 docker exec -it CONTAINER_ID bash  ## connect container 
-apt-get update
-apt-get install vim nano
-psql -d name_db -U username -f path/filename.sql    ## Restore database
-ctrl + p + q        # uscire senza fermare il container
-exit                # uscire fermando contaniner
+  apt-get update
+  apt-get install vim nano
+  psql -d name_db -U username -f path/filename.sql    ## Restore database
+  ctrl + p + q        # uscire senza fermare il container
+  exit                # uscire fermando contaniner
 
 docker container ls --all          ## list container
 docker ps -a                       ## list container
