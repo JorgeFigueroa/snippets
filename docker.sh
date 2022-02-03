@@ -16,8 +16,25 @@ docker run -d -p 4000:80 friendlyhello           # Same thing, but in detached m
 docker run --name name_container -d test/nginx    ##crea container
 docker run -ti –rm nome_image comando_linux
 
+docker ps -a                       ## list container
+docker container ls --all          ## list container
+docker container ls                ## List all running containers
+docker container ls -a             # List all containers, even those not running
+docker container stop <hash>           # Gracefully stop the specified container
+docker container kill <hash>         # Force shutdown of the specified container
+docker container rm <hash>        # Remove specified container from this machine
+docker container rm $(docker container ls -a -q)         # Remove all containers
+
 docker cp filename CONTAINER_ID:./tmp
 docker rm CONTAINER_ID             ## remove container
+docker start CONTAINER_ID
+docker stop CONTAINER_ID
+docker kill CONTAINER_ID
+docker inspect CONTAINER_ID
+docker stats CONTAINER_ID
+docker logs  CONTAINER_ID -f
+docker logs CONTAINER_ID > C:\log.log
+
 docker exec -it CONTAINER_ID bash
 docker exec -it CONTAINER_ID bash  ## connect container 
   apt-get update
@@ -28,40 +45,38 @@ docker exec -it CONTAINER_ID bash  ## connect container
 
 
 
-
-docker commit CONTAINER_ID  Nombre  ## crea una imagen a partir de otro  container    
-docker commit --change='CMD["apache2ctl", "-D FOREGROUND"]'  -c "EXPOSE 85" CONTAINER_ID nombre
-
-docker start CONTAINER_ID
-docker stop CONTAINER_ID
-
-
-docker build /PATH
-docker build -t friendlyhello .  # Create image using this directory's Dockerfile
-
-docker ps -a                       ## list container
-docker container ls --all          ## list container
-docker container ls                                # List all running containers
-docker container ls -a             # List all containers, even those not running
-docker container stop <hash>           # Gracefully stop the specified container
-docker container kill <hash>         # Force shutdown of the specified container
-docker container rm <hash>        # Remove specified container from this machine
-docker container rm $(docker container ls -a -q)         # Remove all containers
-
-
 docker login             # Log in this CLI session using your Docker credentials
 docker tag <image> username/repository:tag  # Tag <image> for upload to registry
 docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 
-docker-compose up -d
-docker-machine
+docker volume ls
+docker volume create nome_volume
+docker volume rm nome_volume
+docker volume inspect nome_volume
+docker run -v nome_volume -it –name nome_contenitore nome_image
+docker run -v C:\path:/nome_volume -it –name contenitore name_img:tag
 
-docker network ls
+
 docker network create --driver bridge nome_red
 docker network inspect bridge
 docker network rm nome_red
 docker network ls
+
+
+
+docker build -t name_imagen .  # Create image using this directory's Dockerfile
+docker commit CONTAINER_ID  nome_nuova_imagen  ## crea nueva imagen a partir de otro  container    
+docker run -ti --rm nome_nuova_imagen
+
+
+docker-machine
+docker-compose up -d
+docker-compose build
+docker-compose up
+docker-compose up -d --scale name_container=15   ##scale container
+docker-compose exec web bash
+docker-compose ps
 
 
 
