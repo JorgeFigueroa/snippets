@@ -78,5 +78,5 @@ docker-compose up -d --scale name_container=15   ##scale container
 docker-compose exec web bash
 docker-compose ps
 
-
+docker-compose -f docker-compose_name.yml up
 
