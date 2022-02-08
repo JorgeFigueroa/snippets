@@ -26,6 +26,7 @@ docker container rm <hash>        # Remove specified container from this machine
 docker container rm $(docker container ls -a -q)         # Remove all containers
 
 docker cp filename CONTAINER_ID:./tmp
+docker cp <containerId>:/file/path/within/container /host/path/target    ##copia da container a local
 docker rm CONTAINER_ID             ## remove container
 docker start CONTAINER_ID
 docker stop CONTAINER_ID
