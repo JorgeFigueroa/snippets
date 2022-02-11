@@ -5,7 +5,6 @@
 
 @Inject:  lo mismo de @Autowired del standard de java 
 @Resource: lo mismo de @Autowired del standard de java 
-
 @PostConstruct: invoca el metodo despues del objeto instaciado por el  contenedor 
 @PreDestroy: invoca el metodo antes del objeto sea destruido
 
@@ -16,6 +15,7 @@
 @Controller:  para controlladores mvc
 @Respository: para persistencia (DAO) componentes che accedena datos
 @Service:  lógica de negocio, ejemplo patrón Fachada y manejo de transacciones
+
 
 ## WEB MVC
 @Controller
