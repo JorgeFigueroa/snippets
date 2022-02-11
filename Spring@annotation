@@ -26,3 +26,13 @@
 @RequestBody argumento poblado con el valor del HTTP request body
 @ResponseBody  usado para peticiones del tipo AJAX y RESTful (XML, JSON)
 @SessionAttributes  Define atributos de sesión utilizados por un controlador
+
+
+
+
+
+
+
+
+
+
