@@ -1,0 +1,29 @@
+## Inversion od control y Anotaciones
+
+@Autowired → injecta un bean en un atributo de un componente 
+@Required → indica que la injection es requerida
+@Qualifier(“nombre_bean”) → permite dar un indentificador a cada bean(implementacion)
+
+@Inject:  lo mismo de @Autowired del standard de java 
+@Resource: lo mismo de @Autowired del standard de java 
+
+@PostConstruct: invoca el metodo despues del objeto instaciado por el  contenedor 
+@PreDestroy: invoca el metodo antes del objeto sea destruido
+
+@Configuration: indica al contenedor IoC que la clase se comporta fuente de definiciones beans.
+@Bean
+
+@Component: estereotipo genérico para cualquier componente
+@Controller:  para controlladores mvc
+@Respository: para persistencia (DAO) componentes che accedena datos
+@Service:  lógica de negocio, ejemplo patrón Fachada y manejo de transacciones
+
+## MVC
+@Controller
+@RequestMapping:  usada para mapear las URLs hacia métodos
+@PathVariable valores URI Path
+@RequestParam para valores Query Parameters(strings - path?pordId=10. )
+@RequestHeader("name") Parámetros  específicas cabeceras HTTP (request HTTP headers)
+@RequestBody argumento poblado con el valor del HTTP request body
+@ResponseBody  usado para peticiones del tipo AJAX y RESTful (XML, JSON)
+@SessionAttributes  Define atributos de sesión utilizados por un controlador
