@@ -1,5 +1,4 @@
 ## Inversion od control y Anotaciones
-
 @Autowired → injecta un bean en un atributo de un componente 
 @Required → indica que la injection es requerida
 @Qualifier(“nombre_bean”) → permite dar un indentificador a cada bean(implementacion)
@@ -18,7 +17,7 @@
 @Respository: para persistencia (DAO) componentes che accedena datos
 @Service:  lógica de negocio, ejemplo patrón Fachada y manejo de transacciones
 
-## MVC
+## WEB MVC
 @Controller
 @RequestMapping:  usada para mapear las URLs hacia métodos
 @PathVariable valores URI Path
