@@ -28,6 +28,14 @@
 @SessionAttributes  Define atributos de sesión utilizados por un controlador
 
 
+##  javax.persistence.*
+@Entity
+@Table(name = "name_table")
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "name", length = 20, nullable = false)
+	@NotEmpty	
+	@NotNull
 
 
 
