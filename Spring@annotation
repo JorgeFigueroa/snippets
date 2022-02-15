@@ -34,8 +34,8 @@
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "name", length = 20, nullable = false)
-	@NotEmpty	
-	@NotNull
+  @NotEmpty	
+  @NotNull
 
 
 
