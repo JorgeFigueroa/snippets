@@ -39,12 +39,13 @@ DROP DATABASE name_database;
 
 \c dbname username #connection database
 \l    #List databases
+\connect name_db
 \dt   #List tables
 \q    #esci
 
 pg_ctl restart/start/status -D "C:\Program Files\PostgreSQL\12\data"
 
-\connect name_db
+
 
 
 #https://mauriziosiagri.wordpress.com/it/postgresql/postgresql-comandi-utili/
