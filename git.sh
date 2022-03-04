@@ -4,7 +4,7 @@ C:\Windows\System32\drivers\etc
 git --version
 man git		#manual de git
 git --help comando  #ver ayuda de comandos
-git config --system core.longpaths true
+git config --system core.longpaths true  ## enabled long file name
 
 
 #Git batch registrar SSH keys
