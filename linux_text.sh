@@ -1,3 +1,5 @@
+cat /etc/os-release
+
 #Mostrar
 cat file       #todo
 cat -n file    #lineas numeradas
