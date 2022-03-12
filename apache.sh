@@ -6,6 +6,7 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 Apache24\bin\httpd.exe    --> http://localhost
 httpd.exe -k install    #install as a service. Open command prompt as Administrator
 services.msc            #start/stop the service:
+httpd -v
 httpd -h                # All Command line options:
 php -v
 
