@@ -1,2 +1,20 @@
+
+
 ## container con image postgres
-docker run -p 5432:5432 --name name_container -e POSTGRES_PASSWORD=pass -e POSTGRES_DB=nome_db -d postgres
+docker run -p 5432:5432 --name name_container -e POSTGRES_PASSWORD=pass -e POSTGRES_DB=nome_db -d postgres:version
+
+
+## container con image mysql
+docker run -p 3306:3306 --name name_container -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=name_db -d mysql:version
+
+
+## container con image rabbitmq
+docker run -p 15672:15672 -p 5672:5672 --name name_container  -d rabbitmq:version
+
+
+
+=== commandos
+docker stop $(docker ps -q)
+docker rm $(docker ps -a -q)
+docker start name_container
+docker logs -f name_container
