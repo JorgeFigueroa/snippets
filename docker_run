@@ -18,3 +18,7 @@ docker stop $(docker ps -q)
 docker rm $(docker ps -a -q)
 docker start name_container
 docker logs -f name_container
+
+
+
+
