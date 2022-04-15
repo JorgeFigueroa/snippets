@@ -1,4 +1,6 @@
 
+tree /F    # windows
+
 
 ping www.google.com
 nslookup      #name dominio
