@@ -18,6 +18,8 @@ iptables -L -v
 
 create user 'user'@'tuip' identified by 'Pass@123';
 FLUSH PRIVILEGES;
+SELECT * FROM mysql.user;
+
 
  mysql --version  --help
  mysql -u root -p
