@@ -1,4 +1,4 @@
-## WINDOWS
+### WINDOWS
 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads    vc_redist.x64.exe
 https://dev.mysql.com/downloads/windows/installer/8.0.html               Windows (x86, 32-bit), MSI Installer
 install:  MySql Server, MySql shell, MySql Documentation. Samples, MySql Workbench
@@ -8,7 +8,13 @@ SET PATH=C:\Program Files\MySQL\MySQL Server 8.0\bin;%PATH%
 /Library/Application Support/appsolute/MAMP PRO/db/mysql  #path db
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
 
-
+### Reset the MySQL Root Password
+systemctl stop mysql
+mysqld_safe --skip-grant-tables &
+mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MY_NEW_PASSWORD';
+FLUSH PRIVILEGES;
+restart server
 
 ##### MYSQL TERMINAL
 ssh -L 3333:localhost:3306 username@hostname
