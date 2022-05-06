@@ -93,10 +93,12 @@ pwd         #mostrar ruta
 clear       #limpiar
 history     #lista de comando usados
 
-mkdir  dirname          #crear carpeta
-mkdir -p dir/subdir      #crear subcarpetas
-touch file.txt          #crearFile
-echo hola mundo >> file.txt #agregar testo
+mkdir  dirname              # crear carpeta
+mkdir -p dir/subdir         # crear subcarpetas
+touch file.txt              # crearFile
+echo hola mundo >> file.txt # agregar testo
+ln -s nome_file nome_enlace # crear enlace simbolico
+rm nome_enlace              # remover enlace simbolico
 
 cp -r dir otroDir       #copiar carpeta modo recursivo
 cp -p file fileB
@@ -150,6 +152,5 @@ nano ~/.bash_profile  #variables de entorno
 
 iconv -f "windows-1252" -t "UTF-8" import.csv -o new_import.csv    #cambiar encoding
 
-ln -s nome_file nome_enlace # enlace simbolico
 
 
