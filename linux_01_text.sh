@@ -150,4 +150,6 @@ nano ~/.bash_profile  #variables de entorno
 
 iconv -f "windows-1252" -t "UTF-8" import.csv -o new_import.csv    #cambiar encoding
 
+ln -s nome_file nome_enlace # enlace simbolico
+
 
