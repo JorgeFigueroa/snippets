@@ -97,7 +97,7 @@ services.msc
 
 
 
-## SSL HTTPS
+## CREAR CERTIFICADO AUTOFIRMADO SSL 
 Instalar openSSL
 openssl genrsa -out ca.key 2084 #Generar Llave privada
 openssl req -new -key ca.key -out ca.csr	#Generar Archivo CSR 
