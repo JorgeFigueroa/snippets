@@ -1,6 +1,6 @@
 
 
-#Utenti e Gruppi permisos
+## UTENTI E GRUPPI PERMESSI
 /etc/passwd       #List All Users
 awk -F':' '{ print $1}' /etc/passwd     #List All Users
 /etc/shells       #list shell disponibile per user
@@ -25,7 +25,9 @@ groupdel name_group
 groupmod name_group -g 1002
 
 
-### Permessi di file e cartelle
+
+
+### PERMESSI FILE E CARTELLE
 groups #lista dei gruppi a cui appartiene l’utente
 chmod  #modifca i permessi di un flee/cartella
 chown  #modifca il proprietario di un flee/cartella
