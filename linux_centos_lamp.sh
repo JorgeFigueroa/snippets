@@ -10,13 +10,20 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-
 #apache centos 7
 yum install php71-php-mcrypt.x86_64   httpd
 httpd -V
-systemctl httpd: start, enable, status, restart
+/etc/httpd/conf/httpd.conf
+
 firewall-cmd --zone=public --permanent --add-service=http
+systemctl [enable, start, status, reload]  firewalld
+
+systemctl httpd: [start, enable, status, restart]
+apachectl [status, configtest, graceful]
+service [start, restart, reload] httpd
+chkconfig httpd on
+
 /etc/init.d/php7-fpm restart
 
-systemctl enable start status reload  firewalld
-
-
+service mysqld  [start, status, enable]
+chkconfig  mysqld  on
 
 
 #centos 6
@@ -25,21 +32,14 @@ service network:  restart, status
 service iptables  stop
 chkconfig iptables  off
 
-#apache
-/etc/httpd/conf/httpd.conf
-apachectl: status, configtest, graceful
-service start, restart, reload: httpd
-chkconfig httpd on
+
 
 nano /etc/hosts
 
 
-service mysqld:  start, status, enable
-chkconfig  mysqld  on
 
 ps aux | grep java
 kill -9 pid
-
 
 java -jar file.jar
 nohup java -jar file.jar > /dev/null &
@@ -53,7 +53,6 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 /etc/fstab  #lista dei dispositivi da montare al boot
 df -h   #Spazio libero sul sistema
 du -hs  #Spazio occupato della cartella
-
 
 
 env   #mostra variabili di ambiente
