@@ -71,7 +71,7 @@ sort nome_file.csv  | sort | uniq -d  #Script to find duplicates in a csv file
 
 
 
-######################################### LINUX SHELL
+
 #SISTEMA FICHEROS
 cd ~        #regresar  /
 cd -        #regresa a directorio anterior
@@ -128,9 +128,9 @@ purge       #liberar memoria
 
 
 
-top 1	              #mostrar procesos
+top 1	                #mostrar procesos
 ps -fe | grep res     #processi
-kill -9  25274   #kill  matar processi
+kill -9  25274        #kill  matar processi
 
 
 ping 192.168.1.1   #comprobar IP esta respondiendo 
@@ -139,6 +139,8 @@ netstat     #mostrar estado red
 top         #mostrar todos los procesos
 iptables -L -n -v  #1. Displaying the Status of Your Firewall  https://www.cyberciti.biz/tips/linux-iptables-examples.html
 
+
+
 ssh root@IP    #conectar a servidor
 rsync -rv jorge@IP:/var/www/build/path/vendor .
 ftp hostname
@@ -146,6 +148,6 @@ nano /private/etc/hosts #path Hosts
 nano ~/.bash_profile  #variables de entorno
 
 
-iconv -f "windows-1252" -t "UTF-8" import.csv -o new_import.csv
+iconv -f "windows-1252" -t "UTF-8" import.csv -o new_import.csv    #cambiar encoding
 
 crontab -l
