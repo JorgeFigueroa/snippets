@@ -1,6 +1,6 @@
 
 
-## UTENTI E GRUPPI PERMESSI
+### UTENTI E GRUPPI PERMESSI
 /etc/passwd       #List All Users
 awk -F':' '{ print $1}' /etc/passwd     #List All Users
 /etc/shells       #list shell disponibile per user
