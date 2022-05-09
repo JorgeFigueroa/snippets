@@ -99,11 +99,11 @@ services.msc
 
 ## CREAR CERTIFICADO AUTOFIRMADO SSL 
 Instalar openSSL
-openssl genrsa -out ca.key 2084 #Generar Llave privada
+openssl genrsa -out chiave.key 2084 #Generar Llave privada
 openssl req -new -key ca.key -out ca.csr	#Generar Archivo CSR 
-openssl x509 -req -days 90 -in ca.csr -signkey ca.key -out ca.crt	#Generar Certificado 
+openssl x509 -req -days 90 -in ca.csr -signkey chiave.key -out certificato.crt	#Generar Certificado 
 
-openssl req -nodes -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 -subj /CN=nomedominio.com
+openssl req -nodes -x509 -newkey rsa:4096 -keyout chiave.key -out certificato.crt -days 365 -subj /CN=nomedominio.com
 
 #C:\Apache24\conf\httpd.conf
 LoadModule ssl_module modules/mod_ssl.so
