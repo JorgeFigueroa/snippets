@@ -5,4 +5,5 @@ python3 --version
 
 python
   exit()
+python -h   #help
 
