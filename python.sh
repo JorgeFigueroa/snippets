@@ -7,3 +7,5 @@ python
   exit()
 python -h   #help
 
+pip --version
+
