@@ -13,4 +13,5 @@ pip --version
 pip install ipython
 python -m pip show ipython
 python -m IPython
+exit
 
