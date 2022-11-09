@@ -19,3 +19,7 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 df -h   #Spazio libero sul sistema
 du -hs  #Spazio occupato della cartella
 
+
+netstat -tnlp | grep :22222
+netstat -na | grep 8080 | grep ESTABLISHED
+netstat -na | grep 443 | grep ESTABLISHED
