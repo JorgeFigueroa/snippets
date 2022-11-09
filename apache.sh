@@ -133,7 +133,7 @@ Include conf/extra/httpd-ssl.conf
 
 
 
-netstat -tnlp | grep apache
+netstat -tnlp | grep apache	# porte in ascolto di apache
 
 
 
