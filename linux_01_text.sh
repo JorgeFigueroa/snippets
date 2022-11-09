@@ -113,13 +113,14 @@ rm -f *.log     #eliminar varios file mismo type
 
 
 #https://www.tecmint.com/18-tar-command-examples-in-linux/
+tar -cfz nome_file.tgz nome_file.log    #compress
 tar -cvf file.tar /dir    #descompres tar Archive File
 tar –xvzf  archive.tgz		#decomprimere
 tar -xvzf archive.tar.gx -C archive_dir 	#decomprimere to dir
 tar -tvf filename.tar   #view content
 
 bzip2 -d       test.txt.bz2
-zip ./nome_file.zip nome_file.log
+zip ./nome_file.zip nome_file.log  #compress file
 zip -r dump.zip dump/   #compress folder
 unzip file.zip          #decompress
 zcat nome_file.zip
