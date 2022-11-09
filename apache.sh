@@ -133,7 +133,7 @@ Include conf/extra/httpd-ssl.conf
 
 
 
-
+netstat -tnlp | grep apache
 
 
 
