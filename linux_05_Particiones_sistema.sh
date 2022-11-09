@@ -21,5 +21,6 @@ du -hs  #Spazio occupato della cartella
 
 
 netstat -tnlp | grep :22222
+netstat -tnlp | grep apache
 netstat -na | grep 8080 | grep ESTABLISHED # view user conected
 netstat -na | grep 443 | grep ESTABLISHED  # view user conected
