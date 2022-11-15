@@ -3,3 +3,20 @@ $ aws configure
 AWS Access Key ID [None]: ***************
 AWS Secret Access Key [None]: **********************
 Default region name [None]: us-west-2
+
+
+### SEVERLESS
+https://www.serverless.com/framework/docs/getting-started
+npm install -g serverless
+serverless config credentials --provider aws --profile strudent1 --key *********** --secret *************
+serverless create --template aws-nodejs --name name_project
+serverless deploy --verbose
+serverless logs -f 
+
+
+
+
+nvm use 16.13.2
+npm install -g aws-cdk
+cdk –version
+cdk bootstrap aws://ID_ACCOUNT_AWS/eu-west-1
