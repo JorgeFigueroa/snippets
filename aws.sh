@@ -25,6 +25,7 @@ cdk bootstrap aws://ID_ACCOUNT_AWS/eu-west-1
 cdk init --language typescript
 cdk synth  #crea la cartella cdk.out che contiene json di cloudformation compilado
 cdk deploy
+cdk destroy
 
 
 npm install @aws-cdk/aws-lambda
