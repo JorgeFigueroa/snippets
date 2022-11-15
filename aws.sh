@@ -13,6 +13,7 @@ serverless config credentials --provider aws --profile strudent1 --key *********
 serverless create --template aws-nodejs --name name_project
 serverless deploy --verbose
 serverless logs -f 
+sls logs -f name_project -t
 serverless remove 
 
 
