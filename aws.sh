@@ -8,11 +8,12 @@ Default region name [None]: us-west-2
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
 npm install -g serverless
+npm init -y
 serverless config credentials --provider aws --profile strudent1 --key *********** --secret *************
 serverless create --template aws-nodejs --name name_project
 serverless deploy --verbose
 serverless logs -f 
-
+serverless remove 
 
 
 
