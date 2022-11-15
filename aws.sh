@@ -20,3 +20,6 @@ nvm use 16.13.2
 npm install -g aws-cdk
 cdk –version
 cdk bootstrap aws://ID_ACCOUNT_AWS/eu-west-1
+cdk init --language typescript
+
+npm install @aws-cdk/aws-lambda
