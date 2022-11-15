@@ -16,7 +16,7 @@ serverless logs -f
 serverless remove 
 
 
-
+### CDK
 nvm use 16.13.2
 npm install -g aws-cdk
 cdk –version
