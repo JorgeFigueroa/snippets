@@ -2,6 +2,7 @@
 
 ## container con image postgres
 docker run -p 5432:5432 --name name_container -e POSTGRES_PASSWORD=pass -e POSTGRES_DB=nome_db -d postgres:version
+docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=pas -d postgres
 
 
 ## container con image mysql
