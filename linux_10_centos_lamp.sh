@@ -39,7 +39,7 @@ nano /etc/hosts
 
 
 ps aux | grep java
-kill -9 pid
+kill -9 PID
 killall -e COMMAND
 
 java -jar file.jar
