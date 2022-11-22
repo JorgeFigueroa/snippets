@@ -7,6 +7,9 @@ ps aux|grep cron  #check process cron
 crontab -l        #list cron
 crontab -e        #edit cron
 crontab -u root -e
+
+minute(s) hour(s) day(s) month(s) weekday(s) command(s)
+
 0 */2 * ? * *  /path/script.sh >> /path/log.log
 
 0 */2 * ? * *	  #Every 2 minutes
