@@ -40,6 +40,7 @@ nano /etc/hosts
 
 ps aux | grep java
 kill -9 pid
+killall -e COMMAND
 
 java -jar file.jar
 nohup java -jar file.jar > /dev/null &
