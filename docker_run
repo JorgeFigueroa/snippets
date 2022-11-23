@@ -13,6 +13,9 @@ docker run -p 3306:3306 --name name_container -e MYSQL_ROOT_PASSWORD=pass -e MYS
 docker run -p 15672:15672 -p 5672:5672 --name name_container  -d rabbitmq:version
 
 
+docker run -dit --name my-ubuntu -p 8080:8080   ubuntu:16.04
+
+
 
 === commandos
 docker stop $(docker ps -q)
