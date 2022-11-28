@@ -55,6 +55,9 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 df -h   #Spazio libero sul sistema
 du -hs  #Spazio occupato della cartella
 
+### liberar spazio en disco
+du -h /var/cache/apt/archives/
+apt-get clean
 
 env   #mostra variabili di ambiente
 echo $PATH
