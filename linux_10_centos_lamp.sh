@@ -56,6 +56,7 @@ df -h   #Spazio libero sul sistema
 du -hs  #Spazio occupato della cartella
 
 ### liberar spazio en disco
+ls -ltr --block-size=M
 du -h --max-depth=1 | sort -hr
 du -h /var/cache/apt/archives/
 apt-get clean
