@@ -58,6 +58,9 @@ du -hs  #Spazio occupato della cartella
 ### liberar spazio en disco
 du -h /var/cache/apt/archives/
 apt-get clean
+apt-get auto-clean
+apt-get auto-remove
+apt-get purge
 
 env   #mostra variabili di ambiente
 echo $PATH
