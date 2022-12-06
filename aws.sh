@@ -11,6 +11,8 @@ npm install -g serverless
 npm init -y
 serverless -v
 serverless config credentials --provider aws --profile strudent1 --key *********** --secret *************
+cat ~/.aws/credentials
+
 serverless create --template aws-nodejs --name name_project
 serverless deploy --verbose
 serverless logs -f 
