@@ -14,6 +14,7 @@ serverless config credentials --provider aws --profile strudent1 --key *********
 cat ~/.aws/credentials
 
 serverless create --template aws-nodejs --name name_project
+sls create -t nome_template -n name_project
 serverless deploy --verbose
 serverless logs -f 
 serverless logs -f name_project -t
