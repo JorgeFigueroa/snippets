@@ -16,6 +16,9 @@ cat ~/.aws/credentials
 serverless create --template aws-nodejs --name name_project
 sls create -t nome_template -n name_project
 serverless deploy --verbose
+sls invoke -f name -s dev
+sls invoke local -f name -s dev
+
 serverless logs -f 
 serverless logs -f name_project -t
 serverless remove 
