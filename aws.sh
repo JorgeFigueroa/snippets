@@ -7,6 +7,7 @@ Default region name [None]: us-west-2
 
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
+https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
 npm install -g serverless
 npm init -y
 serverless -v
