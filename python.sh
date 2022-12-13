@@ -10,6 +10,7 @@ python -h   #help
 pip --version
 pip list
 pip freeze > requirements.txt
+pip install -r requirements.txt
 
 ###  iPython on Windows
 pip install ipython
