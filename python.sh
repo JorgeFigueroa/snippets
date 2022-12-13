@@ -8,10 +8,20 @@ python
 python -h   #help
 
 pip --version
+pip list
 
 ###  iPython on Windows
 pip install ipython
 python -m pip show ipython
 python -m IPython
+
 exit
 
+
+
+### venv
+python -m venv v_env
+cd v_env/bin  ## linux
+cd v_env/Script  ## win
+  activate
+  deactivate
