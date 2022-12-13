@@ -11,9 +11,11 @@ pip --version
 pip list
 pip freeze > requirements.txt
 pip install -r requirements.txt
-pip install --no-cache-dir urllib.request
+pip install --no-cache-dir libreria
 pip clean
 
+
+pip install jupyter
 
 ###  iPython on Windows
 pip install ipython
