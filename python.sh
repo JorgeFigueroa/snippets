@@ -23,7 +23,7 @@ exit
 
 ### venv
 python -m venv v_env
-cd v_env/bin  ## linux
-cd v_env/Script  ## win
-  activate
+venv/bin/activate  ## osx
+source venv/bin/activate  ## linux
+venv/Script/activate  ## win
   deactivate
