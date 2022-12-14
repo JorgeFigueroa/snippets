@@ -52,10 +52,11 @@ lsblk -a  #lista dispositivia blocchi
 mount /dev/sr0 /path/destinazione  #Montare il lettore cd virtuale
 umount /dev/sr0  #Smontare il lettore cd virtuale
 /etc/fstab  #lista dei dispositivi da montare al boot
-df -h   #Spazio libero sul sistema
-du -hs  #Spazio occupato della cartella
+
 
 ### liberar spazio en disco
+df -h   #Spazio libero sul sistema
+du -hs  #Spazio occupato della cartella
 ls -ltr --block-size=M
 du -h --max-depth=1 | sort -hr
 du -h /var/cache/apt/archives/
