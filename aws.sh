@@ -5,6 +5,12 @@ AWS Secret Access Key [None]: **********************
 Default region name [None]: us-west-2
 
 
+### https://aws.amazon.com/es/cli/
+aws s3 ls
+aws s3 ls  s3://nome_bucket
+aws s3 cp image.png s3://nome_bucket
+
+
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
 https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
