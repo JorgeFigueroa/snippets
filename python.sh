@@ -30,7 +30,7 @@ exit
 python -m venv venv
 venv/bin/activate  ## osx
 source venv/bin/activate  ## linux
-venv/Script/activate  ## win
+venv\Scripts\activate  ## win
   deactivate
 
 
