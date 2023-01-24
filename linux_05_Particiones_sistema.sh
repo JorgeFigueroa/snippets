@@ -18,6 +18,7 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 /etc/fstab  #lista dei dispositivi da montare al boot
 df -h   #Spazio libero sul sistema
 du -hs  #Spazio occupato della cartella
+ls -lh  #show their sizes in human-readable format (MB)
 
 
 netstat -tnlp | grep :22222
