@@ -10,6 +10,9 @@ aws s3 ls
 aws s3 ls  s3://nome_bucket
 aws s3 cp image.png s3://nome_bucket
 
+aws dynamodb list-tables
+aws dynamodb scan --table-name nome_table
+
 
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
