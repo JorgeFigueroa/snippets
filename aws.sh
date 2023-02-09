@@ -9,6 +9,8 @@ Default region name [None]: us-west-2
 aws s3 ls
 aws s3 ls  s3://nome_bucket
 aws s3 cp image.png s3://nome_bucket
+aws codecommit list-repositories
+aws ecr describe-repositories  ## lista lambda
 
 aws dynamodb list-tables
 aws dynamodb scan --table-name nome_table
