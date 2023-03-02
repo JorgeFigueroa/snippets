@@ -4,6 +4,8 @@ AWS Access Key ID [None]: ***************
 AWS Secret Access Key [None]: **********************
 Default region name [None]: us-west-2
 
+aws configure list
+
 
 ### https://aws.amazon.com/es/cli/
 aws s3 ls
