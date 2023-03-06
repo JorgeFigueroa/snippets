@@ -6,6 +6,7 @@ Default region name [None]: us-west-2
 
 aws configure list
 
+awslogs get /my-log-group ALL --watch  --profile name_profile
 
 ### https://aws.amazon.com/es/cli/
 aws s3 ls
