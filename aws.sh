@@ -18,6 +18,7 @@ aws ecr describe-repositories  ## lista lambda
 
 aws dynamodb list-tables
 aws dynamodb list-tables --region name_region
+aws dynamodb scan --table-name TABLE_NAME --region REGION --max-items 10
 aws dynamodb scan --table-name nome_table
 
 
