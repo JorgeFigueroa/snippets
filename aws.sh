@@ -17,6 +17,7 @@ aws lambda list-functions
 aws ecr describe-repositories  ## lista lambda
 
 aws dynamodb list-tables
+aws dynamodb list-tables --region name_region
 aws dynamodb scan --table-name nome_table
 
 
