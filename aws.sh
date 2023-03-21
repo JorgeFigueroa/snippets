@@ -21,6 +21,7 @@ aws dynamodb list-tables --region name_region
 aws dynamodb scan --table-name TABLE_NAME --region REGION --max-items 10
 aws dynamodb scan --table-name nome_table
 
+aws iam list-roles --region name_region
 
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
