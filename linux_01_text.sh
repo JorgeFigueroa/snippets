@@ -65,9 +65,9 @@ echo 'testo' >> file.txt    #append  text to file
 
 sort -nr    #ordenar
 sort -r     #odernar de modo inverso
+sort nome_file.csv  | sort | uniq -d  #Script to find duplicates in a csv file
 unique      #muestra los unicos
 open
-sort nome_file.csv  | sort | uniq -d  #Script to find duplicates in a csv file
 
 
 
@@ -133,24 +133,6 @@ purge       #liberar memoria
 
 
 
-top 1	                #mostrar procesos
-ps -fe | grep res     #processi
-kill -9  25274        #kill  matar processi
-pkill -f nome_ruta_file
-
-
-
-ping 192.168.1.1   #comprobar IP esta respondiendo 
-ping 8.8.8.8   #comprobar si tienes internet con ip google
-netstat     #mostrar estado red
-top         #mostrar todos los procesos
-iptables -L -n -v  #1. Displaying the Status of Your Firewall  https://www.cyberciti.biz/tips/linux-iptables-examples.html
-
-
-
-ssh root@IP    #conectar a servidor
-rsync -rv jorge@IP:/var/www/build/path/vendor .
-ftp hostname
 nano /private/etc/hosts #path Hosts
 nano ~/.bash_profile  #variables de entorno
 
