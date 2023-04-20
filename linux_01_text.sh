@@ -136,6 +136,8 @@ purge       #liberar memoria
 top 1	                #mostrar procesos
 ps -fe | grep res     #processi
 kill -9  25274        #kill  matar processi
+pkill -f nome_ruta_file
+
 
 
 ping 192.168.1.1   #comprobar IP esta respondiendo 
