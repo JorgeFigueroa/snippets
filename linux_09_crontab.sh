@@ -1,12 +1,14 @@
 sudo apt install cron
-sudo systemctl enable --now cron
+systemctl enable --now cron
 ls /var/spool/cron/crontabs
 
 ### Cron e Schedulazioni
 ps aux|grep cron  #check process cron
 crontab -l        #list cron
 crontab -e        #edit cron
-crontab -u root -e
+crontab -u <nombre_de_usuario> -e
+crontab -l -u <nombre_de_usuario>
+
 
 minute(s) hour(s) day(s) month(s) weekday(s) command(s)
 
