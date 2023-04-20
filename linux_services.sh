@@ -1,6 +1,10 @@
 systemctl list-unit-files --type=service
 systemctl list-unit-files --type=service | grep enabled
 
-sudo systemctl disable <nombre_del_servicio>
-sudo systemctl enable <nombre_del_servicio>
-sudo systemctl start <nombre_del_servicio>
+systemctl disable <nombre_del_servicio>
+systemctl enable <nombre_del_servicio>
+systemctl start <nombre_del_servicio>
+
+
+kill -9  numero_process        #kill  matar processi
+pkill -f nome_ruta_file
