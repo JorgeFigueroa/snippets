@@ -7,10 +7,20 @@ systemctl start <nombre_del_servicio>
 
 top 1	                #mostrar procesos
 ps -fe | grep res     #filtar processi
+ps -A | wc -l         #contar procesos
+ps fax                #ver procesos
+
+
+/etc/security/limits.conf > user hard nproc 300
+ulimit -a           # lista info (max user processes)
+
+
 kill -9  numero_process        #kill  matar processi
 pkill -f nome_ruta_file         #killar processo en base la ruta del file
 
 killall -e COMMAND
+killall -KILL -u user  #uscide procesos del usuario
+
 
 java -jar file.jar
 nohup java -jar file.jar > /dev/null &
