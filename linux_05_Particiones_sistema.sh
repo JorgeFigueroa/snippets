@@ -20,8 +20,9 @@ df -h	# report file system disk space usage
 du -hs  #Spazio occupato della cartella
 du -h --max-depth=1 | sort -hr
 du -h /var/cache/apt/archives/
-du -sh /*  # verifica cuanto spacio ocupa los directorios
+du -sh ./* | sort -hr   # verifica cuanto spacio ocupa los directorios ordenados por tamano
 du -sh /var/*
+
 
 ls -ltr --block-size=M
 ls -lh  #show their sizes in human-readable format (MB)
