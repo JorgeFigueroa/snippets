@@ -6,8 +6,7 @@ kubectl version
 kubectl version --client
 
 brew install minikube
-minikube start / stop
-minikube status
+minikube start / stop / status
 minikube dashboard --url
   http://127.0.0.1:58553/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
  
