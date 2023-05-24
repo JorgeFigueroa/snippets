@@ -10,13 +10,12 @@ minikube start / stop / status
 minikube dashboard --url
   http://127.0.0.1:58553/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
  
-
-docker ps # IMAGE gcr.io/k8s-minikube/kicbase:v0.0.3
+docker ps # muestra contenedor con la imagen de minikube 
 
 
 ##
 kubectl run kbillingapp --image=sotobotero/udemy-devops:0.0.1 --port=80 80 # crear pod da image en dockerhub
-kubectl get pods                 # listar pods
+kubectl get pods         # listar pods
 kubectl describe pod kbillingapp
 
 
