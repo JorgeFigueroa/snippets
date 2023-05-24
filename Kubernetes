@@ -1,0 +1,15 @@
+## MAC
+sysctl -a | grep -E --color 'machdep.cpu.features|VMX'   #check if virtualization is supported on macOS
+
+brew install kubernetes-cli
+kubectl version
+kubectl version --client
+
+brew install minikube
+minikube start 
+minikube status
+
+
+
+
+
