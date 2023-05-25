@@ -16,19 +16,19 @@ docker ps # muestra contenedor con la imagen de minikube
 ##
 kubectl run kbillingapp --image=sotobotero/udemy-devops:0.0.1 --port=80 80       #Crear POD da image en dockerhub
 kubectl expose pod kbillingapp --type=LoadBalancer --port 8080 --target-port=80  #Crear servicio
-
 kubectl get pods         # listar pods
 kubectl get services     # listar servicios
 kubectl describe service kbillingapp
 kubectl describe pod kbillingapp
 
 
-
 minikube service kbillingapp   #Obtener la ipexterna del servicio en minikube
+minikube service --url kbillingapp
+  http://127.0.0.1:59065
 
-kubectl logs kbillingapp.      #Obtener los logs de un servicio
-kubectl delete service kbillingapp. #Eliminar un pod
-kubectl delete service kbillingapp. #Eliminar un servicio
+kubectl logs kbillingapp.      #Obtener logs de un servicio
+kubectl delete service kbillingapp. #Eliminar  pod
+kubectl delete service kbillingapp. #Eliminar  servicio
 kubectl api-versions. #Consultar la version del apiserver
 
 Codificar un parametro
