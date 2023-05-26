@@ -32,7 +32,11 @@ apt-get auto-clean
 apt-get auto-remove
 apt-get purge
 
-
+##procesador y la RAM
+top
+htop
+free -h
+kill -9 PID
 
 #LIBERAR MEMORIA RAM
 watch -n 1 free -m
