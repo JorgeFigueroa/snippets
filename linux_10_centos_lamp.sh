@@ -11,6 +11,7 @@ yum install php71-php-mcrypt.x86_64   httpd
 /etc/httpd/conf/httpd.conf
 
 firewall-cmd --zone=public --permanent --add-service=http
+
 systemctl [enable, start, status, reload]  firewalld
 systemctl httpd: [start, enable, status, restart]
 apachectl [status, configtest, graceful]
