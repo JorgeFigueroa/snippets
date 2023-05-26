@@ -4,17 +4,13 @@ systemctl list-unit-files --type=service | grep enabled
 systemctl disable /enable / start <nombre_del_servicio>
 
 
-
 /etc/security/limits.conf > user hard nproc 300
 ulimit -a           # lista info (max user processes)
 
 
 
-
-
 java -jar file.jar
 nohup java -jar file.jar > /dev/null &
-
 
 
 #Administración de software UBUNTU
@@ -27,11 +23,7 @@ apt-get install aptitude
 aptitude update
 aptitude --help
 aptitude search, install:  paquete
-aptitude install build-essential libssl-dev
-aptitude install  nginx  mongodb  php7.2-cli mysql-server php7.2-fpm  php7.2-mysql
-
 man aptitude
-
 
 
 
