@@ -36,12 +36,6 @@ aptitude install  nginx  mongodb  php7.2-cli mysql-server php7.2-fpm  php7.2-mys
 
 man aptitude
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-source ~/.profile
-nvm ls-remote
-nvm install 6.11.2
-nvm ls
-nvm use 6.11.2
 
 
 
