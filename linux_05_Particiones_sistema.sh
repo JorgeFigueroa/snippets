@@ -42,7 +42,10 @@ ps fax                #ver procesos
 htop            #processos modo amigable
 free -h         #cantidad total de RAM libre y usada en el sistema 
 kill -9 PID     #matar proceso
-
+kill -9  numero_process        #kill  matar processi
+pkill -f nome_ruta_file         #killar processo en base la ruta del file
+killall -e COMMAND
+killall -KILL -u user  #uscide procesos del usuario
 
 #LIBERAR MEMORIA RAM
 watch -n 1 free -m
