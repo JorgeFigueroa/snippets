@@ -9,11 +9,7 @@ systemctl disable /enable / start <nombre_del_servicio>
 ulimit -a           # lista info (max user processes)
 
 
-kill -9  numero_process        #kill  matar processi
-pkill -f nome_ruta_file         #killar processo en base la ruta del file
 
-killall -e COMMAND
-killall -KILL -u user  #uscide procesos del usuario
 
 
 java -jar file.jar
