@@ -34,6 +34,11 @@ apt-get purge
 
 ##procesador y la RAM
 top             # procesos
+top 1	                #mostrar procesos
+ps -fe | grep res     #filtar processi
+ps -A | wc -l         #contar procesos
+ps fax                #ver procesos
+
 htop            #processos modo amigable
 free -h         #cantidad total de RAM libre y usada en el sistema 
 kill -9 PID     #matar proceso
