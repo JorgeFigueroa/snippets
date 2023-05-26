@@ -33,10 +33,11 @@ apt-get auto-remove
 apt-get purge
 
 ##procesador y la RAM
-top
-htop
-free -h
-kill -9 PID
+top             # procesos
+htop            #processos modo amigable
+free -h         #cantidad total de RAM libre y usada en el sistema 
+kill -9 PID     #matar proceso
+
 
 #LIBERAR MEMORIA RAM
 watch -n 1 free -m
