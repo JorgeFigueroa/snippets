@@ -12,6 +12,9 @@ awslogs get /my-log-group ALL --watch  --profile name_profile
 aws s3 ls
 aws s3 ls  s3://nome_bucket
 aws s3 cp image.png s3://nome_bucket
+aws --profile nome_profile s3 cp /path s3://nome_bucket/path --recursive
+aws --profile nome_profile s3 sync /path s3://nome_bucket/path
+
 aws codecommit list-repositories
 aws lambda list-functions
 aws ecr describe-repositories  ## lista lambda
