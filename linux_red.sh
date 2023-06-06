@@ -2,6 +2,7 @@ iptables -L -n -v  #1. Displaying the Status of Your Firewall  https://www.cyber
 
 ssh user@IP    #conectar a servidor
 ssh -i certificato.pem user@IP -pNUMERO_PORT
+scp -P PORT -r -i path/key.pem /path_local user@destination:/path_destination
 rsync -rv jorge@IP:/var/www/build/path/vendor .
 ftp hostname
 
