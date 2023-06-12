@@ -11,6 +11,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-
 ### Reset the MySQL Root Password
 systemctl stop mysql
 mysqld_safe --skip-grant-tables &
+mysqld_safe --skip-grant-tables --skip-networking &
+
 mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MY_NEW_PASSWORD';
 FLUSH PRIVILEGES;
