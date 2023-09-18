@@ -23,6 +23,7 @@ du -h /var/cache/apt/archives/
 du -sh ./* | sort -hr   # verifica cuanto spacio ocupa los directorios ordenados por tamano
 du -sh /var/*
 
+lsof +L1  #mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
 
 ls -ltr --block-size=M
 ls -lh  #show their sizes in human-readable format (MB)
