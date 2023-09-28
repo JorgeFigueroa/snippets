@@ -27,3 +27,5 @@ ng g m modules/general/canvas --routing  ## crea modulo con routing
 
 #Disable CORS CHROME
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir="C:/ChromeDevSession"
+
+
