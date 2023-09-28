@@ -23,3 +23,7 @@ ng g s services/usuario
 ng g g  guards/auth   # crea guards
 ng g m folder/nome_modulo –flat     # crea modulo
 ng g m modules/general/canvas --routing  ## crea modulo con routing
+
+
+#Disable CORS CHROME
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir="C:/ChromeDevSession"
