@@ -1,3 +1,11 @@
+## INFO LINUX 
+cat /etc/os-release  #SO
+uname -a             #SO
+lscpu    #CPU
+free -h  #RAM
+df -h    #DISK
+lsblk    #PARTITION
+
 
 which dmesg
 man dmesg
