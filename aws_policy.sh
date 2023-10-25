@@ -23,7 +23,7 @@ aws dynamodb list-tables --region eu-south-1
             "Action": [
                 "dynamodb:ListTables"
             ],
-            "Resource": "arn:aws:dynamodb:eu-south-1:162229746485:table/*"
+            "Resource": "arn:aws:dynamodb:eu-south-1:Account_ID:table/*"
         }
     ]
 }
