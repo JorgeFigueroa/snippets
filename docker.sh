@@ -36,6 +36,7 @@ docker stats CONTAINER_ID
 docker logs  CONTAINER_ID -f
 docker logs CONTAINER_ID > C:\log.log
 
+docker exec CONTAINER_ID env  #variabli di ambiente
 docker exec -it CONTAINER_ID bash
 docker exec -it CONTAINER_ID bash  ## connect container 
   apt-get update
