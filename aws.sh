@@ -1,3 +1,8 @@
+#EC2 Instance Connect 
+ec2-user
+sudo su #root
+
+
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 $ aws configure
 AWS Access Key ID [None]: ***************
