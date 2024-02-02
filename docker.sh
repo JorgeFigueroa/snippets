@@ -9,6 +9,8 @@ docker images                      ## list images
 docker image rm <image id>            # Remove specified image from this machine
 docker image rm $(docker image ls -a -q)   # Remove all images from this machine
 docker rmi -f IMAGE_ID             ## remove image 
+docker image prune -a              ##elimina tutte le immagini non utilizzate, inclusi i layer intermedi non utilizzati da nessuna immagine costruita:
+
 
 docker run -p 5432:5432  --name name_db -e POSTGRES_PASSWORD=postgres -d postgres:9.3    #crea container con image postgress
 docker run -it  ubuntu:16.04 /bin/bash           # create container interactive con version
