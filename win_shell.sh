@@ -1,4 +1,5 @@
-
+start .    # open in explorer
+F:         # cambia unita
 tree /F    # windows
 
 
