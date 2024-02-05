@@ -2,6 +2,8 @@ sudo apt install cron
 systemctl enable --now cron
 ls /var/spool/cron/crontabs
 
+export VISUAL=nano; crontab -e
+
 ### Cron e Schedulazioni
 ps aux|grep cron  #check process cron
 crontab -l        #list cron
