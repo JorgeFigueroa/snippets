@@ -21,7 +21,7 @@ useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default
 
 useradd name_user               # create user
 usermod -aG sudo name_user      # add user to group admin
-usermod -g nameuser grupo       # change group a user
+usermod -g name_user grupo       # change group a user
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
@@ -35,6 +35,7 @@ groupmod name_group -g 1002
 
 ### PERMESSI FILE E CARTELLE
 groups #lista dei gruppi a cui appartiene l’utente
+groups name_user
 chmod  #modifca i permessi di un flee/cartella
 chown  #modifca il proprietario di un flee/cartella
 chgrp  #cambia il gruppo di un flee/cartella
