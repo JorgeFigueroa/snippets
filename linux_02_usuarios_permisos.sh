@@ -15,11 +15,16 @@ groups #nombre  grupo
 id  #info usuario
 
 export PATH=$PATH:/usr/sbin:/sbin  #agregar /usr/sbin y /sbin a tu PATH de manera temporal
-useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default
-useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default
+useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
+## Crea user sin Directorio Home, con Acceso de No-Login - para cuentas de servicio o procesos específicos y no para una sesión interactiva.
+useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   
+
+useradd name_user               # create user
+usermod -aG sudo name_user      # add user to group admin
 usermod -g nameuser grupo #change group a user
 userdel name_user -r  #delete user
 passwd name_user  tu_pass   #change pasword
+
 
 groupadd name_group 
 groupdel name_group
