@@ -14,6 +14,7 @@ whoami #nombre usuario
 groups #nombre  grupo
 id  #info usuario
 
+export PATH=$PATH:/usr/sbin:/sbin  #agregar /usr/sbin y /sbin a tu PATH de manera temporal
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default
 usermod -g nameuser grupo #change group a user
