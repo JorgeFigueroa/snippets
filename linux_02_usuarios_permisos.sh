@@ -34,8 +34,8 @@ cd ~/.ssh          # da la machina local
 ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
-ssh-copy-id -p numero_port  name_user@IP_REMOTO    #copia id_rsa.pub llave publica en el servidor ~/.ssh/authorized_keys
-ssh name_user@IP_REMOTO -p numero_port              # conect tramite ssh
+ssh-copy-id -p port  name_user@IP_REMOTO    #copia id_rsa.pub llave publica en el servidor ~/.ssh/authorized_keys
+ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
 curl ifconfig.me    # obtener la IP pública
 
