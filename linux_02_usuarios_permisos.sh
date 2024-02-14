@@ -22,15 +22,15 @@ source /root/.bashrc              #Para que los cambios tengan efecto inmediatam
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   ## Crea user sin Directorio, con Acceso de No-Login para cuentas de servicio o procesos, no para una sesión interactiva.
 
+adduser name_user
 useradd -m name_user            # create user
 usermod -aG sudo name_user      # add user to group admin
 usermod -g name_user grupo      # change group a user
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
-adduser name_user
 
-cd ~/.ssh          # da la machina local
+cd ~/.ssh          # machina local WIN o MAC
 ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
