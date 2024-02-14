@@ -32,9 +32,10 @@ adduser name_user
 
 cd ~/.ssh          # da la machina local
 ssh-keygen -t rsa -b 4096  ## generar llaves SSH
-ssh-copy-id -p numero_port  name_user@IP_REMOTO   #curl ifconfig.me    --> obtener la IP pública
+ssh-copy-id -p numero_port  name_user@IP_REMOTO    #invia la llave publica al servidor
 ssh name_user@IP_REMOTO -p numero_port
 
+curl ifconfig.me    # obtener la IP pública
 
 sudo nano /etc/ssh/sshd_config
   PasswordAuthentication no
