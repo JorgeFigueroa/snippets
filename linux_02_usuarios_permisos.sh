@@ -30,6 +30,11 @@ passwd name_user  tu_pass       # change pasword
 
 adduser name_user
 
+ssh-keygen -t rsa -b 4096  ## generar llaves SSH
+ssh-copy-id -p numero_port  name_user@IP
+curl ifconfig.me    #obtener la IP pública
+
+
 
 groupadd name_group 
 groupdel name_group
