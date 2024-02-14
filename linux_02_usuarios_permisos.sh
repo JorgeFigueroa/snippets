@@ -28,6 +28,8 @@ usermod -g name_user grupo      # change group a user
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
+adduser name_user
+
 
 groupadd name_group 
 groupdel name_group
