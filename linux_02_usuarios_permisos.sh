@@ -29,13 +29,20 @@ usermod -g name_user grupo      # change group a user
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
-
+## GENERATE KEY SSH
 cd ~/.ssh          # machina local WIN o MAC
-ssh-keygen -t rsa -b 4096 -f name_key
+ssh-keygen -t rsa -b 4096 -f name_key ## generar llaves publica y privada con nome custom
 ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
 ssh-copy-id -p port  name_user@IP_REMOTO    #copy key id_rsa.pub in server  /home/name_user/.ssh/authorized_keys
+ssh-copy-id -i nome_key_custom.pub utente@IP_REMOTO
+
+# caricare manualmente chiave publica
+scp nome_key.pub ssh old_user@IP_REMOTO:/home/old_user
+mkdir /home/name_user/.ssh
+cat nome_key_custom.pub >> /home/name_user/.ssh/authorized_keys
+
 ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
 curl ifconfig.me    # obtener la IP pública
