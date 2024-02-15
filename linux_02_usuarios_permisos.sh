@@ -11,7 +11,7 @@ sudo su #pasar a root
 sudo su –    # permessi root
 su user #cambia user
 whoami #nombre usuario
-groups #nombre  grupo
+groups # grupos del usuario
 id  #info usuario
 
 apt-get update
