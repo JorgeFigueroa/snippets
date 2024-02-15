@@ -22,7 +22,7 @@ source /root/.bashrc              #Para que los cambios tengan efecto inmediatam
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   ## Crea user sin Directorio, con Acceso de No-Login para cuentas de servicio o procesos, no para una sesión interactiva.
 
-adduser name_user
+adduser name_user               # create user
 useradd -m name_user            # create user
 usermod -aG sudo name_user      # add user to group admin
 usermod -g name_user grupo      # change group a user
@@ -34,7 +34,7 @@ cd ~/.ssh          # machina local WIN o MAC
 ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
-ssh-copy-id -p port  name_user@IP_REMOTO    #copia llave id_rsa.pub en server copia en /home/name_user/.ssh/authorized_keys
+ssh-copy-id -p port  name_user@IP_REMOTO    #copy key id_rsa.pub in server  /home/name_user/.ssh/authorized_keys
 ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
 curl ifconfig.me    # obtener la IP pública
