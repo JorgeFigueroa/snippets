@@ -31,6 +31,7 @@ passwd name_user  tu_pass       # change pasword
 
 
 cd ~/.ssh          # machina local WIN o MAC
+ssh-keygen -t rsa -b 4096 -f name_key
 ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
