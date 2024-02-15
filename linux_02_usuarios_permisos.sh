@@ -26,6 +26,9 @@ adduser name_user               # create user
 useradd -m name_user            # create user
 usermod -aG sudo name_user      # add user to group admin
 usermod -g name_user grupo      # change group a user
+sudo usermod -aG name_grupo $USER
+sudo gpasswd -d nome_utente nome_gruppo  #remove user to group
+sudo deluser nome_utente nome_gruppo     #remove user to group
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
