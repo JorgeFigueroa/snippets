@@ -4,12 +4,12 @@ sudo su #root
 
 
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-$ aws configure
+$ aws configure --profile name_profile
 AWS Access Key ID [None]: ***************
 AWS Secret Access Key [None]: **********************
 Default region name [None]: eu-west-1
 
-aws configure list
+aws configure list --profile name_profile
 
 awslogs get /my-log-group ALL --watch  --profile name_profile
 
@@ -23,6 +23,8 @@ aws --profile nome_profile s3 sync /path s3://nome_bucket/path
 aws codecommit list-repositories
 aws lambda list-functions
 aws ecr describe-repositories  ## lista lambda
+
+aws ec2 describe-instances --profile name_profile
 
 aws dynamodb list-tables
 aws dynamodb list-tables --region name_region
