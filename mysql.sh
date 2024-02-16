@@ -9,13 +9,19 @@ SET PATH=C:\Program Files\MySQL\MySQL Server 8.0\bin;%PATH%
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
 
 ### Reset the MySQL Root Password
-systemctl stop mysql
-mysqld_safe --skip-grant-tables &
-mysqld_safe --skip-grant-tables --skip-networking &
-
+sudo systemctl stop mysql
+sudo mysqld_safe --skip-grant-tables &
+#mysqld_safe --skip-grant-tables --skip-networking &
 mysql -u root
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'MY_NEW_PASSWORD';
 FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MY_NEW_PASSWORD';
+EXIT;
+
+sudo kill `cat /var/run/mysqld/mysqld.pid`
+sudo systemctl start mysql
+
+ps aux | grep mysql
+kill -9 PID
 restart server
 
 ##### MYSQL TERMINAL
