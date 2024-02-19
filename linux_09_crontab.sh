@@ -11,6 +11,8 @@ crontab -e        #edit cron
 crontab -u <nombre_de_usuario> -e
 crontab -l -u <nombre_de_usuario>
 
+sudo systemctl stop cron
+sudo systemctl disable cron
 
 minute(s) hour(s) day(s) month(s) weekday(s) command(s)
 
