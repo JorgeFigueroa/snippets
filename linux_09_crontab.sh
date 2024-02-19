@@ -10,6 +10,8 @@ crontab -l        #list cron
 crontab -e        #edit cron
 crontab -u <nombre_de_usuario> -e
 crontab -l -u <nombre_de_usuario>
+crontab -r    #deshabilitar task de cron para un usuario
+
 
 sudo systemctl stop cron
 sudo systemctl disable cron
