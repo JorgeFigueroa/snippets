@@ -26,7 +26,7 @@ sudo systemctl restart cron
 
 minute(s) hour(s) day(s) month(s) weekday(s) command(s)
 
-0 */2 * ? * *  /path/script.sh >> /path/log.log
+0 * * * *  /path/script.sh >/path/log.log 2>>/path/log.err
 
 0 */2 * ? * *	  #Every 2 minutes
 0 */30 * ? * *	#Every 30 minutes
