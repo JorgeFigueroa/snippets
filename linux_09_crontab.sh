@@ -19,6 +19,10 @@ crontab -r    #deshabilitar task de cron para un usuario
 
 sudo systemctl stop cron
 sudo systemctl disable cron
+sudo systemctl reload cron
+sudo systemctl restart cron
+
+
 
 minute(s) hour(s) day(s) month(s) weekday(s) command(s)
 
