@@ -64,25 +64,36 @@ sudo service ssh restart
 
 
 ### PERMESSI FILE E CARTELLE
+chown user:grupo /dir        # Cambia el propietario y grupo de /dir
+chown -R user:grupo /dir     # Cambio recursivo de propietario y grupo en /dir
+
+# user - group - others
+drw - r - r    # lectura, escritura - leer - leer      --> dir
+r - w - x       # leer - scribir - ejecutar    -->file
+r - w - x       # listar - modificar - acceder    -->dir
+
+chmod -R 777 /dir          # Establece permisos de lectura, escritura y ejecución para todos los usuarios, recursivamente en /dir
+chmod +r archivo           # Agrega permisos de lectura al archivo para todos los usuarios
+chmod -r archivo           # Quita permisos de lectura del archivo para todos los usuarios
+chmod u-r archivo          # Quita permisos de lectura del archivo solo para el propietario
+chmod o-x archivo          # Quita permisos de ejecución del archivo solo para otros usuarios
+chmod u-r,g+x archivo      # Quita permisos de lectura al propietario y agrega permisos de ejecución al grupo
+chmod u=w,o=wx archivo     # Establece los permisos del propietario a solo escritura y de otros a escribir y ejecutar
+
 lettura = 4
 scrittura = 2
 esecuzione = 1
 
-chown user:grupo /dir        # modifica propietario /dir 
-chown -R user:grupo /dir     # modifica propietario recursivo
-
-drwx - r - r     # user - grupo - otrosUser
-r - w - x   # leer - scribir - ejecutar    -->file
-r - w - x   # listar - modificar - acceder    -->dir
-chmod -R 777   #permisos ala carpeta
-chmod +r file   #agregar permisos de lectura
-chmod -r file   #quitar permisos de lectura
-chmod u-r file  #quita permisos solo user
-chmod o-x file  #quita permisos de execute solo otros
-chmod u-r, g+x file #modificando permisos
-chmod u=w, o=wx file  
-
-
+chmod 744 archivo # Propietario: todo; Grupo y Otros: solo lectura.
+chmod 755 directorio # Propietario: todo; Grupo y Otros: leer y ejecutar.
+chmod 600 archivo # Propietario: leer y escribir; Grupo y Otros: ningún permiso.
+chmod 666 archivo # Todos: leer y escribir; nadie puede ejecutar.
+chmod 775 directorio # Propietario y Grupo: todo; Otros: leer y ejecutar.
+chmod 700 archivo # Propietario: todo; Grupo y Otros: ningún permiso.
+chmod 570 directorio # Propietario: leer y ejecutar; Grupo: todo; Otros: ningún permiso.
+chmod 640 archivo # Propietario: leer y escribir; Grupo: solo lectura; Otros: ningún permiso.
+chmod 710 directorio # Propietario: todo; Grupo: ningún permiso; Otros: solo ejecutar.
+chmod 764 archivo # Propietario: todo; Grupo: leer y escribir; Otros: solo lectura.
 
 
 
