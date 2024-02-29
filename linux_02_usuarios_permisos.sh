@@ -35,7 +35,7 @@ passwd name_user  tu_pass       # change pasword
 ## GENERATE KEY SSH
 cd ~/.ssh          # machina local WIN o MAC
 ssh-keygen -t rsa -b 4096 -f name_key ## generar llaves publica y privada con nome custom
-ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
+ssh-keygen -t rsa -b 4096  ## genera chiavi publica e privata C:\Users\nome_utente\.ssh
   id_rsa
   id_rsa.pub
 ssh-copy-id -p port  name_user@IP_REMOTO    #copy key id_rsa.pub in server  /home/name_user/.ssh/authorized_keys
