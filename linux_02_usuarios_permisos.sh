@@ -22,7 +22,7 @@ source /root/.bashrc              #Para que los cambios tengan efecto inmediatam
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   ## Crea user sin Directorio, con Acceso de No-Login para cuentas de servicio o procesos, no para una sesión interactiva.
 
-## USER
+## USER y GRUPOS
 adduser name_user               # create user
 useradd -m name_user            # create user
 usermod -aG sudo name_user      # add user to group admin
@@ -33,13 +33,13 @@ sudo deluser nome_utente nome_gruppo     #remove user to group
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
 
-# GRUPOS
 groups # grupos del usuario
 groups name_user
 groupadd name_group 
 groupdel name_group
 groupmod name_group -g 1002
 chgrp  #cambia il gruppo di un file/cartella
+
 
 ## GENERATE KEY SSH
 cd ~/.ssh          # machina local WIN o MAC
@@ -69,8 +69,6 @@ sudo service ssh restart
 
 
 ### PERMESSI FILE E CARTELLE
-
-
 lettura = 4
 scrittura = 2
 esecuzione = 1
