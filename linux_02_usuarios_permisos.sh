@@ -39,16 +39,15 @@ ssh-keygen -t rsa -b 4096  ## generar llaves publica y privada
   id_rsa
   id_rsa.pub
 ssh-copy-id -p port  name_user@IP_REMOTO    #copy key id_rsa.pub in server  /home/name_user/.ssh/authorized_keys
-ssh-copy-id -i nome_key_custom.pub utente@IP_REMOTO
+ssh-copy-id -i name_key.pub utente@IP_REMOTO
 
-
-ssh-keygen -y -f privata.pem > chiave_pubblica.pub  ## generare chiave publica da chiave privata
+ssh-keygen -y -f privata.pem > chiave.pub  ## generare chiave publica da chiave privata
 
 # caricare manualmente chiave publica
-scp nome_key.pub ssh old_user@IP_REMOTO:/home/old_user
+scp chiave.pub ssh old_user@IP_REMOTO:/home/old_user
 mkdir /home/name_user/.ssh
-cat nome_key_custom.pub >> /home/name_user/.ssh/authorized_keys
-chown user:grupo authorized_keys
+cat chiave.pub >> /home/name_user/.ssh/authorized_keys
+chown name_user:name_user authorized_keys
 
 
 ssh name_user@IP_REMOTO -p port              # conect tramite ssh
