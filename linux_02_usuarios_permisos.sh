@@ -1,6 +1,4 @@
-
-
-### UTENTI E GRUPPI PERMESSI
+### UTENTI E GRUPPI
 /etc/passwd       #List All Users
 awk -F':' '{ print $1}' /etc/passwd     #List All Users
 /etc/shells       #list shell disponibile per user
@@ -18,7 +16,7 @@ apt-get update
 apt-get install adduser
 nano /root/.bashrc                 # agrega la siguiente para modificar el PATH de Manera permanente
 export PATH=$PATH:/usr/sbin:/sbin  # ejecuta para modificar el PATH de manera temporal
-source /root/.bashrc              #Para que los cambios tengan efecto inmediatamente
+source /root/.bashrc               # Para que los cambios tengan efecto inmediatamente
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   ## Crea user sin Directorio, con Acceso de No-Login para cuentas de servicio o procesos, no para una sesión interactiva.
 
@@ -62,8 +60,7 @@ ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
 curl ifconfig.me    # obtener la IP pública
 
-sudo nano /etc/ssh/sshd_config
-  PasswordAuthentication no
+sudo nano /etc/ssh/sshd_config --> PasswordAuthentication no
 sudo service ssh restart
 
 
