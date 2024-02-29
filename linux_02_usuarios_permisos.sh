@@ -69,16 +69,14 @@ groupmod name_group -g 1002
 ### PERMESSI FILE E CARTELLE
 groups #lista dei gruppi a cui appartiene l’utente
 groups name_user
-chmod  #modifca i permessi di un flee/cartella
-chown  #modifca il proprietario di un flee/cartella
 chgrp  #cambia il gruppo di un flee/cartella
 
 lettura = 4
 scrittura = 2
 esecuzione = 1
 
-chown user:grupo /dir #change dir de user
-chown -R user:grupo /dir     #change privileg
+chown user:grupo /dir        # modifica propietario /dir 
+chown -R user:grupo /dir     # modifica propietario recursivo
 
 drwx - r - r     # user - grupo - otrosUser
 r - w - x   # leer - scribir - ejecutar    -->file
