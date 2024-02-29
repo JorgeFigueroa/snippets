@@ -45,6 +45,8 @@ ssh-copy-id -i nome_key_custom.pub utente@IP_REMOTO
 scp nome_key.pub ssh old_user@IP_REMOTO:/home/old_user
 mkdir /home/name_user/.ssh
 cat nome_key_custom.pub >> /home/name_user/.ssh/authorized_keys
+chown user:grupo authorized_keys
+
 
 ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
