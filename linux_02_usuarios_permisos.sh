@@ -97,3 +97,7 @@ chmod 764 archivo    # Propietario: todo; Grupo: leer y escribir; Otros: solo le
 
 
 
+
+
+
+
