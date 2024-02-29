@@ -84,16 +84,16 @@ lettura = 4
 scrittura = 2
 esecuzione = 1
 
-chmod 744 archivo # Propietario: todo; Grupo y Otros: solo lectura.
+chmod 744 archivo    # Propietario: todo; Grupo y Otros: solo lectura.
 chmod 755 directorio # Propietario: todo; Grupo y Otros: leer y ejecutar.
-chmod 600 archivo # Propietario: leer y escribir; Grupo y Otros: ningún permiso.
-chmod 666 archivo # Todos: leer y escribir; nadie puede ejecutar.
+chmod 600 archivo    # Propietario: leer y escribir; Grupo y Otros: ningún permiso.
+chmod 666 archivo    # Todos: leer y escribir; nadie puede ejecutar.
 chmod 775 directorio # Propietario y Grupo: todo; Otros: leer y ejecutar.
-chmod 700 archivo # Propietario: todo; Grupo y Otros: ningún permiso.
+chmod 700 archivo    # Propietario: todo; Grupo y Otros: ningún permiso.
 chmod 570 directorio # Propietario: leer y ejecutar; Grupo: todo; Otros: ningún permiso.
-chmod 640 archivo # Propietario: leer y escribir; Grupo: solo lectura; Otros: ningún permiso.
+chmod 640 archivo    # Propietario: leer y escribir; Grupo: solo lectura; Otros: ningún permiso.
 chmod 710 directorio # Propietario: todo; Grupo: ningún permiso; Otros: solo ejecutar.
-chmod 764 archivo # Propietario: todo; Grupo: leer y escribir; Otros: solo lectura.
+chmod 764 archivo    # Propietario: todo; Grupo: leer y escribir; Otros: solo lectura.
 
 
 
