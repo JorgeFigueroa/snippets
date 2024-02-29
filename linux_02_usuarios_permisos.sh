@@ -11,7 +11,7 @@ sudo su #pasar a root
 sudo su –    # permessi root
 su user #cambia user
 whoami #nombre usuario
-groups # grupos del usuario
+
 id  #info usuario
 
 apt-get update
@@ -22,6 +22,7 @@ source /root/.bashrc              #Para que los cambios tengan efecto inmediatam
 useradd name_user -d /home/name_user -s /bin/bash -G name_gruppo -g gruppo_default # Crea user con Directorio Home, Shell, y Grupos Especificados
 useradd user_nologin -M -s /bin/nologin -G name_gruppo -g gruppo_default   ## Crea user sin Directorio, con Acceso de No-Login para cuentas de servicio o procesos, no para una sesión interactiva.
 
+## USER
 adduser name_user               # create user
 useradd -m name_user            # create user
 usermod -aG sudo name_user      # add user to group admin
@@ -31,6 +32,14 @@ sudo gpasswd -d nome_utente nome_gruppo  #remove user to group
 sudo deluser nome_utente nome_gruppo     #remove user to group
 userdel name_user -r            # delete user
 passwd name_user  tu_pass       # change pasword
+
+# GRUPOS
+groups # grupos del usuario
+groups name_user
+groupadd name_group 
+groupdel name_group
+groupmod name_group -g 1002
+chgrp  #cambia il gruppo di un file/cartella
 
 ## GENERATE KEY SSH
 cd ~/.ssh          # machina local WIN o MAC
@@ -43,14 +52,11 @@ ssh-keygen -t rsa -b 4096  ## genera chiavi publica e privata C:\Users\nome_uten
 ssh-copy-id -p port  name_user@IP_REMOTO    #copy key id_rsa.pub in server  /home/name_user/.ssh/authorized_keys
 ssh-copy-id -i name_key.pub utente@IP_REMOTO
 
-
-
 # caricare manualmente chiave publica
 scp chiave.pub ssh old_user@IP_REMOTO:/home/old_user
 mkdir /home/name_user/.ssh
 cat chiave.pub >> /home/name_user/.ssh/authorized_keys
 chown name_user:name_user authorized_keys
-
 
 ssh name_user@IP_REMOTO -p port              # conect tramite ssh
 
@@ -61,15 +67,9 @@ sudo nano /etc/ssh/sshd_config
 sudo service ssh restart
 
 
-groupadd name_group 
-groupdel name_group
-groupmod name_group -g 1002
-
 
 ### PERMESSI FILE E CARTELLE
-groups #lista dei gruppi a cui appartiene l’utente
-groups name_user
-chgrp  #cambia il gruppo di un flee/cartella
+
 
 lettura = 4
 scrittura = 2
