@@ -10,6 +10,7 @@ AWS Secret Access Key [None]: **********************
 Default region name [None]: eu-west-1
 
 aws configure list --profile name_profile
+aws sts get-caller-identity
 
 awslogs get /my-log-group ALL --watch  --profile name_profile
 
