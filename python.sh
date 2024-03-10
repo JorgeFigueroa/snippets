@@ -6,6 +6,8 @@ python3 --version
 python
   exit()
 python -h   #help
+python3 -m http.server 80
+
 
 pip --version
 pip list
