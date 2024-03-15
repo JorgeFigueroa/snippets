@@ -5,7 +5,7 @@ aws ssm start-session --target ID_ISTANZE --region eu-west-1
 aws ec2 create-key-pair --key-name MiKeyPair
 
 ## create security group
-aws ec2 create-security-group --group-name MySecurityGroup --description "Security group for bastion host" --vpc-id VPC_ID
+aws ec2 create-security-group --group-name MySecurityGroup --description "bastion host" --vpc-id VPC_ID
 aws ec2 authorize-security-group-ingress --group-id ID_SG --protocol tcp --port 22 --cidr 0.0.0.0/0
 
 ## create role con policy
