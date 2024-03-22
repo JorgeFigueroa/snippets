@@ -24,14 +24,14 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 ### liberar spazio en disco
 which df
 man df
-df -h	# report file system disk space usage
-du -h --max-depth=1 | sort -hr #tamano de la cartella dove ti trovi
-du -hs ./* | sort -hr   # verifica cuanto spacio ocupa los directorios ordenados por tamano
+df -h	             # report file system disk space usage
+du -h --max-depth=1 | sort -hr # cuanto spacio ocupa la cartella dove ti trovi
+du -hs ./* | sort -hr          # cuanto spacio ocupa los directorios ordenados por tamano
 du -hs /var/*
 
-lsof +L1  #mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
+lsof +L1  # mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
 
-ls -ltr --block-size=M  #show sizes format (MB) order data ASC
+ls -ltr --block-size=M  # show sizes format (MB) order data ASC
 
 apt-get clean
 apt-get auto-clean
