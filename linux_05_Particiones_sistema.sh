@@ -25,10 +25,9 @@ umount /dev/sr0  #Smontare il lettore cd virtuale
 which df
 man df
 df -h	# report file system disk space usage
-du -h --max-depth=1 | sort -hr
-du -h /var/cache/apt/archives/
+du -h --max-depth=1 | sort -hr #tamano de la cartella dove ti trovi
 du -hs ./* | sort -hr   # verifica cuanto spacio ocupa los directorios ordenados por tamano
-du -sh /var/*
+du -hs /var/*
 
 lsof +L1  #mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
 
