@@ -31,8 +31,7 @@ du -hs /var/*
 
 lsof +L1  #mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
 
-ls -ltr --block-size=M
-ls -lh  #show their sizes in human-readable format (MB)
+ls -ltr --block-size=M  #show sizes format (MB) order data ASC
 
 apt-get clean
 apt-get auto-clean
