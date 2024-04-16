@@ -84,3 +84,13 @@ docker-compose ps
 
 docker-compose -f docker-compose_name.yml up
 
+
+
+
+## restore dump mysql
+docker cp path_to_your_dump.sql container_id_or_name:/dump.sql
+docker exec -it container_id_or_name bash
+mysql -u your_mariadb_user -p your_database_name < /dump.sql
+mysql -u your_mariadb_user -p
+
+
