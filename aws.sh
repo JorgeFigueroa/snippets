@@ -34,6 +34,10 @@ aws dynamodb scan --table-name nome_table
 
 aws iam list-roles --region name_region
 
+## Install the Session Manager plugin on Windows
+https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPluginSetup.exe
+
+
 ### SEVERLESS
 https://www.serverless.com/framework/docs/getting-started
 https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
