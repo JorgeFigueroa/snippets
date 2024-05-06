@@ -35,6 +35,7 @@ aws dynamodb scan --table-name nome_table
 aws iam list-roles --region name_region
 
 ## Install the Session Manager plugin on Windows
+https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-windows.html
 https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPluginSetup.exe
 
 
