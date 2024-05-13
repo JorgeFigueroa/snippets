@@ -14,6 +14,9 @@ db.help
 db.help()
 exit
 show dbs
+db.getUsers()
+db.dropUser("testUser")
+
 db
 show collections
 
