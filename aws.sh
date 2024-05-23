@@ -39,7 +39,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-wind
 https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPluginSetup.exe
 
 
-## CONFIG GIT
+## CONFIG GIT REPO CODECOMMIT AWS
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 pip install git-remote-codecommit
