@@ -1,0 +1,3 @@
+## INSTALL
+C:\Windows\System32\terraform.exe
+terraform --version
