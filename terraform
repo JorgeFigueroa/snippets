@@ -10,3 +10,10 @@ terraform plan
 terraform apply -auto-approve
 terraform destroy -auto-approve
 terraform show        # Questo comando mostrerà lo stato corrente delle risorse gestite da Terraform.
+
+
+
+terraform workspace show
+terraform workspace list
+terraform workspace new dev
+terraform workspace 
