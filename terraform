@@ -11,6 +11,11 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
 terraform show        # Questo comando mostrerà lo stato corrente delle risorse gestite da Terraform.
 
+## Importar Infraestructura existente
+resource "aws_instance" "servidor"
+terraform import recurso.nome_recurso
+terraform import aws_instance.servidor Instance_ID
+ 
 
 
 terraform workspace show
