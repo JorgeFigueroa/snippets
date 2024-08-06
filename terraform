@@ -23,4 +23,4 @@ terraform state mv aws_instace.name_old aws_instance.name_new
 terraform workspace show
 terraform workspace list
 terraform workspace new dev
-terraform workspace 
+terraform workspace select
