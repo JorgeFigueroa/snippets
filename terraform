@@ -15,8 +15,11 @@ terraform show        # Questo comando mostrerà lo stato corrente delle risorse
 terraform import recurso_tipo.nome_recurso
 terraform import aws_instance.servidor Instance_ID
  
+## commandi State
+terraform state list
+terraform state mv aws_instace.name_old aws_instance.name_new
 
-
+## commandi workspace
 terraform workspace show
 terraform workspace list
 terraform workspace new dev
