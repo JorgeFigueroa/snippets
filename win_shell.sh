@@ -9,6 +9,13 @@ nslookup      #name dominio
 d:  #change disk
 
 
+## set variable ambiente
+$env:AWS_PROFILE="NAME_PROFILE"
+[System.Environment]::SetEnvironmentVariable("AWS_PROFILE", "NAME_PROFILE", "User")
+echo $env:AWS_PROFILE
+Get-ChildItem Env:
+
+
 Get-Content D:\log.txt -Tail 3
 Get-Content D:\log.txt –Wait
 
