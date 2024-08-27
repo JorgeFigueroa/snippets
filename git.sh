@@ -68,6 +68,12 @@ https://github.com/settings/keys
  rebase --skip
  rebase --abort
 
+## change name commit old
+git rebase -i 3e3d6
+reword 3e3d6 OLD_NAME_COMMIT
+NEW_NAME_COMMIT
+git push --force
+
 
  reset --hard    #ripristina los cambios del momento
  reset --hard HEAD~1  #restore one commit
