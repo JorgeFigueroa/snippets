@@ -51,6 +51,13 @@ python3.10 --version
 
 
 
+## poetry
+run powershell admin
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+[System.Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";C:\Users\NAMEUSER\AppData\Roaming\Python\Scripts", "User")
+poetry --version
+
+
 
 
 
