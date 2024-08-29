@@ -58,7 +58,11 @@ run powershell admin
 poetry --version
 
 
-
+## generate package poetry
+poetry export -f ./src/lambda_poetry/requirements.txt --output requirements.txt --without-hashes
+pip install -r ./src/lambda_poetry/requirements.txt --target "./src/lambda_poetry/packages/"
+Remove-Item -Force ./src/lambda_poetry.zip
+Compress-Archive -Path ./src/lambda_poetry/* -DestinationPath ./src/lambda_poetry.zip
 
 
 
