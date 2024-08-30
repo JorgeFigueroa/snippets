@@ -30,7 +30,9 @@ https://github.com/settings/keys
  checkout -b ramanueva	#crear rama nueva
  checkout ramanueva		#cambiar de rama
  branch -d name_rama		#eliminar rama en local
- merge otrarama		    #unir rama corrente con otrarama
+git merge otrarama		    #unir rama corrente con otrarama
+git merge --abort      # anular merge
+
 
  status		#stado del repositorio
  log --all
