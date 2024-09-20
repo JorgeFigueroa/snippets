@@ -1,0 +1,51 @@
+add C:\Users\nome_user\.ssh\config
+    Host NUXEO
+    Hostname IP_SERVER
+    Port 22
+    User ec2-user
+    PubkeyAuthentication yes
+    IdentityFile ~/.ssh/chiave.pem
+
+NUXEO Download : https://releases.nuxeo.com/
+scp -r nuxeo-server-10.10-tomcat.zip NUXEO:/home/ec2-user
+
+ssh NUXEO
+sudo su
+
+## Java https://www.openlogic.com/openjdk-downloads
+wget https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u402-b06/openlogic-openjdk-8u402-b06-linux-x64.tar.gz
+sudo mkdir -p /usr/lib/jvm
+sudo tar xzf openlogic-openjdk-8u402-b06-linux-x64.tar.gz -C /usr/lib/jvm
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/openlogic-openjdk-8u402-b06-linux-x64/bin/java 100
+sudo update-alternatives --config java
+java -version
+
+
+## NUXEO
+https://auth.nuxeo.com/login/login.htm mail/pass
+
+unzip nuxeo-server-10.10-tomcat.zip -d /opt
+cd /opt/nuxeo-server-10.10-tomcat
+./bin/nuxeoctl
+./bin/nuxeoctl start
+./bin/nuxeoctl stop
+./bin/nuxeoctl restart
+./bin/nuxeoctl mp-install nuxeo-web-ui
+./bin/nuxeoctl mp-list
+
+http://IP:8080/nuxeo/
+Administrator/Administrator
+
+## DOCKER
+sudo yum install docker -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo docker run --name nuxeo-postgres -e POSTGRES_PASSWORD=yourpassword -e POSTGRES_USER=nuxeo -e POSTGRES_DB=nuxeo -p 5432:5432 -d postgres:11
+docker start 97ec58690100
+
+
+## RESET PASSWORD
+docker exec -it nuxeo-postgres psql -U nuxeeo -d nuxeo
+generar nuova_password_ssha con script
+UPDATE users SET password = 'nuova_password_ssha' WHERE username = 'Administrator';
+./bin/nuxeoctl restart
