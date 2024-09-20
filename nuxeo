@@ -49,3 +49,21 @@ docker exec -it nuxeo-postgres psql -U nuxeeo -d nuxeo
 generar nuova_password_ssha con script
 UPDATE users SET password = 'nuova_password_ssha' WHERE username = 'Administrator';
 ./bin/nuxeoctl restart
+
+
+
+
+## script python
+import hashlib
+import base64
+import os
+def generate_ssha_password(password):
+    salt = os.urandom(4)  # Genera un salt casuale di 4 byte
+    sha = hashlib.sha1(password.encode('utf-8'))
+    sha.update(salt)
+    digest = sha.digest() + salt
+    return "{SSHA}" + base64.b64encode(digest).decode('utf-8')
+
+if __name__ == '__main__':
+    new_password = "TU_PASS"
+    stored_password = generate_ssha_password(new_password)
