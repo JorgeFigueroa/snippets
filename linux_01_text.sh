@@ -84,6 +84,7 @@ ls -l *a*
 ls -l name*.txt
 ls -l name??.txt #comodin ? busca depende cantidad 
 ls | wc -l  #contar archivos
+ls -ltr --block-size=M
 
 tree dir/   #mostrar dir forma arbol
 tree -CL 2 dir/   #Descend only level directories deep.  color
