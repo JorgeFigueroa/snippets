@@ -28,6 +28,7 @@ df -h	             # report file system disk space usage
 du -h --max-depth=1 | sort -hr # cuanto spacio ocupa la cartella dove ti trovi
 du -hs ./* | sort -hr          # cuanto spacio ocupa los directorios ordenados por tamano
 du -hs /var/*
+du -hxd1 ./ | sort -hr | head -20 # cuanto spacio ocupa los directorios ordenados por tamano
 
 lsof +L1  # mostra file che sono stati cancellati ma sono ancora tenuti aperti da processi
 
