@@ -8,6 +8,13 @@ aws sso login --profile <tu-perfil-sso>
 aws sso logout
 
 
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+aws configure --profile name_profile
+  AWS Access Key ID [None]: ***************
+  AWS Secret Access Key [None]: **********************
+  Default region name [None]: eu-west-1
+
+.aws/credentials
 [SSO_PROFILE]
 sso_start_url = https://azienda.awsapps.com/start#/
 sso_region = REGION
@@ -16,12 +23,21 @@ sso_role_name = ROLE
 region = REGION
 output = json
 
+[name_profile]
+aws_access_key_id = XXXXX
+aws_secret_access_key = XXXXX
 
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-aws configure --profile name_profile
-  AWS Access Key ID [None]: ***************
-  AWS Secret Access Key [None]: **********************
-  Default region name [None]: eu-west-1
+.aws/config
+[default]
+region = eu-south-1
+output = json
+
+[profile name_profile]
+region = eu-south-1
+output = json
+
+
+
 
 aws configure list --profile name_profile
 aws sts get-caller-identity
