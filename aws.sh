@@ -2,6 +2,20 @@
 ec2-user
 sudo su #root
 
+aws configure sso
+aws configure list-profiles
+aws sso login --profile <tu-perfil-sso>
+aws sso logout
+
+
+[SSO_PROFILE]
+sso_start_url = https://azienda.awsapps.com/start#/
+sso_region = REGION
+sso_account_id = ID
+sso_role_name = ROLE
+region = REGION
+output = json
+
 
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 aws configure --profile name_profile
